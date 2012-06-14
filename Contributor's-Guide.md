@@ -24,7 +24,8 @@ Details:
 
 Building the code is easy.
 
-* Open the solution **CesiumLanguageWriter.sln** in Visual Studio.
+C#:
+* Open the solution **DotNet/CesiumLanguageWriter.sln** in Visual Studio.
 
 * From the build menu, select _Build -> Configuration Manager.._. and make sure all of the projects to be built are checked. 
 ![Configuration Manager](screenshots/czml-writer-configuration-manager.png)

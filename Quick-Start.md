@@ -7,5 +7,5 @@ Getting started with a local copy of the CZML Writers on Windows.
 	
 ## Build
 
-* In Visual Studio, open the solution CesiumLanguageWriter.sln
-* Select Build -> Build Solution (Ctrl + Shift + B) from the build menu to compile all the included projects.
+* In Visual Studio, open the solution **CesiumLanguageWriter.sln**
+* Select _Build -> Build Solution_ (Ctrl + Shift + B) from the build menu to compile all the included projects.

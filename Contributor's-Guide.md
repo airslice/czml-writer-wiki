@@ -1,4 +1,4 @@
-Details on how to get, build, develop, and contribute code.
+We are a community that encourages contributions. Join us.  Here, we detail how to get, build, develop, and contribute code.
 
 ## Getting the Code
 

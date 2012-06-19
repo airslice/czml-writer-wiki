@@ -7,8 +7,9 @@ Short version:
 * Commit access? Clone [czml-writer](https://github.com/AnalyticalGraphicsInc/czml-writer) and make all non-trivial changes in a branch.
 
 Details:
-* [Setup git on Windows](http://help.github.com/win-set-up-git/) if it isn't already.
+* Setup git if it isn't already ([linux](http://help.github.com/linux-set-up-git/) | [mac](http://help.github.com/mac-set-up-git/) | [windows](http://help.github.com/win-set-up-git/)).
    * On Windows, `git config --global core.autocrlf true` (following the instructions above does this for you).  
+   * On Linux/Mac, `git config --global core.autocrlf input` - see the [GitHub help on this topic](http://help.github.com/line-endings/).
    * Other recommended Git settings:
       * `git config --global push.default upstream` - when running `git push`, only push the current branch.
       * `git config --global branch.autosetuprebase always` - when pulling remote changes, rebase your local changes on top of the remote changes, to avoid unnecessary merge commits.
@@ -27,11 +28,14 @@ Building the code is easy.
 C#:
 * Open `DotNet/CesiumLanguageWriter.sln` in [Visual Studio](http://www.microsoft.com/visualstudio/en-us).
 
-* Select Build - Configuration Manager, and make sure all of the projects to be built are checked. 
-
-![Configuration Manager](screenshots/czml-writer-configuration-manager.png)
-
 * Select Build - Build Solution (Ctrl + Shift + B) to build all projects.
+
+Java:
+* Open the projects in [Eclipse](http://www.eclipse.org/):
+	* File - Import - General - Existing Projects into Workspace
+	* Select root directory: `\czml-writer\Java`
+* Project - Build All (Ctrl + B)
+	* Or select Project - Build Automatically to build when changes are saved.
 
 ## Development Tips and Conventions
 

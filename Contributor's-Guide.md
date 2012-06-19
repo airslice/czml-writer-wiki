@@ -26,7 +26,7 @@ Details:
 Building the code is easy.
 
 C#:
-* Open `DotNet/CesiumLanguageWriter.sln` in Visual Studio (or ([MonoDevelop](http://monodevelop.com/))).
+* Open `DotNet/CesiumLanguageWriter.sln` in Visual Studio (or [MonoDevelop](http://monodevelop.com/)).
 
 * Select Build - Build Solution (Ctrl + Shift + B) to build all projects.
 

@@ -8,8 +8,8 @@
 .NET:
 
 * Open `DotNet\CesiumLanguageWriter.sln`.
-	* On Windows use Visual Studio 2010 or newer.
-	* On Linux and Mac use [MonoDevelop](http://monodevelop.com/).
+	* On Windows, use Visual Studio 2010 or newer.
+	* On Linux and Mac, use [MonoDevelop](http://monodevelop.com/).
 * Build - Build Solution (Ctrl + Shift + B) or Build - Build All (F8) to compile all included projects.
 
 Java:

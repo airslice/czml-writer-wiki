@@ -1,5 +1,3 @@
-Getting started with a local copy of the CZML Writers on Windows.
-
 ## Get the Code
 
 * `git clone git@github.com:AnalyticalGraphicsInc/czml-writer.git`

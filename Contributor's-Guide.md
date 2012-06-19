@@ -39,9 +39,9 @@ Java:
 
 ## Development Tips and Conventions
 
-* Place each new CZML converter in a new project, including the source format in the project name, e.g. `KmlToCesiumLanguage`.
+* Place each new CZML converter in a new project.  Include the source format in the project name, e.g. `KmlToCesiumLanguage`.
 
-* Place unit tests for each writer in a new project, named by appending the `Tests` to the corresponding project name, e.g. `KmlToCesiumLanguageTests`.
+* Place unit tests for each writer in a new project, named by appending `Tests` to the corresponding project name, e.g. `KmlToCesiumLanguageTests`.
 
 * When `using CesiumLanguageWriter`, make sure to include a reference to the project. In the Solution Explorer (View - Solution Explorer), expand the project tree, right-click References and select Add Reference. In the window that appears, click the Projects tab, select `CesiumLanguageWriter` and hit OK.
 

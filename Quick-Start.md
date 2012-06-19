@@ -20,7 +20,7 @@ Java:
 * Project - Build All (Ctrl + B)
 	* Or select Project - Build Automatically to build when changes are saved.
 
-## Running Unit Tests
+## Running the Unit Tests
 
 .NET:
 

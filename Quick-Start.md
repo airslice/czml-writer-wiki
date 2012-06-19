@@ -21,3 +21,15 @@ Java:
 	* Select root directory: `\czml-writer\Java`
 * Project - Build All (Ctrl + B)
 	* Or select Project - Build Automatically to build when changes are saved.
+
+## Running Unit Tests
+
+.NET:
+
+* Visual Studio:  [TestDriven.NET](http://testdriven.net/download.aspx) provides the easiest way to run unit tests.
+* MonoDevelop: Run - Run Unit Tests (Ctrl + T)
+
+Java:
+
+* In the Package or Project Explorer (Window - Show View), right-click the test project or file and select Run-As - [Junit](http://www.junit.org/) Test
+

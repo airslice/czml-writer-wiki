@@ -18,7 +18,7 @@
 		![Set up NUnit as an external tool in Visual Studio](./screenshots/NUnit-AddExternalTool.png)
 		* View - Toolbars - Customize
 		* New - Enter 'NUnit Tools'. 
-		* On the Commands tab, add the external command (usually External Command 1 when you don’t have any other external commands).
+		* On the Commands tab, add the external command (the command number corresponds to the position of NUnit in the External Tools list shown above).
 		![Add the NUnit toolbar in Visual Studio](./screenshots/NUnit-AddToolbar.png)
 		* Click the NUnit button in the new toolbar to start the NUnit GUI and load the current test suite.
 		* To debug tests within Visual Studio, Debug - Attach To Process... - nunit-agent.exe

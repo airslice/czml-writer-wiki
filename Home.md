@@ -10,7 +10,7 @@ This is a library for writing [CZML](http://cesium.agi.com/czml.html) content fo
 ## For Everyone
 
 ### Features
-* [Cesium Language (CZML) Guide](https://github.com/AnalyticalGraphicsInc/cesium/wiki/Cesium-Language-%28CZML%29-Guide) - describes the CZML specification, which is a work-in-progress.
+* [Cesium Language (CZML) Guide](https://github.com/AnalyticalGraphicsInc/cesium/wiki/czml-guide) - describes the CZML specification, which is a work-in-progress.
 
 ### Code
 * [[Quick Start]] - how to get the code, build, and run.

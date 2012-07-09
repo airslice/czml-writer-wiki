@@ -26,9 +26,9 @@ Using [MonoDevelop](http://monodevelop.com/) on Linux or Mac:
 * Run the unit tests:
 	* In the Package or Project Explorer (Window - Show View), right-click the test project or file and select Run-As - [Junit](http://www.junit.org/) Test
 
-##Convert To CZML Using The Command Line Tool
+##Convert Files To CZML Using The Command Line Tool
 * Building the included `CesiumLanguageConverter` project will generate a command line executable, `CesiumLanguageConverter.exe`, located at `DotNet/CesiumLanguageConverter/bin/Debug`.
 
-* Navigate to this directory and run `CesiumLanguageConverter.exe -h` or see the [[CesiumLanguageConverter Help]] wiki for usage options.
+* Navigate to this directory and run `CesiumLanguageConverter -h` or see the [[CesiumLanguageConverter Help]] wiki for usage options.
 
 * Input file paths can be relative or absolute: e.g. `CesiumLanguageConverter --webGLGlobeJsonHeightScalar=4000000 helloWorld.json` or `CesiumLanguageConverter C:\Users\admin\Desktop\sample.kml`

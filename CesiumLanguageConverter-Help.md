@@ -26,3 +26,8 @@ After building the included `CesiumLanguageConverter` project, the executable ca
 
 * `--webGLGlobeJsonHeightScalar=VALUE` 
 	 * A scale factor for the height component of each coordinate.  Defaults to 1.
+
+##Examples
+* `CesiumLanguageConverter --webGLGlobeJsonHeightScalar=4000000 helloWorld.json` 
+* `CesiumLanguageConverter C:\Users\admin\Desktop\sample.kml`
+* `CesiumLanguageConverter --pretty -t KML -o stateBorders test.txt`

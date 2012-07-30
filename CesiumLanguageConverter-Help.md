@@ -8,7 +8,7 @@ After building the included `CesiumLanguageConverter` project, the executable ca
 `FILENAME` can be either a relative or absolute file path.
 
 ## Supported file formats
-* KML
+* [[KML]]
 * WebGLGlobeJSON.
 
 ## Options

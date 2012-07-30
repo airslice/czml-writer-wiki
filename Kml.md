@@ -1,41 +1,39 @@
+## <a name="Feature">Feature</a>
 
-## Feature
+## <a name="Placemark">Placemark</a>
 
-## Placemark
+## <a name="Geometry">Geometry</a>
 
-## Geometry
+## <a name="Point">Point</a>
 
-## Point
+## <a name="LineString">LineString</a>
 
-## LineString
+## <a name="LinearRing">LinearRing</a>
 
-## LinearRing
+## <a name="Polygon">Polygon</a>
 
-## Polygon
+## <a name="MultiGeometry">MultiGeometry</a>
 
-## MultiGeometry
+## <a name="StyleSelector">StyleSelector</a>
 
-## StyleSelector
+## <a name="Style">Style</a>
 
-## Style
+## <a name="StyleMap">StyleMap</a>
 
-## StyleMap
+## <a name="TimePrimitive">TimePrimitive</a>
 
-## TimePrimitive
+## <a name="TimeSpan">TimeSpan</a>
 
-## TimeSpan
+## <a name="TimeStamp">TimeStamp</a>
 
-## TimeStamp
+## <a name="SubStyle">SubStyle</a>
 
-## SubStyle
+## <a name="ColorStyle">ColorStyle</a>
 
-## ColorStyle
+## <a name="LineStyle">LineStyle</a>
 
-## LineStyle
+## <a name="PolyStyle">PolyStyle</a>
 
-## PolyStyle
+## <a name="IconStyle">IconStyle</a>
 
-## IconStyle
-
-## LabelStyle
-
+## <a name="LabelStyle">LabelStyle</a>

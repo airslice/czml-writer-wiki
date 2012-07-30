@@ -24,7 +24,7 @@ Supported:
 </Icon>`  
 ## <a name="GroundOverlay">GroundOverlay</a>
 inherited from <a href="#Feature">Feature</a> element.  
-inherited from <a href="#Overlay">Overlay</a>element.  
+inherited from <a href="#Overlay">Overlay</a> element.  
 Supported:  
 `<altitude>`  
 `<altitudeMode>(clampToGround and absolute)`  

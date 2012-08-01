@@ -48,9 +48,9 @@ Not supported:
 `<extrude>`  
 `<tessellate>`  
 ## <a name="LinearRing">LinearRing</a>
-Supported:
+Supported:  
 `<altitudeMode>(clampToGround, absolute)`  
-'<coordinates>`    
+`<coordinates>`  
 Not supported:  
 `<extrude>`  
 `<tessellate>`  

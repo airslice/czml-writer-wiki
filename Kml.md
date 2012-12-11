@@ -79,7 +79,6 @@ Supported:
 `<altitudeMode>(clampToGround, absolute)`  
 `<gx:interpolate>`  
 `<gx:Track>`  
-## <a name="Polygon">Polygon</a>
 ## <a name="MultiGeometry">MultiGeometry</a>
 A container for zero or more geometry primitives. Supported.
 ## <a name="Model">Model</a>

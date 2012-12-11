@@ -67,18 +67,18 @@ Not supported:
 `<tessellate>`  
 `<innerBoundaryIs>`  
 ## <a name="gx:MultiTrack">gx:MultiTrack</a>
-Supported:
-`<altitudeMode>(clampToGround, absolute)`
-`<when>`
-`<gx:coord>`
-Not Supported:
-`<Model>`
-`<ExtendedData>`
+Supported:  
+`<altitudeMode>(clampToGround, absolute)`  
+`<when>`  
+`<gx:coord>`  
+Not Supported:  
+`<Model>`  
+`<ExtendedData>`  
 ## <a name="gx:Track">gx:Track</a>
-Supported:
-`<altitudeMode>(clampToGround, absolute)`
-`<gx:interpolate>`
-`<gx:Track>`
+Supported:  
+`<altitudeMode>(clampToGround, absolute)`  
+`<gx:interpolate>`  
+`<gx:Track>`  
 ## <a name="Polygon">Polygon</a>
 ## <a name="MultiGeometry">MultiGeometry</a>
 A container for zero or more geometry primitives. Supported.

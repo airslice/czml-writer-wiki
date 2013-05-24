@@ -1,6 +1,6 @@
 ## Get the Code
 
-* `git clone git@github.com:AnalyticalGraphicsInc/czml-writer.git`
+* `git clone https://github.com/AnalyticalGraphicsInc/czml-writer.git`
 	* Or download the [zip](https://github.com/AnalyticalGraphicsInc/czml-writer/zipball/master)
 
 ## .NET

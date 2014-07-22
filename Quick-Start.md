@@ -31,4 +31,4 @@ Using [MonoDevelop](http://monodevelop.com/) on Linux or Mac:
 
 * Navigate to this directory and run `CesiumLanguageConverter -h` or see the [[CesiumLanguageConverter Help]] wiki for usage options.
 
-* Input file paths can be relative or absolute, e.g. `CesiumLanguageConverter --webGLGlobeJsonHeightScalar=4000000 helloWorld.json` or `CesiumLanguageConverter C:\Users\admin\Desktop\sample.kml`
+* Input file paths can be relative or absolute, e.g. `CesiumLanguageConverter --webGLGlobeJsonHeightScalar=4000000 helloWorld.json` or `CesiumLanguageConverter C:\Users\admin\Desktop\helloWorldjson`

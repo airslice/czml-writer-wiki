@@ -8,7 +8,6 @@ After building the included `CesiumLanguageConverter` project, the executable ca
 `FILENAME` can be either a relative or absolute file path.
 
 ## Supported file formats
-* [[KML]]
 * WebGLGlobeJSON.
 
 ## Options
@@ -19,7 +18,7 @@ After building the included `CesiumLanguageConverter` project, the executable ca
 	* Specify the output file name.  Defaults to the  input file name, with extension changed to czml.
 
 * `-t, --type=VALUE` 
-	* Specify the type of input file.  By default it will be inferred from the extension of the input file.  Valid options: KML, WebGLGlobeJSON.
+	* Specify the type of input file.  By default it will be inferred from the extension of the input file.  Valid options: WebGLGlobeJSON.
 
 * `--pretty`  
 	* Produce pretty-printed output, which is more easily readable, but produces larger files.
@@ -29,5 +28,3 @@ After building the included `CesiumLanguageConverter` project, the executable ca
 
 ##Examples
 * `CesiumLanguageConverter --webGLGlobeJsonHeightScalar=4000000 helloWorld.json` 
-* `CesiumLanguageConverter C:\Users\admin\Desktop\sample.kml`
-* `CesiumLanguageConverter --pretty -t KML -o stateBorders test.txt`

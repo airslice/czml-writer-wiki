@@ -14,7 +14,6 @@ This is a library for writing [CZML](http://cesium.agi.com/czml.html) content fo
 
 ### Code
 * [[Quick Start]] - how to get the code, build, and run.
-* [[CesiumLanguageConverter Help]] - instructions for converting files to CZML using the included command line utility.
 
 ## For Contributors
 

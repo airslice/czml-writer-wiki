@@ -158,7 +158,7 @@ The position of the object in the world. The position has no direct visual repre
 The orientation of the object in the world.  The orientation has no direct visual representation, but it is used to orient models, cones, pyramids, and other graphical items attached to the object.
 
 
-**viewFrom** - [[Cartesian3]]
+**viewFrom** - [[ViewFrom]]
 
 A suggested camera location when viewing this object.  The property is specified as a Cartesian position in the East (x), North (y), Up (z) reference frame relative to the object's position.
 

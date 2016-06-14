@@ -8,6 +8,31 @@ Defines an orientation.  An orientation is a rotation that takes a vector expres
 
 **Interpolatable**: yes
 
+**Examples**:
+
+```javascript
+{
+    "orientation": {
+        "unitQuaternion": [ 0.0, 0.0, 0.0, 1.0 ]
+    }
+}
+```
+
+```javascript
+{
+    "orientation": {
+        "interpolationAlgorithm": "LINEAR",
+        "interpolationDegree": 1,
+        "epoch": "2012-03-15T10:00:00Z",
+        "unitQuaternion": [
+            0, 0.45652188368372576, -0.049580035995243577, -0.8819344359461565, 0.10640131785324795,
+            300, 0.309688526062018, -0.0592870464529779, -0.945283886004075, 0.0837641797515638,
+            600, 0.15524757622990795, -0.06613430791377527, -0.9841132393764626, 0.05518673278488507
+        ]
+    }
+}
+```
+
 ##Properties
 
 **unitQuaternion** - [[UnitQuaternionValue]]

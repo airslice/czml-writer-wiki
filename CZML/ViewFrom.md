@@ -8,6 +8,16 @@ A suggested camera location when viewing an object, specified as a Cartesian pos
 
 **Interpolatable**: yes
 
+**Examples**:
+
+```javascript
+{
+    "viewFrom": {
+        "cartesian": [ 4.3, 0.1, 2.6 ]
+    }
+}
+```
+
 ##Properties
 
 **cartesian** - [[Cartesian3Value]]

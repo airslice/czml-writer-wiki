@@ -24,9 +24,9 @@ Each packet has an `id` property identifying the object it is describing.  IDs d
 
 If an `id` is not specified, the client will automatically generate a unique one. However, this prevents later packets from referring to this object in order to, for example, add more data to it.
 
-In addition to the `id`, packets contain zero or more (but usually one or more) properties defining graphical items to draw related to the object.  In the example above, we've specified that the "GroundControlStation" object has a fixed position at [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) longitude -75.5 degrees, latitude 40.0 degrees, and height 0.0 meters, and that a blue point (dot) is drawn at its location.
+In addition to the `id`, [[Packet][Packets]] contain zero or more (but usually one or more) properties defining graphical items to draw related to the object.  In the example above, we've specified that the "GroundControlStation" object has a fixed position at [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) longitude -75.5 degrees, latitude 40.0 degrees, and height 0.0 meters, and that a blue point (dot) is drawn at its location.
 
-There are many standard properties defined for CZML, including properties for adding points, billboards, models, lines, and other graphics to the scene.  The available properties are described in detail on the [[CZML Content]] page.  On this page, we are primarily concerned with how the data is structured.  For example, we describe how a property can be specified such that it has two different values over two different intervals of time.
+There are many standard properties defined for CZML, including properties for adding points, billboards, models, lines, and other graphics to the scene.  The available properties are described in detail on the [[Packet]] page, and linked pages for sub-properties and sub-types.  On this page, we are primarily concerned with how the data is structured.  For example, we describe how a property can be specified such that it has two different values over two different intervals of time.
 
 ## Intervals
 
@@ -48,7 +48,7 @@ In the most general case, the value of a CZML property is a JSON array, where ea
 }
 ```
 
-Here we define the `someProperty` property over two intervals, the first from noon to 1:00 PM UTC where the value of the property is 5, and the other from 1:00 PM to 2:00 PM UTC where the value of the property is 6.  The value will change instantly when crossing the boundary between two intervals.  We use `number` to indicate the value because this is a number-type property.  Some properties, notably properties that represent position, allow the value to be specified in multiple formats, such as a Cartesian X,Y,Z position or a Cartographic longitude, latitude, height position.  The [[CZML Content]] page lists the types of data supported for each property, and the value names to use with each.
+Here we define the `someProperty` property over two intervals, the first from noon to 1:00 PM UTC where the value of the property is 5, and the other from 1:00 PM to 2:00 PM UTC where the value of the property is 6.  The value will change instantly when crossing the boundary between two intervals.  We use `number` to indicate the value because this is a number-type property.  Some properties, notably properties that represent position, allow the value to be specified in multiple formats, such as a Cartesian X,Y,Z position or a Cartographic longitude, latitude, height position.  The page for each type lists the types of data supported for each property, and the value names to use with each.
 
 The `interval` property is optional.  If it is not specified, the interval is assumed to span all time.  It doesn't make much sense to specify multiple infinite intervals, or intervals that overlap in general, but if you do, the one later in the CZML file or stream takes precedence.
 
@@ -90,23 +90,21 @@ More complicated composite values, such as a Cartesian position or a color, are 
 
 Composite values must always be specified within an interval, even if that interval is infinite as shown here.  If the value, `[1.0, 2.0, 3.0]`, were allowed as the value of the `complexProperty` directly, it would be necessary for a client interpreting the CZML to look at the contents of the array to determine whether the array is a list of intervals or a single value.  So, for simplicity, we do not allow this.
 
-The [[CZML Content]] page describes how various types of data are encoded in arrays.
-
 ## Sampled Property Values
 
 So far, we've discussed how to specify a single value for a property for all time, and how to specify different values for a property over different discrete intervals.  Some properties also allow you to specify time-tagged samples which the client will interpolate over to compute the value of the property at any given time.  Times are specified using [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) strings.
 
 ```javascript
-{  
-    // ...  
-    "someInterpolatableProperty": {  
-        "cartesian": [  
-            "2012-04-30T12:00Z", 1.0, 2.0, 3.0,  
-            "2012-04-30T12:01Z", 4.0, 5.0, 6.0,  
-            "2012-04-30T12:02Z", 7.0, 8.0, 9.0  
-        ]  
-    }  
-} 
+{
+    // ...
+    "someInterpolatableProperty": {
+        "cartesian": [
+            "2012-04-30T12:00Z", 1.0, 2.0, 3.0,
+            "2012-04-30T12:01Z", 4.0, 5.0, 6.0,
+            "2012-04-30T12:02Z", 7.0, 8.0, 9.0
+        ]
+    }
+}
 ```
 
 Here we're specifying that the value is `[1.0, 2.0, 3.0]` at noon, `[4.0, 5.0, 6.0]` one minute later, and `[7.0, 8.0, 9.0]` a minute after that.  If the client's current clock is 30 seconds past noon, the value will be a linear interpolation between `[1.0, 2.0, 3.0]` and `[4.0, 5.0, 6.0]`, or `[2.5, 3.5, 4.5]`.
@@ -114,35 +112,35 @@ Here we're specifying that the value is `[1.0, 2.0, 3.0]` at noon, `[4.0, 5.0, 6
 For succinctness, times can also be specified in seconds since an epoch.  While this is potentially less precise than specifying each time using an ISO8601 string, it is usually more than sufficient when the samples span less than a day or when the offsets are whole numbers of seconds.
 
 ```javascript
-{  
-    // ...  
-    "someInterpolatableProperty": {  
-        "epoch": "2012-04-30T12:00Z",  
-        "cartesian": [  
-            0.0, 1.0, 2.0, 3.0,  
-            60.0, 4.0, 5.0, 6.0,  
-            120.0, 7.0, 8.0, 9.0  
-        ]  
-    }  
+{
+    // ...
+    "someInterpolatableProperty": {
+        "epoch": "2012-04-30T12:00Z",
+        "cartesian": [
+            0.0, 1.0, 2.0, 3.0,
+            60.0, 4.0, 5.0, 6.0,
+            120.0, 7.0, 8.0, 9.0
+        ]
+    }
 }
 ```
 
 Finally, properties specified using time-tagged samples have some additional, optional sub-properties controlling interpolation.
 
 ```javascript
-{  
-    // ...  
-    "someInterpolatableProperty": {  
-        "epoch": "2012-04-30T12:00Z",  
-        "cartesian": [  
-            0.0, 1.0, 2.0, 3.0,  
-            60.0, 4.0, 5.0, 6.0,  
-            120.0, 7.0, 8.0, 9.0  
-        ],  
-        "interpolationAlgorithm": "LAGRANGE",  
+{
+    // ...
+    "someInterpolatableProperty": {
+        "epoch": "2012-04-30T12:00Z",
+        "cartesian": [
+            0.0, 1.0, 2.0, 3.0,
+            60.0, 4.0, 5.0, 6.0,
+            120.0, 7.0, 8.0, 9.0
+        ],
+        "interpolationAlgorithm": "LAGRANGE",
         "interpolationDegree": 5
-    },  
-} 
+    },
+}
 ```
 
 The `interpolationAlgorithm` specifies the algorithm to use to interpolate a value at a different time from the provided data.  See the table below for the possible values.  The `interpolationDegree` property specifies the degree of the polynomial to use for interpolation.  If these properties are not specified, linear interpolation is used.  See [[InterpolatableProperty]] for a full list of the properties relating to interpolation.
@@ -155,14 +153,14 @@ Putting an entire CZML document in one big JSON array makes it difficult to load
 
 ```javascript
 event: czml
-data: {  
-    // packet one  
-}  
-  
+data: {
+    // packet one
+}
+
 event: czml
-data: {  
-    // packet two  
-} 
+data: {
+    // packet two
+}
 ```
 
 As a result, the browser raises an event when each packet is received, containing the data for just that one packet.  This allows us to incrementally process CZML data with excellent performance.
@@ -184,10 +182,10 @@ The samples in an interval must be ordered by increasing time within a single pa
 In addition to the `id` property, CZML packets have one additional special property: `availability`.
 
 ```javascript
-{  
-    "id": "PredatorUAV",  
-    "availability": "2012-04-30T12:00:00Z/14:00:00Z",  
-    // ...  
+{
+    "id": "PredatorUAV",
+    "availability": "2012-04-30T12:00:00Z/14:00:00Z",
+    // ...
 }
 ```
 

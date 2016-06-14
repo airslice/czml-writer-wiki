@@ -10,7 +10,7 @@ This is a library for writing CZML content for use with [Cesium](https://cesiumj
 ## For Everyone
 
 ### Features
-* [Cesium Language (CZML) Guide](CZML Guide) - describes the CZML specification, which is a work-in-progress.
+* [Cesium Language (CZML) Guide](CZML-Guide) - describes the CZML specification, which is a work-in-progress.
 
 ### Code
 * [[Quick Start]] - how to get the code, build, and run.

@@ -6,3 +6,13 @@ A URI value.
 
 **Type**: string
 
+**Examples**:
+
+```javascript
+"http://cesiumjs.org/images/logos/cesium-white.png"
+```
+
+```javascript
+"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2Nk+M/wHwAEBgIA5agATwAAAABJRU5ErkJggg=="
+```
+

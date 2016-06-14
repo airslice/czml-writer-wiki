@@ -38,7 +38,7 @@ An HTML description of the object.
 The clock settings for the entire data set. Only valid on the document object.
 
 
-**version** - [[String]]
+**version** - string
 
 The CZML version being written. Only valid on the document object.
 

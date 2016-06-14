@@ -66,6 +66,13 @@ Describes the graphical properties of a single object in a scene, such as a sing
 }
 ```
 
+```javascript
+{
+    "id": "My Object",
+    "delete": true
+}
+```
+
 ##Properties
 
 **id** - string

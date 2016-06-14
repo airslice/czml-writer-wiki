@@ -11,6 +11,6 @@ CZML is a JSON format for describing a time-dynamic graphical scene, primarily f
 1. An open-source library, [czml-writer](https://github.com/AnalyticalGraphicsInc/czml-writer), for writing CZML is maintained on Github.
 
 * [[CZML Structure]] - the overall structure of a CZML document / stream.
-* [[CZML Content]] -  the schema of the standard content present in a CZML document / stream.
+* [[Packet]] - the schema of the standard content present in a CZML document / stream.
 
 Live demos are available on the [Cesium Home page](http://cesiumjs.org/).

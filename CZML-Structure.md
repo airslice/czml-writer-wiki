@@ -24,7 +24,7 @@ Each packet has an `id` property identifying the object it is describing.  IDs d
 
 If an `id` is not specified, the client will automatically generate a unique one. However, this prevents later packets from referring to this object in order to, for example, add more data to it.
 
-In addition to the `id`, (Packets)[Packet] contain zero or more (but usually one or more) properties defining graphical items to draw related to the object.  In the example above, we've specified that the "GroundControlStation" object has a fixed [[Position]] at [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) longitude -75.5 degrees, latitude 40.0 degrees, and height 0.0 meters, and that a blue [[Point]] is drawn at its location.
+In addition to the `id`, [Packet](Packets) contain zero or more (but usually one or more) properties defining graphical items to draw related to the object.  In the example above, we've specified that the "GroundControlStation" object has a fixed [[Position]] at [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) longitude -75.5 degrees, latitude 40.0 degrees, and height 0.0 meters, and that a blue [[Point]] is drawn at its location.
 
 There are many standard properties defined for CZML, including properties for adding [Point](points), [Billboard](billboards), [Model](models), [Polyline](lines), and other graphics to the scene.  The available properties are described in detail on the [[Packet]] page, and linked pages for sub-properties and sub-types.  On this page, we are primarily concerned with how the data is structured.  For example, we describe how a property can be specified such that it has two different values over two different intervals of time.
 

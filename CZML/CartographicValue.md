@@ -6,3 +6,17 @@ A geodetic, WGS84 position specified as `[Longitude, Latitude, Height]`.  If the
 
 **Type**: array
 
+**Examples**:
+
+```javascript
+[ 1.0, 2.0, 3.0 ]
+```
+
+```javascript
+[
+    0, -77, 37, 100000,
+    300, -77.5, 37, 100500,
+    600, -77.9, 37, 100900
+]
+```
+

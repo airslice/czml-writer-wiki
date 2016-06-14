@@ -24,10 +24,30 @@ The position specified as a three-dimensional Cartesian value, `[X, Y, Z]`, in m
 
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in radians and Height is in meters.
 
+**Examples**:
+
+```javascript
+{
+    "position": {
+        "cartographicRadians": [ -1.3439035240356338, 0.6457718232379019, 100000 ]
+    }
+}
+```
+
 
 **cartographicDegrees** - [[CartographicValue]]
 
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in degrees and Height is in meters.
+
+**Examples**:
+
+```javascript
+{
+    "position": {
+        "cartographicDegrees": [ -77, 37, 100000 ]
+    }
+}
+```
 
 
 **cartesianVelocity** - [[Cartesian3VelocityValue]]

@@ -6,3 +6,11 @@ Defines how a clock advances each tick.  If `TICK_DEPENDENT`, the current time i
 
 **Interpolatable**: no
 
+##Values
+
+* `SYSTEM_CLOCK`
+
+* `SYSTEM_CLOCK_MULTIPLIER`
+
+* `TICK_DEPENDENT`
+

@@ -6,3 +6,11 @@ The behavior of a clock when its current time reaches its start or end time.  If
 
 **Interpolatable**: no
 
+##Values
+
+* `UNBOUNDED`
+
+* `CLAMPED`
+
+* `LOOP_STOP`
+

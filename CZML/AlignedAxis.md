@@ -10,12 +10,12 @@ An aligned axis which can optionally vary over time.
 
 ##Properties
 
-**cartesian** - [[Cartesian3]]
+**cartesian** - [[Cartesian3Value]]
 
 The axis specified as a three-dimensional Cartesian value `[X, Y, Z]`, in world coordinates in meters.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The axis specified as a reference to another property.
 

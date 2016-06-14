@@ -4,17 +4,5 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 A boolean value.
 
-**Interpolatable**: no
-
-##Properties
-
-**boolean** - [[BooleanValue]]
-
-The boolean value.
-
-
-**reference** - [[ReferenceValue]]
-
-The boolean specified as a reference to another property.
-
+**Type**: boolean
 

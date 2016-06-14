@@ -8,12 +8,12 @@ A URI value.  The URI can optionally vary with time.
 
 ##Properties
 
-**uri** - [[Uri]]
+**uri** - [[UriValue]]
 
 The URI value.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The URI specified as a reference to another property.
 

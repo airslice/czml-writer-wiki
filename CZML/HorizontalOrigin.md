@@ -8,12 +8,12 @@ The horizontal origin of an element, which can optionally vary over time.  It co
 
 ##Properties
 
-**horizontalOrigin** - [[HorizontalOrigin]]
+**horizontalOrigin** - [[HorizontalOriginValue]]
 
 The horizontal origin.  Valid values are "LEFT", "CENTER", and "RIGHT".
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The horizontal origin specified as a reference to another property.
 

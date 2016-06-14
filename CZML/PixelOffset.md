@@ -10,12 +10,12 @@ A pixel offset in viewport coordinates.  A pixel offset is the number of pixels 
 
 ##Properties
 
-**cartesian2** - [[Cartesian2]]
+**cartesian2** - [[Cartesian2Value]]
 
 The pixel offset specified as a two-dimensional Cartesian value `[X, Y]`, in viewport coordinates in pixels, where X is pixels to the right and Y is pixels up.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The pixel offset specified as a reference to another property.
 

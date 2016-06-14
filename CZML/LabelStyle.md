@@ -8,12 +8,12 @@ The style of a label.
 
 ##Properties
 
-**labelStyle** - [[LabelStyle]]
+**labelStyle** - [[LabelStyleValue]]
 
 The label style.  Valid values are "FILL", "OUTLINE", and "FILL_AND_OUTLINE".
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The label style specified as a reference to another property.
 

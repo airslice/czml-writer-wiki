@@ -10,12 +10,12 @@ The width, depth, and height of a box.
 
 ##Properties
 
-**cartesian** - [[Cartesian3]]
+**cartesian** - [[Cartesian3Value]]
 
 The dimensions specified as a three-dimensional Cartesian value `[X, Y, Z]`, with X representing width, Y representing depth, and Z representing height, in world coordinates in meters.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The dimensions specified as a reference to another property.
 

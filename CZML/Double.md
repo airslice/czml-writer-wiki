@@ -10,12 +10,12 @@ A floating-point number.
 
 ##Properties
 
-**number** - [[Double]]
+**number** - [[DoubleValue]]
 
 The number.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The number specified as a reference to another property.
 

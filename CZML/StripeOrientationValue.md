@@ -2,19 +2,13 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #StripeOrientation
 
-The orientation of stripes in a stripe material.
-
-**Interpolatable**: no
-
-##Properties
-
-**StripeOrientation** - [[StripeOrientationValue]]
-
 The orientation of stripes in the stripe material. Valid values are "HORIZONTAL" or "VERTICAL".
 
+**Type**: string
 
-**reference** - [[ReferenceValue]]
+##Values
 
-The orientation of stripes specified as a reference to another property.
+* `HORIZONTAL`
 
+* `VERTICAL`
 

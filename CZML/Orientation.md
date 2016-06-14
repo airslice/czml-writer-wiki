@@ -10,12 +10,12 @@ Defines an orientation.  An orientation is a rotation that takes a vector expres
 
 ##Properties
 
-**unitQuaternion** - [[UnitQuaternion]]
+**unitQuaternion** - [[UnitQuaternionValue]]
 
 The orientation specified as a 4-dimensional unit magnitude quaternion, specified as `[X, Y, Z, W]`.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The orientation specified as a reference to another property.
 

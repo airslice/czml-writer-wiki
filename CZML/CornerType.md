@@ -8,12 +8,12 @@ The style of a corner.
 
 ##Properties
 
-**CornerType** - [[CornerType]]
+**CornerType** - [[CornerTypeValue]]
 
 The corner style.  Valid values are "ROUNDED", "MITERED", and "BEVELED".
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The corner style specified as a reference to another property.
 

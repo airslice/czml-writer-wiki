@@ -8,12 +8,12 @@ A font used to draw text. Fonts are specified using the same syntax as the CSS "
 
 ##Properties
 
-**font** - [[Font]]
+**font** - [[FontValue]]
 
 The font, specified using the same syntax as the CSS "font" property.
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The font specified as a reference to another property.
 

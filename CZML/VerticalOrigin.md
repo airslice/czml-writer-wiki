@@ -8,12 +8,12 @@ The vertical origin of an element, which can optionally vary over time.  It cont
 
 ##Properties
 
-**verticalOrigin** - [[VerticalOrigin]]
+**verticalOrigin** - [[VerticalOriginValue]]
 
 The vertical origin.  Valid values are "BOTTOM", "CENTER", and "TOP".
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 The vertical origin specified as a reference to another property.
 

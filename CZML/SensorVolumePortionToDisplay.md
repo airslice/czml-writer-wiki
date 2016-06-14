@@ -8,12 +8,12 @@ What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_
 
 ##Properties
 
-**portionToDisplay** - [[SensorVolumePortionToDisplay]]
+**portionToDisplay** - [[SensorVolumePortionToDisplayValue]]
 
 What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_ELLIPSOID_HORIZON", "ABOVE_ELLIPSOID_HORIZON".
 
 
-**reference** - [[Reference]]
+**reference** - [[ReferenceValue]]
 
 What part of a sensor should be displayed, specified as a reference to another property.
 

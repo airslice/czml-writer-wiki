@@ -94,7 +94,7 @@ The [[CZML Content]] page describes how various types of data are encoded in arr
 
 ## Sampled Property Values
 
-So far, we've discussed how to specify a single value for a property for all time, and how to specify different values for a property over different discrete intervals.  Some properties (and the [[CZML Content]] page will tell you which) also allow you to specify time-tagged samples which the client will interpolate over to compute the value of the property at any given time.  Times are specified using [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) strings.
+So far, we've discussed how to specify a single value for a property for all time, and how to specify different values for a property over different discrete intervals.  Some properties also allow you to specify time-tagged samples which the client will interpolate over to compute the value of the property at any given time.  Times are specified using [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) strings.
 
 ```javascript
 {  
@@ -145,23 +145,13 @@ Finally, properties specified using time-tagged samples have some additional, op
 } 
 ```
 
-The `interpolationAlgorithm` specifies the algorithm to use to interpolate a value at a different time from the provided data.  See the table below for the possible values.  The `interpolationDegree` property specifies the degree of the polynomial to use for interpolation.  For example, `1` means linear interpolation and `2` means quadratic interpolation.  If these properties are not specified, linear interpolation is used.
+The `interpolationAlgorithm` specifies the algorithm to use to interpolate a value at a different time from the provided data.  See the table below for the possible values.  The `interpolationDegree` property specifies the degree of the polynomial to use for interpolation.  If these properties are not specified, linear interpolation is used.  See [[InterpolatableProperty]] for a full list of the properties relating to interpolation.
 
 It is not necessary for the time of every sample to fall within the interval that contains it, but the samples will not be used outside their interval.  This is useful to provide better accuracy with higher-degree interpolation.
 
-The following table summarizes the sub-properties available for interpolatable properties.
-
-| Name | Scope | JSON | Description |
-|:-----|:------|:-----|:------------|
-| `epoch` | Packet | string | The epoch (time 0.0), specified as an [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) date and time string, for times specified in epoch seconds.  This property is required if a sample time or other property is specified in epoch seconds.  It is ignored if this property is not defined by samples for this interval. |
-| `nextTime` | Packet | string or number | The time of the next sample within this interval, specified as either an ISO 8601 date and time string or as seconds since `epoch`.  This property is used to determine if there is a gap between samples specified in different packets. |
-| `previousTime` | Packet | string or number | The time of the previous sample within this interval, specified as either an ISO 8601 date and time string or as seconds since `epoch`.  This property is used to determine if there is a gap between samples specified in different packets. |
-| `interpolationAlgorithm` | Interval | string | The algorithm to use for interpolation.  Possible values are `LAGRANGE`, `HERMITE`, or `GEODESIC`.  The default is `LAGRANGE`.  If the position is not sampled over this interval, this property is ignored. |
-| `interpolationDegree` | Interval | number | The degree of the polynomial to use for interpolation.  The default value is 1 meaning linear interpolation.  The value of this property is ignored for `GEODESIC` interpolation. |
-
 ## EventSource and Streaming
 
-Putting an entire CZML document in one big JSON array makes it difficult to load the document incrementally.  Today's web browsers allow some access to a stream before it is complete, but parsing and interpreting the incomplete data requires slow and cumbersome string manipulations.  To faciliate high-performance streaming, CZML may also be streamed using modern browsers' [server-sent events](http://dev.w3.org/html5/eventsource/) (`EventSource`) API.  When using this API, each CZML packet is streamed to the client as a separate event:
+Putting an entire CZML document in one big JSON array makes it difficult to load the document incrementally.  Today's web browsers allow some access to a stream before it is complete, but parsing and interpreting the incomplete data requires slow and cumbersome string manipulations.  To facilitate high-performance streaming, CZML may also be streamed using modern browsers' [server-sent events](http://dev.w3.org/html5/eventsource/) (`EventSource`) API.  When using this API, each CZML packet is streamed to the client as a separate event:
 
 ```javascript
 event: czml
@@ -189,33 +179,6 @@ When a new interval overlaps existing intervals, the new interval takes preceden
 
 The samples in an interval must be ordered by increasing time within a single packet.  Across packets, however, it is not necessary for the samples to be provided in any particular order.  However, care must be taken to ensure reasonable interpolation when streaming non-contiguous samples.
 
-Consider a property that has sampled values at times 0.0 through 10.0, inclusive, at 1.0 second intervals.  The first packet contains times 0.0 through 3.0 and the second contains times 8.0 through 10.0.  The client has not yet received the third packet containing times 4.0 through 7.0.  Can we render the scene at time 5.0?
-
-One approach is to interpolate across the two packets.  This is probably a bad idea, though, because interpolating across this gap can result in a very wrong-looking scene, especially with higher-degree interpolation.  So really, we'd like to pause animation, display some sort of "Buffering..." message to the user, and wait for the gap to be filled.  But how do we even know there's a gap?  We might infer that there's a gap because we have 1.0 second steps, and then a 5.0 second gap, and then 1.0 second gaps again.  But that's not reliable; maybe the object was just moving more slowly over that interval so we needed fewer samples.
-
-CZML offers a solution in the form of two additional sub-properties for use with time-tagged samples: `previousTime` and `nextTime`.
-
-```javascript
-{  
-    // ...  
-    "someInterpolatableProperty": {  
-        "epoch": "2012-04-30T12:00:00Z",  
-        "cartesian": [  
-            0.0, 1.0, 2.0, 3.0,  
-            1.0, 4.0, 5.0, 6.0,  
-            2.0, 7.0, 8.0, 9.0,
-            3.0, 10.0, 11.0, 12.0
-        ],  
-        "previousTime": -1.0,  
-        "nextTime": 4.0  
-    }  
-}
-```
-
-These properties tell the CZML client that the next sample time after 3.0 is 4.0.  If the next sample it _has_ after 3.0 is 8.0, as in our example above, the client knows that there's a gap, and it will wait for more data before interpolating at a time within that gap.  
-
-It is not necessary to specify both `previousTime` and `nextTime`, though one or the other might be more convenient in different situations.  If either is specified, adjacent samples are checked before interpolation.
-
 ## Availability
 
 In addition to the `id` property, CZML packets have one additional special property: `availability`.
@@ -228,9 +191,9 @@ In addition to the `id` property, CZML packets have one additional special prope
 }
 ```
 
-The `availability` property indicates when data for an object is available.  If data for an object is known to be available at the current animation time, but the client does not yet have that data (presumably because it will arrive in a later packet), the client will pause with a message like "Buffering..." while it waits to receive the data.  The property can be a single string specifying a single interval, or an array of strings representing intervals.
+The `availability` property indicates when data for an object is available.  If data for an object is known to be available at the current animation time, but the client does not yet have that data (presumably because it will arrive in a later packet), the client could pause with a message like "Buffering..." while it waits to receive the data.  The property can be a single string specifying a single interval, or an array of strings representing intervals.
 
-A later Cesium packet can update this availability if it changes or is found to be incorrect. For example, an SGP4 propagator may report availability for all time, but then later the propagator throws an exception and the availability needs to be adjusted. If this optional property is not present, the object is assumed to be available for all time. Availability is scoped to a particular CZML stream, so two different streams can list different availability for a single object. Within a single stream, the last availability stated for an object is the one in effect and any availabilities in previous packets are ignored. If an object is available at a time, the client expects the object to have at least one property, and it expects all properties that it needs to be defined at that time. If the object doesn't have any properties, or a needed property is defined but not at the animation time, the client will pause animation and wait for more data.
+A later Cesium packet can update this availability if it changes or is found to be incorrect. For example, an SGP4 propagator may report availability for all time, but then later the propagator throws an exception and the availability needs to be adjusted. If this optional property is not present, the object is assumed to be available for all time. Availability is scoped to a particular CZML stream, so two different streams can list different availability for a single object. Within a single stream, the last availability stated for an object is the one in effect and any availabilities in previous packets are ignored. If an object is available at a time, the client expects the object to have at least one property, and it expects all properties that it needs to be defined at that time. If the object doesn't have any properties, or a needed property is defined but not at the animation time, the client could pause animation and wait for more data.
 
 ## Extending CZML
 

@@ -18,7 +18,7 @@ The scaling to apply to the model node.
 The translation to apply to the model node.
 
 
-**rotation** - [[Orientation]]
+**rotation** - [[Rotation]]
 
 The rotation to apply to the model node.
 

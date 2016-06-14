@@ -41,7 +41,6 @@ A mapping of node names to node transformations.
 
 ```javascript
 {
-    "id": "MyID",
     "model": {
         "gltf": "example.gltf",
         "nodeTransformations": {

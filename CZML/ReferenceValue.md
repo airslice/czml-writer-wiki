@@ -6,3 +6,9 @@ Represents a reference to another property.  References can be used to specify t
 
 **Type**: string
 
+**Examples**:
+
+```javascript
+"object1#billboard.scale"
+```
+

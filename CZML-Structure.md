@@ -32,7 +32,7 @@ There are many standard properties defined for CZML, including properties for ad
 
 In the most general case, the value of a CZML property is a JSON array, where each element in the array is an object literal defining the value of the property for a different interval of time.  The interval described by any given object literal in the array is specified using an [ISO8601 interval](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) string in the `interval` property.
 
-```javascript
+```json
 {
     "id": "myObject",
     "someProperty": [
@@ -54,7 +54,7 @@ The `interval` property is optional.  If it is not specified, the interval is as
 
 In the common case that the property has a value over just one interval, the interval list array can be omitted entirely.
 
-```javascript
+```json
 {
     "id": "myObject",
     "someProperty": {
@@ -66,7 +66,7 @@ In the common case that the property has a value over just one interval, the int
 
 Just as before, the `interval` property can be omitted if it spans all time.  For properties with simple values, like the number property shown above, and with a single value for all time, the value can be given even more compactly:
 
-```javascript
+```json
 {
     "id": "myObject",
     "someProperty": 5
@@ -79,7 +79,7 @@ This abbreviated notation is valid for any property whose value can be represent
 
 More complicated composite values, such as a Cartesian position or a color, are represented using JSON arrays.  For a Cartesian position, the array has three elements, corresponding to the X, Y, and Z components of the position, respectively.
 
-```javascript
+```json
 {
     "id": "myObject",
     "someComplexProperty": {
@@ -94,7 +94,7 @@ Composite values must always be specified within an interval, even if that inter
 
 So far, we've discussed how to specify a single value for a property for all time, and how to specify different values for a property over different discrete intervals.  Some properties also allow you to specify time-tagged samples which the client will interpolate over to compute the value of the property at any given time.  Times are specified using [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) strings.
 
-```javascript
+```json
 {
     // ...
     "someInterpolatableProperty": {
@@ -111,7 +111,7 @@ Here we're specifying that the value is `[1.0, 2.0, 3.0]` at noon, `[4.0, 5.0, 6
 
 For succinctness, times can also be specified in seconds since an epoch.  While this is potentially less precise than specifying each time using an ISO8601 string, it is usually more than sufficient when the samples span less than a day or when the offsets are whole numbers of seconds.
 
-```javascript
+```json
 {
     // ...
     "someInterpolatableProperty": {
@@ -127,7 +127,7 @@ For succinctness, times can also be specified in seconds since an epoch.  While 
 
 Finally, properties specified using time-tagged samples have some additional, optional sub-properties controlling interpolation.
 
-```javascript
+```json
 {
     // ...
     "someInterpolatableProperty": {
@@ -151,7 +151,7 @@ It is not necessary for the time of every sample to fall within the interval tha
 
 Putting an entire CZML document in one big JSON array makes it difficult to load the document incrementally.  Today's web browsers allow some access to a stream before it is complete, but parsing and interpreting the incomplete data requires slow and cumbersome string manipulations.  To facilitate high-performance streaming, CZML may also be streamed using modern browsers' [server-sent events](http://dev.w3.org/html5/eventsource/) (`EventSource`) API.  When using this API, each CZML packet is streamed to the client as a separate event:
 
-```javascript
+```json
 event: czml
 data: {
     // packet one
@@ -181,7 +181,7 @@ The samples in an interval must be ordered by increasing time within a single pa
 
 In addition to the `id` property, CZML packets have one additional special property: `availability`.
 
-```javascript
+```json
 {
     "id": "PredatorUAV",
     "availability": "2012-04-30T12:00:00Z/14:00:00Z",

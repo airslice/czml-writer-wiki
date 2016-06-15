@@ -12,7 +12,7 @@ A box, which is a closed rectangular cuboid.
 
 Whether or not the box is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **dimensions** - [[BoxDimensions]]
@@ -24,7 +24,7 @@ The dimensions of the box.
 
 Whether or not the box is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -36,7 +36,7 @@ The material to display on the surface of the box.
 
 Whether or not the box is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -48,6 +48,6 @@ The color of the box outline.
 
 The width of the box outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

@@ -12,7 +12,7 @@ An ellipse, which is a closed curve on or above the surface of the Earth.
 
 Whether or not the ellipse is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **semiMajorAxis** - [[Double]]
@@ -54,7 +54,7 @@ The sampling distance, in radians.
 
 Whether or not the ellipse is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -66,7 +66,7 @@ The material to use to fill the ellipse.
 
 Whether or not the ellipse is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -78,7 +78,7 @@ The color of the ellipse outline.
 
 The width of the ellipse outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **numberOfVerticalLines** - [[Double]]

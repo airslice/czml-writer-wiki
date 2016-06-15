@@ -12,7 +12,7 @@ A corridor, which is a shape defined by a centerline and width that conforms to 
 
 Whether or not the corridor is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **positions** - [[PositionList]]
@@ -49,7 +49,7 @@ The sampling distance, in radians.
 
 Whether or not the corridor is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -61,7 +61,7 @@ The material to display on the surface of the corridor.
 
 Whether or not the corridor is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -73,6 +73,6 @@ The color of the corridor outline.
 
 The width of the corridor outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

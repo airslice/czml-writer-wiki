@@ -14,7 +14,7 @@ Defines a position.  The position can optionally vary over time.
 
 The reference frame in which cartesian positions are specified. Possible values are "FIXED" and "INERTIAL". If this property is not specified, the default reference frame is "FIXED".
 
-**Default**: `FIXED`
+Default: `FIXED`
 
 
 **cartesian** - [[Cartesian3Value]]

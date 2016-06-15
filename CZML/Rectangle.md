@@ -12,7 +12,7 @@ A cartographic rectangle, which conforms to the curvature of the globe and can b
 
 Whether or not the rectangle is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **coordinates** - [[RectangleCoordinates]]
@@ -49,7 +49,7 @@ The sampling distance, in radians.
 
 Whether or not the rectangle is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -61,7 +61,7 @@ The material to display on the surface of the rectangle.
 
 Whether or not the rectangle is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -73,20 +73,20 @@ The color of the rectangle outline.
 
 The width of the rectangle outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **closeTop** - [[Boolean]]
 
 Whether to close the top of the rectangle.
 
-**Default**: `true`
+Default: `true`
 
 
 **closeBottom** - [[Boolean]]
 
 Whether to close the bottom of the rectangle.
 
-**Default**: `true`
+Default: `true`
 
 

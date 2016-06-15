@@ -12,7 +12,7 @@ A closed quadric surface that is a three dimensional analogue of an ellipse.
 
 Whether or not the ellipsoid is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **radii** - [[EllipsoidRadii]]
@@ -39,7 +39,7 @@ The number of samples per outline ring, determining the granularity of the curva
 
 Whether or not the ellipsoid is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -51,7 +51,7 @@ The material to display on the surface of the ellipsoid.
 
 Whether or not the ellipsoid is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -63,6 +63,6 @@ The color of the ellipsoid outline.
 
 The width of the ellipsoid outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

@@ -12,7 +12,7 @@ A billboard, or viewport-aligned image.  The billboard is positioned in the scen
 
 Whether or not the billboard is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **image** - [[Uri]]
@@ -24,7 +24,7 @@ The URI of the image displayed on the billboard.  For broadest client compatibil
 
 The scale of the billboard.  The scale is multiplied with the pixel size of the billboard's `image`.  For example, if the scale is 2.0, the billboard will be rendered with twice the number of pixels, in each direction, of the `image`.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **pixelOffset** - [[PixelOffset]]
@@ -41,14 +41,14 @@ The eye offset of the billboard, which is the offset in eye coordinates at which
 
 The horizontal origin of the billboard, which determines whether the billboard image is left-, center-, or right-aligned with the `position`.
 
-**Default**: `CENTER`
+Default: `CENTER`
 
 
 **verticalOrigin** - [[VerticalOrigin]]
 
 The vertical origin of the billboard, which determines whether the billboard image is bottom-, center-, or top-aligned with the `position`.
 
-**Default**: `CENTER`
+Default: `CENTER`
 
 
 **color** - [[Color]]
@@ -60,7 +60,7 @@ The color of the billboard.  This color value is multiplied with the values of t
 
 The rotation of the billboard, in radians, counter-clockwise from the alignedAxis.
 
-**Default**: `0.0`
+Default: `0.0`
 
 
 **alignedAxis** - [[AlignedAxis]]
@@ -72,6 +72,6 @@ The aligned axis is the unit vector, in world coordinates, that the billboard up
 
 whether this billboard's size (width and height) should be measured in meters, otherwise size is measured in pixels.
 
-**Default**: `false`
+Default: `false`
 
 

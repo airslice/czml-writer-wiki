@@ -12,7 +12,7 @@ A polyline, which is a line in the scene composed of multiple segments.
 
 Whether or not the polyline is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **positions** - [[PositionList]]
@@ -39,6 +39,6 @@ The material to use to draw the polyline.
 
 Whether or not the positions are connected as great arcs (the default) or as straight lines.
 
-**Default**: `true`
+Default: `true`
 
 

@@ -12,7 +12,7 @@ A polygon, which is a closed figure on the surface of the Earth.
 
 Whether or not the polygon is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **positions** - [[PositionList]]
@@ -44,7 +44,7 @@ The sampling distance, in radians.
 
 Whether or not the polygon is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -56,7 +56,7 @@ The material to use to fill the polygon.
 
 Whether or not the polygon is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -68,7 +68,7 @@ The color of the polygon outline.
 
 The width of the polygon outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **perPositionHeight** - [[Boolean]]
@@ -80,13 +80,13 @@ Whether to use the height of each position to define the polygon or to use `heig
 
 Whether to close the top of the polygon.
 
-**Default**: `true`
+Default: `true`
 
 
 **closeBottom** - [[Boolean]]
 
 Whether to close the bottom of the polygon.
 
-**Default**: `true`
+Default: `true`
 
 

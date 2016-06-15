@@ -12,7 +12,7 @@ A two dimensional wall defined as a line strip and optional maximum and minimum 
 
 Whether or not the wall is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **positions** - [[PositionList]]
@@ -39,7 +39,7 @@ The sampling distance, in radians.
 
 Whether or not the wall is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -51,7 +51,7 @@ The material to display on the surface of the wall.
 
 Whether or not the wall is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -63,6 +63,6 @@ The color of the wall outline.
 
 The width of the wall outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

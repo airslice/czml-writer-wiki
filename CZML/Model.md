@@ -12,7 +12,7 @@ A 3D model.
 
 Whether or not the model is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **gltf** - [[Uri]]
@@ -34,14 +34,14 @@ The approximate minimum pixel size of the model regardless of zoom.
 
 Whether or not the model can be rendered before all textures have loaded.
 
-**Default**: `true`
+Default: `true`
 
 
 **runAnimations** - [[Boolean]]
 
 Whether or not to run all animations defined in the glTF model.
 
-**Default**: `true`
+Default: `true`
 
 
 **nodeTransformations** - [[NodeTransformations]]

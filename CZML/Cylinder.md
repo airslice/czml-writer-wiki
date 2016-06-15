@@ -12,7 +12,7 @@ A cylinder, truncated cone, or cone defined by a length, top radius, and bottom 
 
 Whether or not the cylinder is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **length** - [[Double]]
@@ -34,7 +34,7 @@ The radius of the bottom of the cylinder.
 
 Whether or not the cylinder is filled.
 
-**Default**: `true`
+Default: `true`
 
 
 **material** - [[Material]]
@@ -46,7 +46,7 @@ The material to display on the surface of the cylinder.
 
 Whether or not the cylinder is outlined.
 
-**Default**: `false`
+Default: `false`
 
 
 **outlineColor** - [[Color]]
@@ -58,6 +58,6 @@ The color of the cylinder outline.
 
 The width of the cylinder outline.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

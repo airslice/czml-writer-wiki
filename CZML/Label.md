@@ -12,7 +12,7 @@ A string of text.
 
 Whether or not the label is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **text** - [[String]]
@@ -34,7 +34,7 @@ The style of the label.
 
 The scale of the label.  The scale is multiplied with the pixel size of the label's text.  For example, if the scale is 2.0, the label will be rendered with twice the number of pixels, in each direction, of the text.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **pixelOffset** - [[PixelOffset]]
@@ -51,14 +51,14 @@ The eye offset of the label, which is the offset in eye coordinates at which to 
 
 The horizontal origin of the label.  It controls whether the label is left-, center-, or right-aligned with the `position`.
 
-**Default**: `CENTER`
+Default: `CENTER`
 
 
 **verticalOrigin** - [[VerticalOrigin]]
 
 The vertical origin of the label.  It controls whether the label image is bottom-, center-, or top-aligned with the `position`.
 
-**Default**: `CENTER`
+Default: `CENTER`
 
 
 **fillColor** - [[Color]]
@@ -75,6 +75,6 @@ The outline color of the label.
 
 The outline width of the label.
 
-**Default**: `1.0`
+Default: `1.0`
 
 

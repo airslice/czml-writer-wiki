@@ -12,21 +12,21 @@ A path, which is a polyline defined by the motion of an object over time.  The p
 
 Whether or not the path is shown.
 
-**Default**: `true`
+Default: `true`
 
 
 **width** - [[Double]]
 
 The width of the path line.
 
-**Default**: `1.0`
+Default: `1.0`
 
 
 **resolution** - [[Double]]
 
 The maximum step-size, in seconds, used to sample the path.  If the `position` property has data points farther apart than resolution specifies, additional steps will be taken, creating a smoother path.
 
-**Default**: `60.0`
+Default: `60.0`
 
 
 **leadTime** - [[Double]]

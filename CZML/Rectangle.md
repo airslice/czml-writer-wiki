@@ -1,8 +1,8 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Polygon
+#Rectangle
 
-A polygon, which is a closed figure on the surface of the Earth.
+A cartographic rectangle, which conforms to the curvature of the globe and can be placed on the surface or at altitude and can optionally be extruded into a volume.
 
 **Interpolatable**: no
 
@@ -10,24 +10,29 @@ A polygon, which is a closed figure on the surface of the Earth.
 
 **show** - [[Boolean]]
 
-Whether or not the polygon is shown.
+Whether or not the rectangle is shown.
 
 **Default**: `true`
 
 
-**positions** - [[PositionList]]
+**coordinates** - [[RectangleCoordinates]]
 
-The array of positions defining a simple polygon.
+The coordinates of the rectangle.
 
 
 **height** - [[Double]]
 
-The height of the polygon when `perPositionHeight` is false.
+The height of the rectangle.
 
 
 **extrudedHeight** - [[Double]]
 
-The extruded height of the polygon.
+The extruded height of the rectangle.
+
+
+**rotation** - [[Double]]
+
+The rotation of the rectangle clockwise from north.
 
 
 **stRotation** - [[Double]]
@@ -42,50 +47,45 @@ The sampling distance, in radians.
 
 **fill** - [[Boolean]]
 
-Whether or not the polygon is filled.
+Whether or not the rectangle is filled.
 
 **Default**: `true`
 
 
 **material** - [[Material]]
 
-The material to use to fill the polygon.
+The material to display on the surface of the rectangle.
 
 
 **outline** - [[Boolean]]
 
-Whether or not the polygon is outlined.
+Whether or not the rectangle is outlined.
 
 **Default**: `false`
 
 
 **outlineColor** - [[Color]]
 
-The color of the polygon outline.
+The color of the rectangle outline.
 
 
 **outlineWidth** - [[Double]]
 
-The width of the polygon outline.
+The width of the rectangle outline.
 
 **Default**: `1.0`
 
 
-**perPositionHeight** - [[Boolean]]
-
-Whether to use the height of each position to define the polygon or to use `height` as a constant height above the surface.
-
-
 **closeTop** - [[Boolean]]
 
-Whether to close the top of the polygon.
+Whether to close the top of the rectangle.
 
 **Default**: `true`
 
 
 **closeBottom** - [[Boolean]]
 
-Whether to close the bottom of the polygon.
+Whether to close the bottom of the rectangle.
 
 **Default**: `true`
 

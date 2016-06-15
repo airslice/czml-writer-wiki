@@ -8,11 +8,6 @@ A set of transformations to apply to a particular node in a 3D model.
 
 ##Properties
 
-**scale** - [[Scale]]
-
-The scaling to apply to the model node.
-
-
 **translation** - [[Translation]]
 
 The translation to apply to the model node.
@@ -21,5 +16,10 @@ The translation to apply to the model node.
 **rotation** - [[Rotation]]
 
 The rotation to apply to the model node.
+
+
+**scale** - [[Scale]]
+
+The scaling to apply to the model node.
 
 

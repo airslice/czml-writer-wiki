@@ -12,10 +12,24 @@ A billboard, or viewport-aligned image.  The billboard is positioned in the scen
 
 Whether or not the billboard is shown.
 
+**Default**: `true`
 
-**color** - [[Color]]
 
-The color of the billboard.  This color value is multiplied with the values of the billboard's "image" to produce the final color.
+**image** - [[Uri]]
+
+The URI of the image displayed on the billboard.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+
+
+**scale** - [[Double]]
+
+The scale of the billboard.  The scale is multiplied with the pixel size of the billboard's `image`.  For example, if the scale is 2.0, the billboard will be rendered with twice the number of pixels, in each direction, of the `image`.
+
+**Default**: `1.0`
+
+
+**pixelOffset** - [[PixelOffset]]
+
+The offset, in viewport pixels, of the billboard origin from the `position`.  A pixel offset is the number of pixels up and to the right to place the billboard, relative to the `position`.
 
 
 **eyeOffset** - [[EyeOffset]]
@@ -27,25 +41,26 @@ The eye offset of the billboard, which is the offset in eye coordinates at which
 
 The horizontal origin of the billboard, which determines whether the billboard image is left-, center-, or right-aligned with the `position`.
 
-
-**image** - [[Uri]]
-
-The URI of the image displayed on the billboard.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+**Default**: `CENTER`
 
 
-**pixelOffset** - [[PixelOffset]]
+**verticalOrigin** - [[VerticalOrigin]]
 
-The offset, in viewport pixels, of the billboard origin from the `position`.  A pixel offset is the number of pixels up and to the right to place the billboard, relative to the `position`.
+The vertical origin of the billboard, which determines whether the billboard image is bottom-, center-, or top-aligned with the `position`.
+
+**Default**: `CENTER`
 
 
-**scale** - [[Double]]
+**color** - [[Color]]
 
-The scale of the billboard.  The scale is multiplied with the pixel size of the billboard's `image`.  For example, if the scale is 2.0, the billboard will be rendered with twice the number of pixels, in each direction, of the `image`.
+The color of the billboard.  This color value is multiplied with the values of the billboard's "image" to produce the final color.
 
 
 **rotation** - [[Double]]
 
 The rotation of the billboard, in radians, counter-clockwise from the alignedAxis.
+
+**Default**: `0.0`
 
 
 **alignedAxis** - [[AlignedAxis]]
@@ -53,8 +68,10 @@ The rotation of the billboard, in radians, counter-clockwise from the alignedAxi
 The aligned axis is the unit vector, in world coordinates, that the billboard up vector points towards.  The default is the zero vector, which means the billboard is aligned to the screen up vector.
 
 
-**verticalOrigin** - [[VerticalOrigin]]
+**sizeInMeters** - [[Boolean]]
 
-The vertical origin of the billboard, which determines whether the billboard image is bottom-, center-, or top-aligned with the `position`.
+whether this billboard's size (width and height) should be measured in meters, otherwise size is measured in pixels.
+
+**Default**: `false`
 
 

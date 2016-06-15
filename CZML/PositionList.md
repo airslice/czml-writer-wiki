@@ -12,6 +12,8 @@ A list of positions.
 
 The reference frame in which cartesian positions are specified. Possible values are "FIXED" and "INERTIAL". If this property is not specified, the default reference frame is "FIXED".
 
+**Default**: `FIXED`
+
 
 **cartesian** - [[Cartesian3ListValue]]
 

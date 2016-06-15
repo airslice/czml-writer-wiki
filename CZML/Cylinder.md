@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #Cylinder
 
-A cylinder.
+A cylinder, truncated cone, or cone defined by a length, top radius, and bottom radius.
 
 **Interpolatable**: no
 
@@ -11,6 +11,8 @@ A cylinder.
 **show** - [[Boolean]]
 
 Whether or not the cylinder is shown.
+
+**Default**: `true`
 
 
 **length** - [[Double]]
@@ -32,6 +34,8 @@ The radius of the bottom of the cylinder.
 
 Whether or not the cylinder is filled.
 
+**Default**: `true`
+
 
 **material** - [[Material]]
 
@@ -42,6 +46,8 @@ The material to display on the surface of the cylinder.
 
 Whether or not the cylinder is outlined.
 
+**Default**: `false`
+
 
 **outlineColor** - [[Color]]
 
@@ -51,5 +57,7 @@ The color of the cylinder outline.
 **outlineWidth** - [[Double]]
 
 The width of the cylinder outline.
+
+**Default**: `1.0`
 
 

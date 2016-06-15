@@ -12,20 +12,21 @@ A path, which is a polyline defined by the motion of an object over time.  The p
 
 Whether or not the path is shown.
 
-
-**material** - [[PolylineMaterial]]
-
-The material to use to draw the path.
+**Default**: `true`
 
 
 **width** - [[Double]]
 
 The width of the path line.
 
+**Default**: `1.0`
+
 
 **resolution** - [[Double]]
 
 The maximum step-size, in seconds, used to sample the path.  If the `position` property has data points farther apart than resolution specifies, additional steps will be taken, creating a smoother path.
+
+**Default**: `60.0`
 
 
 **leadTime** - [[Double]]
@@ -36,5 +37,10 @@ The time ahead of the animation time, in seconds, to show the path.
 **trailTime** - [[Double]]
 
 The time behind the animation time, in seconds, to show the path.
+
+
+**material** - [[PolylineMaterial]]
+
+The material to use to draw the path.
 
 

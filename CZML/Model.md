@@ -12,6 +12,13 @@ A 3D model.
 
 Whether or not the model is shown.
 
+**Default**: `true`
+
+
+**gltf** - [[Uri]]
+
+The URI of a <a href="https://github.com/KhronosGroup/glTF">glTF</a> model.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+
 
 **scale** - [[Double]]
 
@@ -23,14 +30,18 @@ The scale of the model.
 The approximate minimum pixel size of the model regardless of zoom.
 
 
-**gltf** - [[Uri]]
+**incrementallyLoadTextures** - [[Boolean]]
 
-The URI of a <a href="https://github.com/KhronosGroup/glTF">glTF</a> model.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+Whether or not the model can be rendered before all textures have loaded.
+
+**Default**: `true`
 
 
 **runAnimations** - [[Boolean]]
 
 Whether or not to run all animations defined in the glTF model.
+
+**Default**: `true`
 
 
 **nodeTransformations** - [[NodeTransformations]]

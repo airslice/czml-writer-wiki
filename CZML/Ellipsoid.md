@@ -12,35 +12,12 @@ A closed quadric surface that is a three dimensional analogue of an ellipse.
 
 Whether or not the ellipsoid is shown.
 
+**Default**: `true`
+
 
 **radii** - [[EllipsoidRadii]]
 
 The dimensions of the ellipsoid.
-
-
-**fill** - [[Boolean]]
-
-Whether or not the ellipsoid is filled.
-
-
-**material** - [[Material]]
-
-The material to display on the surface of the ellipsoid.
-
-
-**outline** - [[Boolean]]
-
-Whether or not the ellipsoid is outlined.
-
-
-**outlineColor** - [[Color]]
-
-The color of the ellipsoid outline.
-
-
-**outlineWidth** - [[Double]]
-
-The width of the ellipsoid outline.
 
 
 **stackPartitions** - [[Double]]
@@ -55,6 +32,37 @@ The number of times to partition the ellipsoid into radial slices.
 
 **subdivisions** - [[Double]]
 
-The number of points per outline line, determining the granularity of the curvature.
+The number of samples per outline ring, determining the granularity of the curvature.
+
+
+**fill** - [[Boolean]]
+
+Whether or not the ellipsoid is filled.
+
+**Default**: `true`
+
+
+**material** - [[Material]]
+
+The material to display on the surface of the ellipsoid.
+
+
+**outline** - [[Boolean]]
+
+Whether or not the ellipsoid is outlined.
+
+**Default**: `false`
+
+
+**outlineColor** - [[Color]]
+
+The color of the ellipsoid outline.
+
+
+**outlineWidth** - [[Double]]
+
+The width of the ellipsoid outline.
+
+**Default**: `1.0`
 
 

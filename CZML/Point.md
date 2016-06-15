@@ -12,6 +12,15 @@ A point, or viewport-aligned circle.
 
 Whether or not the point is shown.
 
+**Default**: `true`
+
+
+**pixelSize** - [[Double]]
+
+The size of the point, in pixels.
+
+**Default**: `1.0`
+
 
 **color** - [[Color]]
 
@@ -27,9 +36,6 @@ The color of the outline of the point.
 
 The width of the outline of the point.
 
-
-**pixelSize** - [[Double]]
-
-The size of the point, in pixels.
+**Default**: `0.0`
 
 

@@ -12,15 +12,12 @@ A polyline, which is a line in the scene composed of multiple segments.
 
 Whether or not the polyline is shown.
 
+**Default**: `true`
+
 
 **positions** - [[PositionList]]
 
 The array of positions defining the polyline as a line strip.
-
-
-**material** - [[PolylineMaterial]]
-
-The material to use to draw the polyline.
 
 
 **width** - [[Double]]
@@ -28,8 +25,20 @@ The material to use to draw the polyline.
 The width of the polyline.
 
 
+**granularity** - [[Double]]
+
+The sampling distance, in radians.
+
+
+**material** - [[PolylineMaterial]]
+
+The material to use to draw the polyline.
+
+
 **followSurface** - [[Boolean]]
 
 Whether or not the positions are connected as great arcs (the default) or as straight lines.
+
+**Default**: `true`
 
 

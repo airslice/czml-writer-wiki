@@ -13,6 +13,11 @@ A material that fills the surface with an image.
 The image to display on the surface.
 
 
+**repeat** - [[Repeat]]
+
+The number of times the image repeats along each axis.
+
+
 **color** - [[Color]]
 
 The color of the image. This color value is multiplied with the image to produce the final color.
@@ -21,10 +26,5 @@ The color of the image. This color value is multiplied with the image to produce
 **transparent** - [[Boolean]]
 
 Whether or not the image has transparency.
-
-
-**repeat** - [[Repeat]]
-
-The number of times the image repeats along each axis.
 
 

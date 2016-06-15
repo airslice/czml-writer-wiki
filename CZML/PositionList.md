@@ -10,7 +10,7 @@ A list of positions.
 
 **referenceFrame** - string
 
-The reference frame in which cartesian positions are specified. Possible values are "FIXED" and "INERTIAL". If this property is not specified, the default reference frame is "FIXED".
+The reference frame in which cartesian positions are specified. Possible values are "FIXED" and "INERTIAL".
 
 Default: `FIXED`
 

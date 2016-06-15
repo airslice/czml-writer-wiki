@@ -79,8 +79,6 @@ Describes the graphical properties of a single object in a scene, such as a sing
 
 The ID of the object described by this packet.  IDs do not need to be GUIDs, but they do need to uniquely identify a single object within a CZML source and any other CZML sources loaded into the same scope.  If this property is not specified, the client will automatically generate a unique one.  However, this prevents later packets from referring to this object in order to add more data to it.
 
-Default: `unique`
-
 
 **delete** - boolean
 

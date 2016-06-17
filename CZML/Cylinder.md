@@ -61,3 +61,13 @@ The width of the cylinder outline.
 Default: `1.0`
 
 
+**numberOfVerticalLines** - [[Double]]
+
+The number of vertical lines to draw along the perimeter for the outline.
+
+
+**slices** - [[Double]]
+
+The number of edges around the perimeter of the cylinder.
+
+

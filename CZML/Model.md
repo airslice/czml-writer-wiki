@@ -30,6 +30,11 @@ The scale of the model.
 The approximate minimum pixel size of the model regardless of zoom.
 
 
+**maximumScale** - [[Double]]
+
+The maximum scale size of the model. This is used as an upper limit for `minimumPixelSize`.
+
+
 **incrementallyLoadTextures** - [[Boolean]]
 
 Whether or not the model can be rendered before all textures have loaded.

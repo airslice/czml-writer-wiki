@@ -39,3 +39,13 @@ The width of the outline of the point.
 Default: `0.0`
 
 
+**scaleByDistance** - [[NearFarScalar]]
+
+How the point's scale should change based on the point's distance from the camera.  This scalar value will be multiplied by `scale`.
+
+
+**translucencyByDistance** - [[NearFarScalar]]
+
+How the point's translucency should change based on the point's distance from the camera.  This scalar value should range from 0 to 1.
+
+

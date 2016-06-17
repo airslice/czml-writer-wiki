@@ -20,21 +20,6 @@ Default: `true`
 The dimensions of the ellipsoid.
 
 
-**stackPartitions** - [[Double]]
-
-The number of times to partition the ellipsoid into stacks.
-
-
-**slicePartitions** - [[Double]]
-
-The number of times to partition the ellipsoid into radial slices.
-
-
-**subdivisions** - [[Double]]
-
-The number of samples per outline ring, determining the granularity of the curvature.
-
-
 **fill** - [[Boolean]]
 
 Whether or not the ellipsoid is filled.
@@ -64,5 +49,20 @@ The color of the ellipsoid outline.
 The width of the ellipsoid outline.
 
 Default: `1.0`
+
+
+**stackPartitions** - [[Double]]
+
+The number of times to partition the ellipsoid into stacks.
+
+
+**slicePartitions** - [[Double]]
+
+The number of times to partition the ellipsoid into radial slices.
+
+
+**subdivisions** - [[Double]]
+
+The number of samples per outline ring, determining the granularity of the curvature.
 
 

@@ -78,3 +78,13 @@ The outline width of the label.
 Default: `1.0`
 
 
+**translucencyByDistance** - [[NearFarScalar]]
+
+How the label's translucency should change based on the label's distance from the camera.  This scalar value should range from 0 to 1.
+
+
+**pixelOffsetScaleByDistance** - [[NearFarScalar]]
+
+How the label's pixel offset should change based on the label's distance from the camera.  This scalar value will be multiplied by `pixelOffset`.
+
+

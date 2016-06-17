@@ -10,7 +10,7 @@ A bounding rectangle specified by a corner, width and height.
 
 ##Properties
 
-**cartesian** - [[BoundingRectangleValue]]
+**boundingRectangle** - [[BoundingRectangleValue]]
 
 The bounding rectangle specified as `[X, Y, Width, Height]`.
 

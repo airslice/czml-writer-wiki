@@ -134,7 +134,7 @@ The width of the billboard, in pixels (or meters, if `sizeInMeters` is true). By
 
 **height** - [[Double]]
 
-The height of the billboard, in pixels (or meters, if `sizeInMeters` is true). By default, the native width of the image is used.
+The height of the billboard, in pixels (or meters, if `sizeInMeters` is true). By default, the native height of the image is used.
 
 
 **scaleByDistance** - [[NearFarScalar]]

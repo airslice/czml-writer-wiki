@@ -41,7 +41,7 @@ Default: `0.0`
 
 **scaleByDistance** - [[NearFarScalar]]
 
-How the point's scale should change based on the point's distance from the camera.  This scalar value will be multiplied by `scale`.
+How the point's scale should change based on the point's distance from the camera.  This scalar value will be multiplied by `pixelSize`.
 
 
 **translucencyByDistance** - [[NearFarScalar]]

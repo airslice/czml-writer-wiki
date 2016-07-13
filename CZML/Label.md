@@ -61,6 +61,13 @@ The vertical origin of the label.  It controls whether the label image is bottom
 Default: `CENTER`
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the label, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **fillColor** - [[Color]]
 
 The fill color of the label.

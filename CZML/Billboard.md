@@ -103,6 +103,13 @@ The vertical origin of the billboard, which determines whether the billboard ima
 Default: `CENTER`
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the billboard, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **color** - [[Color]]
 
 The color of the billboard.  This color value is multiplied with the values of the billboard's "image" to produce the final color.

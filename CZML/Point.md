@@ -22,6 +22,13 @@ The size of the point, in pixels.
 Default: `1.0`
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the point, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **color** - [[Color]]
 
 The color of the point.

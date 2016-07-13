@@ -49,6 +49,13 @@ Whether or not to run all animations defined in the glTF model.
 Default: `true`
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the model, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **nodeTransformations** - [[NodeTransformations]]
 
 A mapping of node names to node transformations.

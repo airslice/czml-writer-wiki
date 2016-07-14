@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #AlignedAxis
 
-An aligned axis which can optionally vary over time.
+An aligned axis represented by a unit vector which can optionally vary over time.
 
 **Extends**: [[InterpolatableProperty]]
 
@@ -10,13 +10,23 @@ An aligned axis which can optionally vary over time.
 
 ##Properties
 
-**cartesian** - [[Cartesian3Value]]
+**unitCartesian** - [[UnitCartesian3Value]]
 
-The axis specified as a three-dimensional Cartesian value `[X, Y, Z]`, in world coordinates in meters.
+The axis specified as a three-dimensional unit magnitude Cartesian value `[X, Y, Z]`, in world coordinates.
+
+
+**unitSpherical** - [[UnitSphericalValue]]
+
+The axis specified as a unit spherical value `[Clock, Cone]`, in radians.  The clock angle is measured in the XY plane from the positive X axis toward the positive Y axis.  The cone angle is the angle from the positive Z axis toward the negative Z axis.
 
 
 **reference** - [[ReferenceValue]]
 
 The axis specified as a reference to another property.
+
+
+**velocityReference** - [[ReferenceValue]]
+
+The axis specified as the normalized velocity vector of a position property. The reference must be to a `position` property.
 
 

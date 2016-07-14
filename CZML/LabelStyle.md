@@ -10,7 +10,7 @@ The style of a label.
 
 **labelStyle** - [[LabelStyleValue]]
 
-The label style.  Valid values are "FILL", "OUTLINE", and "FILL_AND_OUTLINE".
+The label style.
 
 
 **reference** - [[ReferenceValue]]

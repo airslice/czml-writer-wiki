@@ -2,15 +2,15 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #ClockStep
 
-Defines how a clock advances each tick.  If `TICK_DEPENDENT`, the current time is advanced by `multiplier` seconds each tick.  If `SYSTEM_CLOCK_MULTIPLIER`, the current time is advanced by the amount of system time since the last tick, multiplied by `multiplier`.  If `SYSTEM_CLOCK`, the clock is always set to the current system time.
+Defines how a clock advances each tick.
 
 **Interpolatable**: no
 
 ##Values
 
-* `SYSTEM_CLOCK`
+* `TICK_DEPENDENT` - The current time is advanced by `multiplier` seconds each tick.
 
-* `SYSTEM_CLOCK_MULTIPLIER`
+* `SYSTEM_CLOCK_MULTIPLIER` - The current time is advanced by the amount of system time since the last tick, multiplied by `multiplier`.
 
-* `TICK_DEPENDENT`
+* `SYSTEM_CLOCK` - The clock is always set to the current system time.
 

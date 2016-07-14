@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #SensorVolumePortionToDisplay
 
-What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_ELLIPSOID_HORIZON", "ABOVE_ELLIPSOID_HORIZON".
+What part of a sensor should be displayed.
 
 **Interpolatable**: no
 
@@ -10,11 +10,11 @@ What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_
 
 **portionToDisplay** - [[SensorVolumePortionToDisplayValue]]
 
-What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_ELLIPSOID_HORIZON", "ABOVE_ELLIPSOID_HORIZON".
+The part of a sensor to display.
 
 
 **reference** - [[ReferenceValue]]
 
-What part of a sensor should be displayed, specified as a reference to another property.
+The part of a sensor to display, specified as a reference to another property.
 
 

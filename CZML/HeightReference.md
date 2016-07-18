@@ -10,7 +10,7 @@ The height reference of an object, which indicates if the object's position is r
 
 **heightReference** - [[HeightReferenceValue]]
 
-The height reference.  Valid values are "NONE", "CLAMP_TO_GROUND", and "RELATIVE_TO_GROUND".
+The height reference.
 
 
 **reference** - [[ReferenceValue]]

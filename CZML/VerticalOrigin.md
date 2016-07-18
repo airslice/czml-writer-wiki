@@ -10,7 +10,7 @@ The vertical origin of an element, which can optionally vary over time.  It cont
 
 **verticalOrigin** - [[VerticalOriginValue]]
 
-The vertical origin.  Valid values are "BOTTOM", "CENTER", and "TOP".
+The vertical origin.
 
 
 **reference** - [[ReferenceValue]]

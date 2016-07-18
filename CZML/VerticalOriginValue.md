@@ -2,15 +2,15 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #VerticalOrigin (value)
 
-A vertical origin, which specifies whether an element is bottom-, center-, or top-aligned with respect to an origin.  Valid values are "BOTTOM", "CENTER", and "TOP".
+The vertical location of an origin relative to an object's position.
 
 **Type**: string
 
 ##Values
 
-* `BOTTOM`
+* `BOTTOM` - The origin is at the bottom of the object.
 
-* `CENTER`
+* `CENTER` - The origin is at the vertical center of the object.
 
-* `TOP`
+* `TOP` - The origin is at the top of the object.
 

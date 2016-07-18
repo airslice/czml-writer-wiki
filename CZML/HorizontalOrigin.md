@@ -10,7 +10,7 @@ The horizontal origin of an element, which can optionally vary over time.  It co
 
 **horizontalOrigin** - [[HorizontalOriginValue]]
 
-The horizontal origin.
+The horizontal origin.  Valid values are "LEFT", "CENTER", and "RIGHT".
 
 
 **reference** - [[ReferenceValue]]

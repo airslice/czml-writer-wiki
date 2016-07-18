@@ -2,15 +2,15 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #LabelStyle (value)
 
-The style of a label.
+A label style.  Valid values are "FILL", "OUTLINE", and "FILL_AND_OUTLINE".
 
 **Type**: string
 
 ##Values
 
-* `FILL` - The text of the label is filled, but not outlined.
+* `FILL`
 
-* `OUTLINE` - The text of the label is outlined, but not filled.
+* `OUTLINE`
 
-* `FILL_AND_OUTLINE` - The text of the label is both filled and outlined.
+* `FILL_AND_OUTLINE`
 

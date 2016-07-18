@@ -8,9 +8,9 @@ The style of a corner.
 
 ##Values
 
-* `ROUNDED` - The corner has a smooth edge.
+* `ROUNDED`
 
-* `MITERED` - The corner point is the intersection of adjacent edges.
+* `MITERED`
 
-* `BEVELED` - The corner is clipped.
+* `BEVELED`
 

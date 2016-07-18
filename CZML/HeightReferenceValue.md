@@ -8,9 +8,9 @@ The height reference of an object, which indicates if the object's position is r
 
 ##Values
 
-* `NONE` - The position is absolute.
+* `NONE`
 
-* `CLAMP_TO_GROUND` - The position is clamped to the terrain.
+* `CLAMP_TO_GROUND`
 
-* `RELATIVE_TO_GROUND` - The position height is the height above the terrain.
+* `RELATIVE_TO_GROUND`
 

@@ -2,15 +2,15 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #SensorVolumePortionToDisplay (value)
 
-What part of a sensor should be displayed.
+What part of a sensor should be displayed.  Valid values are "COMPLETE", "BELOW_ELLIPSOID_HORIZON", "ABOVE_ELLIPSOID_HORIZON".
 
 **Type**: string
 
 ##Values
 
-* `COMPLETE` - Display the complete sensor volume.
+* `COMPLETE`
 
-* `BELOW_ELLIPSOID_HORIZON` - Display the portion of the sensor volume that lies below the true horizon of the ellipsoid.
+* `BELOW_ELLIPSOID_HORIZON`
 
-* `ABOVE_ELLIPSOID_HORIZON` - Display the portion of the sensor volume that lies above the true horizon of the ellipsoid.
+* `ABOVE_ELLIPSOID_HORIZON`
 

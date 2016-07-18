@@ -2,13 +2,13 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #StripeOrientation (value)
 
-The orientation of stripes in the stripe material.
+The orientation of stripes in the stripe material. Valid values are "HORIZONTAL" or "VERTICAL".
 
 **Type**: string
 
 ##Values
 
-* `HORIZONTAL` - The stripes are oriented horizontally along the X axis.
+* `HORIZONTAL`
 
-* `VERTICAL` - The stripes are oriented vertically along the Y axis.
+* `VERTICAL`
 

@@ -2,15 +2,15 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 #HorizontalOrigin (value)
 
-The horizontal location of an origin relative to an object's position.
+A horizontal origin, which specifies whether an element is left-, center-, or right-aligned with respect to an origin.  Valid values are "LEFT", "CENTER", and "RIGHT".
 
 **Type**: string
 
 ##Values
 
-* `LEFT` - The origin is on the left side of the object.
+* `LEFT`
 
-* `CENTER` - The origin is at the horizontal center of the object.
+* `CENTER`
 
-* `RIGHT` - The origin is on the right side of the object.
+* `RIGHT`
 

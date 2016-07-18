@@ -10,7 +10,7 @@ The orientation of stripes in a stripe material.
 
 **StripeOrientation** - [[StripeOrientationValue]]
 
-The orientation of stripes in the stripe material.
+The orientation of stripes in the stripe material. Valid values are "HORIZONTAL" or "VERTICAL".
 
 
 **reference** - [[ReferenceValue]]

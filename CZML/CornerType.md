@@ -10,7 +10,7 @@ The style of a corner.
 
 **cornerType** - [[CornerTypeValue]]
 
-The corner style.
+The corner style.  Valid values are "ROUNDED", "MITERED", and "BEVELED".
 
 
 **reference** - [[ReferenceValue]]

@@ -56,6 +56,25 @@ The height reference of the model, which indicates if the position is relative t
 Default: `NONE`
 
 
+**color** - [[Color]]
+
+The color to blend with the model's rendered color.
+
+
+**colorBlendMode** - [[ColorBlendMode]]
+
+The mode to use for blending between `color` and the model's color.
+
+Default: `HIGHLIGHT`
+
+
+**colorBlendAmount** - [[Double]]
+
+The color strength when `colorBlendMode` is `MIX`. A value of 0.0 results in the model's rendered color while a value of 1.0 results in a solid color, with any value in-between resulting in a mix of the two.
+
+Default: `0.5`
+
+
 **nodeTransformations** - [[NodeTransformations]]
 
 A mapping of node names to node transformations.

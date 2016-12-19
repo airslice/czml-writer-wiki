@@ -66,3 +66,10 @@ The number of times to partition the ellipsoid into radial slices.
 The number of samples per outline ring, determining the granularity of the curvature.
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the ellipsoid casts or receives shadows.
+
+Default: `DISABLED`
+
+

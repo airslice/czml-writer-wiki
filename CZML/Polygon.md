@@ -90,3 +90,10 @@ Whether to close the bottom of the polygon.
 Default: `true`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the polygon casts or receives shadows.
+
+Default: `DISABLED`
+
+

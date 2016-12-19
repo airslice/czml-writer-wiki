@@ -42,3 +42,10 @@ Whether or not the positions are connected as great arcs (the default) or as str
 Default: `true`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the polyline casts or receives shadows.
+
+Default: `DISABLED`
+
+

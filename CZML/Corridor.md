@@ -76,3 +76,10 @@ The width of the corridor outline.
 Default: `1.0`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the corridor casts or receives shadows.
+
+Default: `DISABLED`
+
+

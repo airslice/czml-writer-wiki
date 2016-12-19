@@ -51,3 +51,10 @@ The width of the box outline.
 Default: `1.0`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the box casts or receives shadows.
+
+Default: `DISABLED`
+
+

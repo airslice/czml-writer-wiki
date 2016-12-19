@@ -49,11 +49,30 @@ Whether or not to run all animations defined in the glTF model.
 Default: `true`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the model casts or receives shadows.
+
+Default: `ENABLED`
+
+
 **heightReference** - [[HeightReference]]
 
 The height reference of the model, which indicates if the position is relative to terrain or not.
 
 Default: `NONE`
+
+
+**silhouetteColor** - [[Color]]
+
+The color of the silhouette drawn around the model.
+
+
+**silhouetteSize** - [[Double]]
+
+The size, in pixels, of the silhouette drawn around the model.
+
+Default: `0.0`
 
 
 **color** - [[Color]]

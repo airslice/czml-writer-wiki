@@ -17,7 +17,7 @@ Default: `true`
 
 **text** - [[String]]
 
-The text displayed by the label.
+The text displayed by the label.  The newline character (\n) indicates line breaks.
 
 
 **font** - [[Font]]
@@ -35,6 +35,23 @@ The style of the label.
 The scale of the label.  The scale is multiplied with the pixel size of the label's text.  For example, if the scale is 2.0, the label will be rendered with twice the number of pixels, in each direction, of the text.
 
 Default: `1.0`
+
+
+**showBackground** - [[Boolean]]
+
+Whether or not a background behind the label is shown.
+
+Default: `false`
+
+
+**backgroundColor** - [[Color]]
+
+The color of the background behind the label.
+
+
+**backgroundPadding** - [[BackgroundPadding]]
+
+The amount of padding between the text and the label's background.
 
 
 **pixelOffset** - [[PixelOffset]]

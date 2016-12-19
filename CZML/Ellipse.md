@@ -86,3 +86,10 @@ Default: `1.0`
 The number of vertical lines to use when outlining an extruded ellipse.
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the ellipse casts or receives shadows.
+
+Default: `DISABLED`
+
+

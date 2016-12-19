@@ -71,3 +71,10 @@ The number of vertical lines to draw along the perimeter for the outline.
 The number of edges around the perimeter of the cylinder.
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the cylinder casts or receives shadows.
+
+Default: `DISABLED`
+
+

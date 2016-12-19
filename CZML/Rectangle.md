@@ -90,3 +90,10 @@ Whether to close the bottom of the rectangle.
 Default: `true`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the rectangle casts or receives shadows.
+
+Default: `DISABLED`
+
+

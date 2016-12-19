@@ -66,3 +66,10 @@ The width of the wall outline.
 Default: `1.0`
 
 
+**shadows** - [[ShadowMode]]
+
+Whether or not the wall casts or receives shadows.
+
+Default: `DISABLED`
+
+

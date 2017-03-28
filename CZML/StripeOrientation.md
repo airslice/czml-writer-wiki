@@ -8,7 +8,7 @@ The orientation of stripes in a stripe material.
 
 ##Properties
 
-**StripeOrientation** - [[StripeOrientationValue]]
+**stripeOrientation** - [[StripeOrientationValue]]
 
 The orientation of stripes in the stripe material.
 

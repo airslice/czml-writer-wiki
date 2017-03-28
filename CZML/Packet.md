@@ -117,6 +117,11 @@ The set of time intervals over which data for an object is available. The proper
 Default: `0000-00-00T00:00:00Z/9999-12-31T24:00:00Z`
 
 
+**properties** - [[CustomProperties]]
+
+A set of custom properties for this object.
+
+
 **position** - [[Position]]
 
 The position of the object in the world. The position has no direct visual representation, but it is used to locate billboards, labels, and other graphical items attached to the object.

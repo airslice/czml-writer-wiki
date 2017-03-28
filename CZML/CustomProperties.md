@@ -6,7 +6,5 @@ A set of custom properties.
 
 **Interpolatable**: no
 
-**Examples**:
-
 This type represents a key-value mapping, where values are of type [[CustomProperty]].
 

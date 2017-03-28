@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#HeightReference (value)
+# HeightReference (value)
 
 The height reference of an object, which indicates if the object's position is relative to terrain or not.
 
 **Type**: string
 
-##Values
+## Values
 
 * `NONE` - The position is absolute.
 

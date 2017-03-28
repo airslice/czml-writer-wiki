@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Ellipsoid
+# Ellipsoid
 
 A closed quadric surface that is a three dimensional analogue of an ellipse.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

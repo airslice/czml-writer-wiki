@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#LabelStyle (value)
+# LabelStyle (value)
 
 The style of a label.
 
 **Type**: string
 
-##Values
+## Values
 
 * `FILL` - The text of the label is filled, but not outlined.
 

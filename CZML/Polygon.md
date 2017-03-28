@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Polygon
+# Polygon
 
 A polygon, which is a closed figure on the surface of the Earth.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

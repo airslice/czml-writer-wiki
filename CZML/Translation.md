@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Translation
+# Translation
 
 A translational offset which can optionally vary over time.
 
@@ -8,7 +8,7 @@ A translational offset which can optionally vary over time.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian** - [[Cartesian3Value]]
 

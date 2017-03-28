@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Corridor
+# Corridor
 
 A corridor, which is a shape defined by a centerline and width that conforms to the curvature of the globe. It can be placed on the surface or at altitude and can optionally be extruded into a volume.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

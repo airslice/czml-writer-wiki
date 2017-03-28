@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Direction
+# Direction
 
 A unit vector, in world coordinates, that defines a direction.
 
@@ -8,7 +8,7 @@ A unit vector, in world coordinates, that defines a direction.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **spherical** - [[SphericalValue]]
 

@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#ImageMaterial
+# ImageMaterial
 
 A material that fills the surface with an image.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **image** - [[Uri]]
 

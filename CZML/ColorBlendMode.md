@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#ColorBlendMode
+# ColorBlendMode
 
 Defines different modes for blending between a target color and an entity's source color.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **colorBlendMode** - [[ColorBlendModeValue]]
 

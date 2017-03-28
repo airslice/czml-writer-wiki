@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Rotation
+# Rotation
 
 Defines a rotation that transforms a vector expressed in one axes and transforms it to another.
 
@@ -33,7 +33,7 @@ Defines a rotation that transforms a vector expressed in one axes and transforms
 }
 ```
 
-##Properties
+## Properties
 
 **unitQuaternion** - [[UnitQuaternionValue]]
 

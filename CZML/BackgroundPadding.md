@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#BackgroundPadding
+# BackgroundPadding
 
 The amount of horizontal and vertical padding, in pixels, between a label's text and its background.
 
@@ -8,7 +8,7 @@ The amount of horizontal and vertical padding, in pixels, between a label's text
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian2** - [[Cartesian2Value]]
 

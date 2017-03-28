@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#DoubleList
+# DoubleList
 
 A list of floating-point numbers.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **array** - [[DoubleListValue]]
 

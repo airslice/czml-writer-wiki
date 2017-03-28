@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Path
+# Path
 
 A path, which is a polyline defined by the motion of an object over time.  The possible vertices of the path are specified by the `position` property.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

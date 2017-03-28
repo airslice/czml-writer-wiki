@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Packet
+# Packet
 
 Describes the graphical properties of a single object in a scene, such as a single aircraft.
 
@@ -73,7 +73,7 @@ Describes the graphical properties of a single object in a scene, such as a sing
 }
 ```
 
-##Properties
+## Properties
 
 **id** - string
 

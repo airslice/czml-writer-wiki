@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Vector
+# Vector
 
 Defines a graphical vector that originates at the `position` property and extends in the provided direction for the provided length.
 
@@ -8,7 +8,7 @@ _Note: This type is an extension and may not be implemented by all CZML clients.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

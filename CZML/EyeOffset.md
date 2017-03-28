@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#EyeOffset
+# EyeOffset
 
 An offset in eye coordinates which can optionally vary over time.  Eye coordinates are a left-handed coordinate system where the X-axis points toward the viewer's right, the Y-axis poitns up, and the Z-axis points into the screen.
 
@@ -8,7 +8,7 @@ An offset in eye coordinates which can optionally vary over time.  Eye coordinat
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian** - [[Cartesian3Value]]
 

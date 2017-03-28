@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#GridMaterial
+# GridMaterial
 
 A material that fills the surface with a two dimensional grid.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **color** - [[Color]]
 

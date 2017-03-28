@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#BoundingRectangle
+# BoundingRectangle
 
 A bounding rectangle specified by a corner, width and height.
 
@@ -8,7 +8,7 @@ A bounding rectangle specified by a corner, width and height.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **boundingRectangle** - [[BoundingRectangleValue]]
 

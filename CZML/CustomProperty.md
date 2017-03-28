@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#CustomProperty
+# CustomProperty
 
 A custom property.
 
@@ -8,7 +8,7 @@ A custom property.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **boolean** - [[BooleanValue]]
 

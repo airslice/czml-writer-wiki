@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#AlignedAxis
+# AlignedAxis
 
 An aligned axis represented by a unit vector which can optionally vary over time.
 
@@ -8,7 +8,7 @@ An aligned axis represented by a unit vector which can optionally vary over time
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **unitCartesian** - [[UnitCartesian3Value]]
 

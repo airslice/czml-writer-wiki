@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#InterpolatableProperty
+# InterpolatableProperty
 
 The base schema for a property whose value may be determined by interpolating over provided time-tagged samples.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **epoch** - string
 

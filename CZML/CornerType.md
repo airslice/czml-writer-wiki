@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#CornerType
+# CornerType
 
 The style of a corner.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **cornerType** - [[CornerTypeValue]]
 

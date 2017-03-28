@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#LineThickness
+# LineThickness
 
 The thickness of grid lines along each axis, in pixels.
 
@@ -8,7 +8,7 @@ The thickness of grid lines along each axis, in pixels.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian2** - [[Cartesian2Value]]
 

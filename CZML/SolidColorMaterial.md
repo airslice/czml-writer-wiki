@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#SolidColorMaterial
+# SolidColorMaterial
 
 A material that fills the surface with a solid color.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **color** - [[Color]]
 

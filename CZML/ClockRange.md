@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#ClockRange
+# ClockRange
 
 The behavior of a clock when its current time reaches its start or end time.
 
 **Interpolatable**: no
 
-##Values
+## Values
 
 * `UNBOUNDED` - The clock will continue advancing in the current direction.
 

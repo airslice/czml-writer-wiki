@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#BoxDimensions
+# BoxDimensions
 
 The width, depth, and height of a box.
 
@@ -8,7 +8,7 @@ The width, depth, and height of a box.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian** - [[Cartesian3Value]]
 

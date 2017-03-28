@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Clock
+# Clock
 
 Initial settings for a simulated clock when a document is loaded.  The start and stop time are configured using the interval property.
 
@@ -20,7 +20,7 @@ Initial settings for a simulated clock when a document is loaded.  The start and
 }
 ```
 
-##Properties
+## Properties
 
 **currentTime** - [[Time]]
 

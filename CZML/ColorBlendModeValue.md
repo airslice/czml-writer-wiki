@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#ColorBlendMode (value)
+# ColorBlendMode (value)
 
 Defines different modes for blending between a target color and an entity's source color.
 
 **Type**: string
 
-##Values
+## Values
 
 * `HIGHLIGHT` - Multiplies the source color by the target color.
 

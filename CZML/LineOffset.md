@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#LineOffset
+# LineOffset
 
 The offset of grid lines along each axis, as a percentage from 0 to 1.
 
@@ -8,7 +8,7 @@ The offset of grid lines along each axis, as a percentage from 0 to 1.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian2** - [[Cartesian2Value]]
 

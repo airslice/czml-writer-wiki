@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Repeat
+# Repeat
 
 The number of times an image repeats along each axis.
 
@@ -8,7 +8,7 @@ The number of times an image repeats along each axis.
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian2** - [[Cartesian2Value]]
 

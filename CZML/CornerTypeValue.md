@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#CornerType (value)
+# CornerType (value)
 
 The style of a corner.
 
 **Type**: string
 
-##Values
+## Values
 
 * `ROUNDED` - The corner has a smooth edge.
 

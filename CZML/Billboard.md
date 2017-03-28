@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Billboard
+# Billboard
 
 A billboard, or viewport-aligned image.  The billboard is positioned in the scene by the `position` property.  A billboard is sometimes called a marker.
 
@@ -58,7 +58,7 @@ A billboard, or viewport-aligned image.  The billboard is positioned in the scen
 }
 ```
 
-##Properties
+## Properties
 
 **show** - [[Boolean]]
 

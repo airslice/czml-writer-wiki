@@ -1,12 +1,12 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#StripeMaterial
+# StripeMaterial
 
 A material that fills the surface with alternating colors.
 
 **Interpolatable**: no
 
-##Properties
+## Properties
 
 **orientation** - [[StripeOrientation]]
 

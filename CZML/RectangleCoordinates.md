@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#RectangleCoordinates
+# RectangleCoordinates
 
 A set of coordinates describing a cartographic rectangle on the surface of the ellipsoid.
 
@@ -8,7 +8,7 @@ A set of coordinates describing a cartographic rectangle on the surface of the e
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **wsen** - [[CartographicRectangleValue]]
 

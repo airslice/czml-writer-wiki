@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#PixelOffset
+# PixelOffset
 
 A pixel offset in viewport coordinates.  A pixel offset is the number of pixels up and to the right to place an element relative to an origin.
 
@@ -8,7 +8,7 @@ A pixel offset in viewport coordinates.  A pixel offset is the number of pixels 
 
 **Interpolatable**: yes
 
-##Properties
+## Properties
 
 **cartesian2** - [[Cartesian2Value]]
 

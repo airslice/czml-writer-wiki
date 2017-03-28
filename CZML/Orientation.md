@@ -1,6 +1,6 @@
 This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-#Orientation
+# Orientation
 
 Defines an orientation.  An orientation is a rotation that takes a vector expressed in the "body" axes of the object and transforms it to the Earth fixed axes.
 
@@ -33,7 +33,7 @@ Defines an orientation.  An orientation is a rotation that takes a vector expres
 }
 ```
 
-##Properties
+## Properties
 
 **unitQuaternion** - [[UnitQuaternionValue]]
 

@@ -23,6 +23,11 @@ A material that fills the line with a color and outline.
 A material that fills the line with an arrow.
 
 
+**polylineDash** - [[PolylineDashMaterial]]
+
+A material that fills the line with a pattern of dashes.
+
+
 **polylineGlow** - [[PolylineGlowMaterial]]
 
 A material that fills the line with a glowing color.

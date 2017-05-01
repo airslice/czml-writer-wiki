@@ -51,14 +51,18 @@ The width of the ellipsoid outline.
 Default: `1.0`
 
 
-**stackPartitions** - [[Double]]
+**stackPartitions** - [[Integer]]
 
 The number of times to partition the ellipsoid into stacks.
 
+Default: `64`
 
-**slicePartitions** - [[Double]]
+
+**slicePartitions** - [[Integer]]
 
 The number of times to partition the ellipsoid into radial slices.
+
+Default: `64`
 
 
 **subdivisions** - [[Double]]

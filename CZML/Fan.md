@@ -55,7 +55,7 @@ The color of the fan outline.
 The width of the fan outline.
 
 
-**numberOfRings** - [[Double]]
+**numberOfRings** - [[Integer]]
 
 The number of outline rings to draw, starting from the outer edge and equidistantly spaced towards the center.
 

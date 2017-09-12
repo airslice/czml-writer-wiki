@@ -242,17 +242,17 @@ A two dimensional wall which conforms to the curvature of the globe and can be p
 
 **agi_conicSensor** - [[ConicSensor]]
 
-A conical sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is is positioned and oriented using the `position` and `orientation` properties.
+A conical sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is positioned and oriented using the `position` and `orientation` properties.
 
 
 **agi_customPatternSensor** - [[CustomPatternSensor]]
 
-A custom sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is is positioned and oriented using the `position` and `orientation` properties.
+A custom sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is positioned and oriented using the `position` and `orientation` properties.
 
 
 **agi_rectangularSensor** - [[RectangularSensor]]
 
-A rectangular pyramid sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is is positioned and oriented using the `position` and `orientation` properties.
+A rectangular pyramid sensor volume taking into account occlusion of an ellipsoid, i.e., the globe.  The sensor is positioned and oriented using the `position` and `orientation` properties.
 
 
 **agi_fan** - [[Fan]]

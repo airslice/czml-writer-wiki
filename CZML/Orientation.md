@@ -45,3 +45,8 @@ The orientation specified as a 4-dimensional unit magnitude quaternion, specifie
 The orientation specified as a reference to another property.
 
 
+**velocityReference** - [[ReferenceValue]]
+
+The orientation specified as the normalized velocity vector of a position property. The reference must be to a `position` property.
+
+

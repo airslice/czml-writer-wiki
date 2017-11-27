@@ -112,3 +112,18 @@ How the label's translucency should change based on the label's distance from th
 How the label's pixel offset should change based on the label's distance from the camera.  This scalar value will be multiplied by `pixelOffset`.
 
 
+**scaleByDistance** - [[NearFarScalar]]
+
+How the label's scale should change based on the label's distance from the camera.  This scalar value will be multiplied by `scale`.
+
+
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying the distance from the camera at which this label will be displayed.
+
+
+**disableDepthTestDistance** - [[Double]]
+
+The distance from the camera at which to disable the depth test. This can be used to prevent clipping against terrain, for example. When set to zero, the depth test is always applied. When set to Infinity, the depth test is never applied.
+
+

@@ -164,3 +164,13 @@ How the billboard's pixel offset should change based on the billboard's distance
 A sub-region of the image which will be used for the billboard, rather than the entire image, measured in pixels from the bottom-left.
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying the distance from the camera at which this billboard will be displayed.
+
+
+**disableDepthTestDistance** - [[Double]]
+
+The distance from the camera at which to disable the depth test. This can be used to prevent clipping against terrain, for example. When set to zero, the depth test is always applied. When set to Infinity, the depth test is never applied.
+
+

@@ -44,3 +44,8 @@ The time behind the animation time, in seconds, to show the path. The time will 
 The material to use to draw the path.
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this path will be displayed.
+
+

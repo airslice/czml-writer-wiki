@@ -97,3 +97,8 @@ Whether or not the polygon casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying the distance from the camera at which this polygon will be displayed.
+
+

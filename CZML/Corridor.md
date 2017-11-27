@@ -83,3 +83,8 @@ Whether or not the corridor casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying the distance from the camera at which this corridor will be displayed.
+
+

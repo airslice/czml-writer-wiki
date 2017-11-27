@@ -93,3 +93,8 @@ Whether or not the ellipse casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this ellipse will be displayed.
+
+

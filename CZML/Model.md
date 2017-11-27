@@ -94,6 +94,11 @@ The color strength when `colorBlendMode` is `MIX`. A value of 0.0 results in the
 Default: `0.5`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this model will be displayed.
+
+
 **nodeTransformations** - [[NodeTransformations]]
 
 A mapping of node names to node transformations.

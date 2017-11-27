@@ -78,3 +78,8 @@ Whether or not the cylinder casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying the distance from the camera at which this cylinder will be displayed.
+
+

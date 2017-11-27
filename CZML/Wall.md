@@ -73,3 +73,8 @@ Whether or not the wall casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this wall will be displayed.
+
+

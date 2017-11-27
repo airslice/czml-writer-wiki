@@ -77,3 +77,8 @@ Whether or not the ellipsoid casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this ellipsoid will be displayed.
+
+

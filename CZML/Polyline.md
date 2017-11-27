@@ -49,3 +49,13 @@ Whether or not the polyline casts or receives shadows.
 Default: `DISABLED`
 
 
+**depthFailMaterial** - [[PolylineMaterial]]
+
+The material to use to draw the polyline when it is below the terrain.
+
+
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this polyline will be displayed.
+
+

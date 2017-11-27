@@ -97,3 +97,8 @@ Whether or not the rectangle casts or receives shadows.
 Default: `DISABLED`
 
 
+**distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
+The display condition specifying at what distance from the camera this rectangle will be displayed.
+
+

@@ -76,20 +76,6 @@ The width of the rectangle outline.
 Default: `1.0`
 
 
-**closeTop** - [[Boolean]]
-
-Whether to close the top of the rectangle.
-
-Default: `true`
-
-
-**closeBottom** - [[Boolean]]
-
-Whether to close the bottom of the rectangle.
-
-Default: `true`
-
-
 **shadows** - [[ShadowMode]]
 
 Whether or not the rectangle casts or receives shadows.

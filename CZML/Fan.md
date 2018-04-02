@@ -18,9 +18,7 @@ Default: `true`
 
 
 **directions** - [[DirectionList]]
-
-**Required**
-
+ - **Required**
 The list of directions defining the fan.
 
 

@@ -16,9 +16,7 @@ Default: `true`
 
 
 **coordinates** - [[RectangleCoordinates]]
-
-**Required**
-
+ - **Required**
 The coordinates of the rectangle.
 
 

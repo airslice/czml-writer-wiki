@@ -16,16 +16,12 @@ Default: `true`
 
 
 **semiMajorAxis** - [[Double]]
-
-**Required**
-
+ - **Required**
 The length of the ellipse's semi-major axis in meters.
 
 
 **semiMinorAxis** - [[Double]]
-
-**Required**
-
+ - **Required**
 The length of the ellipse's semi-minor axis in meters.
 
 

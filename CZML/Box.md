@@ -16,9 +16,7 @@ Default: `true`
 
 
 **dimensions** - [[BoxDimensions]]
-
-**Required**
-
+ - **Required**
 The dimensions of the box.
 
 

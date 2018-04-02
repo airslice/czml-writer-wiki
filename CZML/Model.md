@@ -16,9 +16,7 @@ Default: `true`
 
 
 **gltf** - [[Uri]]
-
-**Required**
-
+ - **Required**
 The URI of a <a href="https://github.com/KhronosGroup/glTF">glTF</a> model. For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS). The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
 
 

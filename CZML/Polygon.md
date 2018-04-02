@@ -16,9 +16,7 @@ Default: `true`
 
 
 **positions** - [[PositionList]]
-
-**Required**
-
+ - **Required**
 The array of positions defining a simple polygon.
 
 

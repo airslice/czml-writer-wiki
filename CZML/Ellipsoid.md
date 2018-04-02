@@ -16,9 +16,7 @@ Default: `true`
 
 
 **radii** - [[EllipsoidRadii]]
-
-**Required**
-
+ - **Required**
 The dimensions of the ellipsoid.
 
 

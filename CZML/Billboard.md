@@ -68,9 +68,7 @@ Default: `true`
 
 
 **image** - [[Uri]]
-
-**Required**
-
+ - **Required**
 The URI of the image displayed on the billboard. For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS). The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
 
 

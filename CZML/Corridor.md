@@ -16,16 +16,12 @@ Default: `true`
 
 
 **positions** - [[PositionList]]
-
-**Required**
-
+ - **Required**
 The array of positions defining the centerline of the corridor.
 
 
 **width** - [[Double]]
-
-**Required**
-
+ - **Required**
 The width of the corridor, which is the distance between the edges of the corridor.
 
 

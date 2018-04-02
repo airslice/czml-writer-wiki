@@ -16,23 +16,17 @@ Default: `true`
 
 
 **length** - [[Double]]
-
-**Required**
-
+ - **Required**
 The length of the cylinder.
 
 
 **topRadius** - [[Double]]
-
-**Required**
-
+ - **Required**
 The radius of the top of the cylinder.
 
 
 **bottomRadius** - [[Double]]
-
-**Required**
-
+ - **Required**
 The radius of the bottom of the cylinder.
 
 

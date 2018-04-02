@@ -83,14 +83,14 @@ Default: `1.0`
 
 The offset, in viewport pixels, of the billboard origin from the `position`. A pixel offset is the number of pixels up and to the right to place the billboard, relative to the `position`.
 
-Default: `[0, 0]`
+Default: `[0.0, 0.0]`
 
 
 **eyeOffset** - [[EyeOffset]]
 
 The eye offset of the billboard, which is the offset in eye coordinates at which to place the billboard relative to the `position` property. Eye coordinates are a left-handed coordinate system where the X-axis points toward the viewer's right, the Y-axis points up, and the Z-axis points into the screen.
 
-Default: `[0, 0, 0]`
+Default: `[0.0, 0.0, 0.0]`
 
 
 **horizontalOrigin** - [[HorizontalOrigin]]
@@ -132,7 +132,7 @@ Default: `0.0`
 
 The aligned axis is the unit vector, in world coordinates, that the billboard up vector points towards. The default is the zero vector, which means the billboard is aligned to the screen up vector.
 
-Default: `[0, 0, 0]`
+Default: `[0.0, 0.0, 0.0]`
 
 
 **sizeInMeters** - [[Boolean]]

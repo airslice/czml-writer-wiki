@@ -9,22 +9,18 @@ A definition of how a surface is colored or shaded.
 ## Properties
 
 **solidColor** - [[SolidColorMaterial]]
-
 A material that fills the surface with a solid color, which may be translucent.
 
 
 **image** - [[ImageMaterial]]
-
 A material that fills the surface with an image.
 
 
 **grid** - [[GridMaterial]]
-
 A material that fills the surface with a grid.
 
 
 **stripe** - [[StripeMaterial]]
-
 A material that fills the surface with alternating colors.
 
 

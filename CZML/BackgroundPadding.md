@@ -11,12 +11,10 @@ The amount of horizontal and vertical padding, in pixels, between a label's text
 ## Properties
 
 **cartesian2** - [[Cartesian2Value]]
-
 The background padding specified as a two-dimensional Cartesian value `[X, Y]`, in pixels, where X is the horizontal padding, and Y is the vertical padding.
 
 
 **reference** - [[ReferenceValue]]
-
 The background padding specified as a reference to another property.
 
 

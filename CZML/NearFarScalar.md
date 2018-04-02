@@ -11,12 +11,10 @@ A numeric value which will be linearly interpolated between two values based on 
 ## Properties
 
 **nearFarScalar** - [[NearFarScalarValue]]
-
 The value specified as four values `[NearDistance, NearValue, FarDistance, FarValue]`, with distances in eye coordinates in meters.
 
 
 **reference** - [[ReferenceValue]]
-
 The value specified as a reference to another property.
 
 

@@ -11,12 +11,10 @@ The number of grid lines along each axis.
 ## Properties
 
 **cartesian2** - [[Cartesian2Value]]
-
 The number of grid lines along each axis.
 
 
 **reference** - [[ReferenceValue]]
-
 The number of grid lines along each axis specified as a reference to another property.
 
 

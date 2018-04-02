@@ -11,19 +11,16 @@ Defines a position.  The position can optionally vary over time.
 ## Properties
 
 **referenceFrame** - string
-
 The reference frame in which cartesian positions are specified. Possible values are "FIXED" and "INERTIAL".
 
 Default: `FIXED`
 
 
 **cartesian** - [[Cartesian3Value]]
-
 The position specified as a three-dimensional Cartesian value, `[X, Y, Z]`, in meters relative to the `referenceFrame`.
 
 
 **cartographicRadians** - [[CartographicValue]]
-
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in radians and Height is in meters.
 
 **Examples**:
@@ -38,7 +35,6 @@ The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude,
 
 
 **cartographicDegrees** - [[CartographicValue]]
-
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in degrees and Height is in meters.
 
 **Examples**:
@@ -53,12 +49,10 @@ The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude,
 
 
 **cartesianVelocity** - [[Cartesian3VelocityValue]]
-
 The position and velocity specified as a three-dimensional Cartesian value and its derivative, `[X, Y, Z, dX, dY, dZ]`, in meters relative to the `referenceFrame`.
 
 
 **reference** - [[ReferenceValue]]
-
 The position specified as a reference to another property.
 
 

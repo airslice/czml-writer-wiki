@@ -9,45 +9,38 @@ A path, which is a polyline defined by the motion of an object over time. The po
 ## Properties
 
 **show** - [[Boolean]]
-
 Whether or not the path is shown.
 
 Default: `true`
 
 
 **width** - [[Double]]
-
 The width of the path line.
 
 Default: `1.0`
 
 
 **resolution** - [[Double]]
-
 The maximum step-size, in seconds, used to sample the path. If the `position` property has data points farther apart than resolution specifies, additional samples will be computed, creating a smoother path.
 
 Default: `60.0`
 
 
 **leadTime** - [[Double]]
-
 The time ahead of the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
 
 
 **trailTime** - [[Double]]
-
 The time behind the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
 
 
 **material** - [[PolylineMaterial]]
-
 The material to use to draw the path.
 
 Default: `solid white`
 
 
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
-
 The display condition specifying at what distance from the camera this path will be displayed.
 
 

@@ -11,12 +11,10 @@ A translational offset which can optionally vary over time.
 ## Properties
 
 **cartesian** - [[Cartesian3Value]]
-
 The translation specified as a three-dimensional Cartesian value `[X, Y, Z]`, in meters.
 
 
 **reference** - [[ReferenceValue]]
-
 The translation specified as a reference to another property.
 
 

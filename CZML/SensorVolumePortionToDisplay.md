@@ -9,12 +9,10 @@ What part of a sensor should be displayed.
 ## Properties
 
 **portionToDisplay** - [[SensorVolumePortionToDisplayValue]]
-
 The part of a sensor to display.
 
 
 **reference** - [[ReferenceValue]]
-
 The part of a sensor to display, specified as a reference to another property.
 
 

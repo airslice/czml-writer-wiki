@@ -11,12 +11,10 @@ The offset of grid lines along each axis, as a percentage from 0 to 1.
 ## Properties
 
 **cartesian2** - [[Cartesian2Value]]
-
 The offset of grid lines along each axis, specified as a percentage from 0 to 1.
 
 
 **reference** - [[ReferenceValue]]
-
 The offset of grid lines along each axis specified as a reference to another property.
 
 

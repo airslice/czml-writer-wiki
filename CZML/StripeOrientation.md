@@ -9,12 +9,10 @@ The orientation of stripes in a stripe material.
 ## Properties
 
 **stripeOrientation** - [[StripeOrientationValue]]
-
 The orientation of stripes in the stripe material.
 
 
 **reference** - [[ReferenceValue]]
-
 The orientation of stripes specified as a reference to another property.
 
 

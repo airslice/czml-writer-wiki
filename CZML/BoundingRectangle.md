@@ -11,12 +11,10 @@ A bounding rectangle specified by a corner, width and height.
 ## Properties
 
 **boundingRectangle** - [[BoundingRectangleValue]]
-
 The bounding rectangle specified as `[X, Y, Width, Height]`.
 
 
 **reference** - [[ReferenceValue]]
-
 The bounding rectangle specified as a reference to another property.
 
 

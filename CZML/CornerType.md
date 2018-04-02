@@ -9,12 +9,10 @@ The style of a corner.
 ## Properties
 
 **cornerType** - [[CornerTypeValue]]
-
 The corner style.
 
 
 **reference** - [[ReferenceValue]]
-
 The corner style specified as a reference to another property.
 
 

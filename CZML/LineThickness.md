@@ -11,12 +11,10 @@ The thickness of grid lines along each axis, in pixels.
 ## Properties
 
 **cartesian2** - [[Cartesian2Value]]
-
 The thickness specified as a two-dimensional Cartesian value `[X, Y]`, in pixels.
 
 
 **reference** - [[ReferenceValue]]
-
 The thickness specified as a reference to another property.
 
 

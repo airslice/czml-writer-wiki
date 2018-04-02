@@ -11,12 +11,10 @@ A scaling factor which can optionally vary over time.
 ## Properties
 
 **cartesian** - [[Cartesian3Value]]
-
 The scale specified as a three-dimensional Cartesian value `[X, Y, Z]`.
 
 
 **reference** - [[ReferenceValue]]
-
 The scale specified as a reference to another property.
 
 

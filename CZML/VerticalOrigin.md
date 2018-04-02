@@ -9,12 +9,10 @@ The vertical origin of an element, which can optionally vary over time.  It cont
 ## Properties
 
 **verticalOrigin** - [[VerticalOriginValue]]
-
 The vertical origin.
 
 
 **reference** - [[ReferenceValue]]
-
 The vertical origin specified as a reference to another property.
 
 

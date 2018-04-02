@@ -9,10 +9,12 @@ The horizontal origin of an element, which can optionally vary over time.  It co
 ## Properties
 
 **horizontalOrigin** - [[HorizontalOriginValue]]
+
 The horizontal origin.
 
 
 **reference** - [[ReferenceValue]]
+
 The horizontal origin specified as a reference to another property.
 
 

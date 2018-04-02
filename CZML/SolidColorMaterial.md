@@ -9,6 +9,7 @@ A material that fills the surface with a solid color.
 ## Properties
 
 **color** - [[Color]]
+
 The color of the surface.
 
 Default: `white`

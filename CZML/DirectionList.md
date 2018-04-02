@@ -9,18 +9,22 @@ A list of directions.
 ## Properties
 
 **spherical** - [[SphericalListValue]]
+
 The list of directions specified as spherical values `[Clock, Cone, Magnitude, Clock, Cone, Magnitude, ...]`, with angles in radians and magnitude in meters.  The clock angle is measured in the XY plane from the positive X axis toward the positive Y axis.  The cone angle is the angle from the positive Z axis toward the negative Z axis.
 
 
 **unitSpherical** - [[UnitSphericalListValue]]
+
 The list of directions specified as unit spherical values `[Clock, Cone, Clock, Cone, ...]`, in radians.  The clock angle is measured in the XY plane from the positive X axis toward the positive Y axis.  The cone angle is the angle from the positive Z axis toward the negative Z axis.
 
 
 **cartesian** - [[Cartesian3ListValue]]
+
 The list of directions specified as three-dimensional Cartesian values `[X, Y, Z, X, Y, Z, ...]`, in world coordinates in meters.
 
 
 **unitCartesian** - [[UnitCartesian3ListValue]]
+
 The list of directions specified as three-dimensional unit magnitude Cartesian values, `[X, Y, Z, X, Y, Z, ...]`, in world coordinates in meters.
 
 

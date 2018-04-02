@@ -9,52 +9,61 @@ A box, which is a closed rectangular cuboid.
 ## Properties
 
 **show** - [[Boolean]]
+
 Whether or not the box is shown.
 
 Default: `true`
 
 
 **dimensions** - [[BoxDimensions]] - **Required**
+
 The dimensions of the box.
 
 
 **fill** - [[Boolean]]
+
 Whether or not the box is filled.
 
 Default: `true`
 
 
 **material** - [[Material]]
+
 The material to display on the surface of the box.
 
 Default: `solid white`
 
 
 **outline** - [[Boolean]]
+
 Whether or not the box is outlined.
 
 Default: `false`
 
 
 **outlineColor** - [[Color]]
+
 The color of the box outline.
 
 Default: `black`
 
 
 **outlineWidth** - [[Double]]
+
 The width of the box outline.
 
 Default: `1.0`
 
 
 **shadows** - [[ShadowMode]]
+
 Whether or not the box casts or receives shadows.
 
 Default: `DISABLED`
 
 
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
+
 The display condition specifying the distance from the camera at which this box will be displayed.
 
 

@@ -11,10 +11,12 @@ The number of times an image repeats along each axis.
 ## Properties
 
 **cartesian2** - [[Cartesian2Value]]
+
 The number of times the image repeats along each axis.
 
 
 **reference** - [[ReferenceValue]]
+
 The number of times the image repeats specified as a reference to another property.
 
 

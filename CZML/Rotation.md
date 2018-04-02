@@ -36,10 +36,12 @@ Defines a rotation that transforms a vector expressed in one axes and transforms
 ## Properties
 
 **unitQuaternion** - [[UnitQuaternionValue]]
+
 The rotation specified as a 4-dimensional unit magnitude quaternion, specified as `[X, Y, Z, W]`.
 
 
 **reference** - [[ReferenceValue]]
+
 The rotation specified as a reference to another property.
 
 

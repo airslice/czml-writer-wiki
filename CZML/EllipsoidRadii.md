@@ -11,10 +11,12 @@ The radii of an ellipsoid.
 ## Properties
 
 **cartesian** - [[Cartesian3Value]]
+
 The radii specified as a three-dimensional Cartesian value `[X, Y, Z]`, in world coordinates in meters.
 
 
 **reference** - [[ReferenceValue]]
+
 The radii specified as a reference to another property.
 
 

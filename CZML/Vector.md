@@ -11,22 +11,27 @@ _Note: This type is an extension and may not be implemented by all CZML clients.
 ## Properties
 
 **show** - [[Boolean]]
+
 Whether or not the vector is shown.
 
 
 **color** - [[Color]]
+
 The color of the vector.
 
 
 **direction** - [[Direction]]
+
 The direction of the vector.
 
 
 **length** - [[Double]]
+
 The graphical length of the vector.
 
 
 **minimumLengthInPixels** - [[Double]]
+
 The minimum graphical length of the vector in pixels.
 
 

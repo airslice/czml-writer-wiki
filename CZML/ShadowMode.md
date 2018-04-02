@@ -9,10 +9,12 @@ Whether or not an object casts or receives shadows from each light source when s
 ## Properties
 
 **shadowMode** - [[ShadowModeValue]]
+
 The shadow mode.
 
 
 **reference** - [[ReferenceValue]]
+
 The shadow mode specified as a reference to another property.
 
 

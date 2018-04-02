@@ -9,18 +9,21 @@ A set of transformations to apply to a particular node in a 3D model.
 ## Properties
 
 **translation** - [[Translation]]
+
 The translation to apply to the model node.
 
 Default: `[0.0, 0.0, 0.0]`
 
 
 **rotation** - [[Rotation]]
+
 The rotation to apply to the model node.
 
 Default: `[0.0, 0.0, 0.0, 1.0]`
 
 
 **scale** - [[Scale]]
+
 The scaling to apply to the model node.
 
 Default: `[1.0, 1.0, 1.0]`

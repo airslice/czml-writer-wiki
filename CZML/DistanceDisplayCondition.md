@@ -11,10 +11,12 @@ Indicates the visibility of an object based on the distance to the camera.
 ## Properties
 
 **distanceDisplayCondition** - [[DistanceDisplayConditionValue]]
+
 The value specified as two values `[NearDistance, FarDistance]`, with distances in meters.
 
 
 **reference** - [[ReferenceValue]]
+
 The value specified as a reference to another property.
 
 

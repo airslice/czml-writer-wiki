@@ -21,10 +21,12 @@ A suggested camera location when viewing an object, specified as a Cartesian pos
 ## Properties
 
 **cartesian** - [[Cartesian3Value]]
+
 The camera location specified as a three-dimensional Cartesian value `[X, Y, Z]`, in the East (x), North (y), Up (z) reference frame relative to the object's position.
 
 
 **reference** - [[ReferenceValue]]
+
 The camera location specified as a reference to another property.
 
 

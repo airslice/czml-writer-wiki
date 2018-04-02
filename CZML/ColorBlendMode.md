@@ -9,10 +9,12 @@ Defines different modes for blending between a target color and an entity's sour
 ## Properties
 
 **colorBlendMode** - [[ColorBlendModeValue]]
+
 The color blend mode.
 
 
 **reference** - [[ReferenceValue]]
+
 The color blend mode specified as a reference to another property.
 
 

@@ -9,10 +9,12 @@ A string value.  The string can optionally vary with time.
 ## Properties
 
 **string** - [[StringValue]]
+
 The string value.
 
 
 **reference** - [[ReferenceValue]]
+
 The string specified as a reference to another property.
 
 

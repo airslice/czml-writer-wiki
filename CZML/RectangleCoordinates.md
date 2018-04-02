@@ -11,14 +11,17 @@ A set of coordinates describing a cartographic rectangle on the surface of the e
 ## Properties
 
 **wsen** - [[CartographicRectangleValue]]
+
 The set of coordinates specified as Cartographic values `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in radians.
 
 
 **wsenDegrees** - [[CartographicRectangleValue]]
+
 The set of coordinates specified as Cartographic values `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in degrees.
 
 
 **reference** - [[ReferenceValue]]
+
 The set of coordinates specified as a reference to another property.
 
 

@@ -9,6 +9,7 @@ A material that fills the surface of a line with an arrow.
 ## Properties
 
 **color** - [[Color]]
+
 The color of the surface.
 
 Default: `white`

@@ -9,10 +9,12 @@ A boolean value.
 ## Properties
 
 **boolean** - [[BooleanValue]]
+
 The boolean value.
 
 
 **reference** - [[ReferenceValue]]
+
 The boolean specified as a reference to another property.
 
 

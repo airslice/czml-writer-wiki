@@ -11,10 +11,12 @@ An integer number.
 ## Properties
 
 **number** - [[IntegerValue]]
+
 The integer.
 
 
 **reference** - [[ReferenceValue]]
+
 The integer specified as a reference to another property.
 
 

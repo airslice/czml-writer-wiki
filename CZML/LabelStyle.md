@@ -9,10 +9,12 @@ The style of a label.
 ## Properties
 
 **labelStyle** - [[LabelStyleValue]]
+
 The label style.
 
 
 **reference** - [[ReferenceValue]]
+
 The label style specified as a reference to another property.
 
 

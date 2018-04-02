@@ -17,14 +17,20 @@ The image to display on the surface.
 
 The number of times the image repeats along each axis.
 
+Default: `[1, 1]`
+
 
 **color** - [[Color]]
 
 The color of the image. This color value is multiplied with the image to produce the final color.
 
+Default: `white`
+
 
 **transparent** - [[Boolean]]
 
 Whether or not the image has transparency.
+
+Default: `false`
 
 

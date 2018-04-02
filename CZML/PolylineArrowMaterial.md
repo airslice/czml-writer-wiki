@@ -12,4 +12,6 @@ A material that fills the surface of a line with an arrow.
 
 The color of the surface.
 
+Default: `white`
+
 

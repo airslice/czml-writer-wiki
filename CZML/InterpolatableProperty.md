@@ -36,9 +36,9 @@ Default: `NONE`
 
 **forwardExtrapolationDuration** - number
 
-The amount of time to extrapolate forward before the property becomes undefined.  A value of 0 will extrapolate forever.
+The amount of time to extrapolate forward before the property becomes undefined. A value of 0 will extrapolate forever.
 
-Default: `0`
+Default: `0.0`
 
 
 **backwardExtrapolationType** - string
@@ -50,8 +50,8 @@ Default: `NONE`
 
 **backwardExtrapolationDuration** - number
 
-The amount of time to extrapolate backward before the property becomes undefined.  A value of 0 will extrapolate forever.
+The amount of time to extrapolate backward before the property becomes undefined. A value of 0 will extrapolate forever.
 
-Default: `0`
+Default: `0.0`
 
 

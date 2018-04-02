@@ -12,4 +12,6 @@ A material that fills the surface with a solid color.
 
 The color of the surface.
 
+Default: `white`
+
 

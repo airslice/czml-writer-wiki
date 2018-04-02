@@ -12,14 +12,20 @@ A material that fills the surface of a line with an outlined color.
 
 The color of the surface.
 
+Default: `white`
+
 
 **outlineColor** - [[Color]]
 
 The color of the surface outline.
 
+Default: `black`
+
 
 **outlineWidth** - [[Double]]
 
 The width of the outline.
+
+Default: `1.0`
 
 

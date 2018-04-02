@@ -33,10 +33,14 @@ Default: `NONE`
 
 The color of the point.
 
+Default: `white`
+
 
 **outlineColor** - [[Color]]
 
 The color of the outline of the point.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]
@@ -48,12 +52,12 @@ Default: `0.0`
 
 **scaleByDistance** - [[NearFarScalar]]
 
-How the point's scale should change based on the point's distance from the camera.  This scalar value will be multiplied by `pixelSize`.
+How the point's scale should change based on the point's distance from the camera. This scalar value will be multiplied by `pixelSize`.
 
 
 **translucencyByDistance** - [[NearFarScalar]]
 
-How the point's translucency should change based on the point's distance from the camera.  This scalar value should range from 0 to 1.
+How the point's translucency should change based on the point's distance from the camera. This scalar value should range from 0 to 1.
 
 
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
@@ -64,5 +68,7 @@ The display condition specifying the distance from the camera at which this poin
 **disableDepthTestDistance** - [[Double]]
 
 The distance from the camera at which to disable the depth test. This can be used to prevent clipping against terrain, for example. When set to zero, the depth test is always applied. When set to Infinity, the depth test is never applied.
+
+Default: `0.0`
 
 

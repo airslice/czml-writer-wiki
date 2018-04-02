@@ -17,6 +17,8 @@ Default: `true`
 
 **positions** - [[PositionList]]
 
+**Required**
+
 The array of positions defining the polyline as a line strip.
 
 
@@ -24,15 +26,21 @@ The array of positions defining the polyline as a line strip.
 
 The width of the polyline.
 
+Default: `1.0`
+
 
 **granularity** - [[Double]]
 
 The sampling distance, in radians.
 
+Default: `PI / 180.0`
+
 
 **material** - [[PolylineMaterial]]
 
 The material to use to draw the polyline.
+
+Default: `solid white`
 
 
 **followSurface** - [[Boolean]]

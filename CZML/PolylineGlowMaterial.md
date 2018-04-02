@@ -12,9 +12,13 @@ A material that fills the surface of a line with a glowing color.
 
 The color of the surface.
 
+Default: `white`
+
 
 **glowPower** - [[Double]]
 
 The strength of the glow.
+
+Default: `0.25`
 
 

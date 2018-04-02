@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 # Billboard
 
-A billboard, or viewport-aligned image.  The billboard is positioned in the scene by the `position` property.  A billboard is sometimes called a marker.
+A billboard, or viewport-aligned image. The billboard is positioned in the scene by the `position` property. A billboard is sometimes called a marker.
 
 **Interpolatable**: no
 
@@ -69,24 +69,30 @@ Default: `true`
 
 **image** - [[Uri]]
 
-The URI of the image displayed on the billboard.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+**Required**
+
+The URI of the image displayed on the billboard. For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS). The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
 
 
 **scale** - [[Double]]
 
-The scale of the billboard.  The scale is multiplied with the pixel size of the billboard's `image`.  For example, if the scale is 2.0, the billboard will be rendered with twice the number of pixels, in each direction, of the `image`.
+The scale of the billboard. The scale is multiplied with the pixel size of the billboard's `image`. For example, if the scale is 2.0, the billboard will be rendered with twice the number of pixels, in each direction, of the `image`.
 
 Default: `1.0`
 
 
 **pixelOffset** - [[PixelOffset]]
 
-The offset, in viewport pixels, of the billboard origin from the `position`.  A pixel offset is the number of pixels up and to the right to place the billboard, relative to the `position`.
+The offset, in viewport pixels, of the billboard origin from the `position`. A pixel offset is the number of pixels up and to the right to place the billboard, relative to the `position`.
+
+Default: `[0, 0]`
 
 
 **eyeOffset** - [[EyeOffset]]
 
-The eye offset of the billboard, which is the offset in eye coordinates at which to place the billboard relative to the `position` property.  Eye coordinates are a left-handed coordinate system where the X-axis points toward the viewer's right, the Y-axis points up, and the Z-axis points into the screen.
+The eye offset of the billboard, which is the offset in eye coordinates at which to place the billboard relative to the `position` property. Eye coordinates are a left-handed coordinate system where the X-axis points toward the viewer's right, the Y-axis points up, and the Z-axis points into the screen.
+
+Default: `[0, 0, 0]`
 
 
 **horizontalOrigin** - [[HorizontalOrigin]]
@@ -112,7 +118,9 @@ Default: `NONE`
 
 **color** - [[Color]]
 
-The color of the billboard.  This color value is multiplied with the values of the billboard's "image" to produce the final color.
+The color of the billboard. This color value is multiplied with the values of the billboard's "image" to produce the final color.
+
+Default: `white`
 
 
 **rotation** - [[Double]]
@@ -124,7 +132,9 @@ Default: `0.0`
 
 **alignedAxis** - [[AlignedAxis]]
 
-The aligned axis is the unit vector, in world coordinates, that the billboard up vector points towards.  The default is the zero vector, which means the billboard is aligned to the screen up vector.
+The aligned axis is the unit vector, in world coordinates, that the billboard up vector points towards. The default is the zero vector, which means the billboard is aligned to the screen up vector.
+
+Default: `[0, 0, 0]`
 
 
 **sizeInMeters** - [[Boolean]]
@@ -146,17 +156,17 @@ The height of the billboard, in pixels (or meters, if `sizeInMeters` is true). B
 
 **scaleByDistance** - [[NearFarScalar]]
 
-How the billboard's scale should change based on the billboard's distance from the camera.  This scalar value will be multiplied by `scale`.
+How the billboard's scale should change based on the billboard's distance from the camera. This scalar value will be multiplied by `scale`.
 
 
 **translucencyByDistance** - [[NearFarScalar]]
 
-How the billboard's translucency should change based on the billboard's distance from the camera.  This scalar value should range from 0 to 1.
+How the billboard's translucency should change based on the billboard's distance from the camera. This scalar value should range from 0 to 1.
 
 
 **pixelOffsetScaleByDistance** - [[NearFarScalar]]
 
-How the billboard's pixel offset should change based on the billboard's distance from the camera.  This scalar value will be multiplied by `pixelOffset`.
+How the billboard's pixel offset should change based on the billboard's distance from the camera. This scalar value will be multiplied by `pixelOffset`.
 
 
 **imageSubRegion** - [[BoundingRectangle]]
@@ -172,5 +182,7 @@ The display condition specifying the distance from the camera at which this bill
 **disableDepthTestDistance** - [[Double]]
 
 The distance from the camera at which to disable the depth test. This can be used to prevent clipping against terrain, for example. When set to zero, the depth test is always applied. When set to Infinity, the depth test is never applied.
+
+Default: `0.0`
 
 

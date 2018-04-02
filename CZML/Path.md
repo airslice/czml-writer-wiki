@@ -43,6 +43,8 @@ The time behind the animation time, in seconds, to show the path. The time will 
 
 The material to use to draw the path.
 
+Default: `solid white`
+
 
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
 

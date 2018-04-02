@@ -17,10 +17,14 @@ Default: `true`
 
 **semiMajorAxis** - [[Double]]
 
+**Required**
+
 The length of the ellipse's semi-major axis in meters.
 
 
 **semiMinorAxis** - [[Double]]
+
+**Required**
 
 The length of the ellipse's semi-minor axis in meters.
 
@@ -28,6 +32,8 @@ The length of the ellipse's semi-minor axis in meters.
 **height** - [[Double]]
 
 The altitude of the ellipse relative to the surface.
+
+Default: `0.0`
 
 
 **extrudedHeight** - [[Double]]
@@ -39,15 +45,21 @@ The altitude of the ellipse's extruded face relative to the surface.
 
 The angle from north (counter-clockwise) in radians.
 
+Default: `0.0`
+
 
 **stRotation** - [[Double]]
 
 The rotation of any applied texture coordinates.
 
+Default: `0.0`
+
 
 **granularity** - [[Double]]
 
 The sampling distance, in radians.
+
+Default: `PI / 180.0`
 
 
 **fill** - [[Boolean]]
@@ -61,6 +73,8 @@ Default: `true`
 
 The material to use to fill the ellipse.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -73,6 +87,8 @@ Default: `false`
 
 The color of the ellipse outline.
 
+Default: `black`
+
 
 **outlineWidth** - [[Double]]
 
@@ -81,9 +97,11 @@ The width of the ellipse outline.
 Default: `1.0`
 
 
-**numberOfVerticalLines** - [[Double]]
+**numberOfVerticalLines** - [[Integer]]
 
 The number of vertical lines to use when outlining an extruded ellipse.
+
+Default: `16`
 
 
 **shadows** - [[ShadowMode]]

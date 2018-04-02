@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 # Color
 
-A color.  The color can optionally vary over time.
+A color. The color can optionally vary over time.
 
 **Extends**: [[InterpolatableProperty]]
 

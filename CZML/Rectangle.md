@@ -17,12 +17,16 @@ Default: `true`
 
 **coordinates** - [[RectangleCoordinates]]
 
+**Required**
+
 The coordinates of the rectangle.
 
 
 **height** - [[Double]]
 
 The height of the rectangle.
+
+Default: `0.0`
 
 
 **extrudedHeight** - [[Double]]
@@ -34,15 +38,21 @@ The extruded height of the rectangle.
 
 The rotation of the rectangle clockwise from north.
 
+Default: `0.0`
+
 
 **stRotation** - [[Double]]
 
 The rotation of any applied texture. A positive rotation is counter-clockwise.
 
+Default: `0.0`
+
 
 **granularity** - [[Double]]
 
 The sampling distance, in radians.
+
+Default: `PI / 180.0`
 
 
 **fill** - [[Boolean]]
@@ -56,6 +66,8 @@ Default: `true`
 
 The material to display on the surface of the rectangle.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -67,6 +79,8 @@ Default: `false`
 **outlineColor** - [[Color]]
 
 The color of the rectangle outline.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]

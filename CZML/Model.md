@@ -17,17 +17,23 @@ Default: `true`
 
 **gltf** - [[Uri]]
 
-The URI of a <a href="https://github.com/KhronosGroup/glTF">glTF</a> model.  For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS).  The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
+**Required**
+
+The URI of a <a href="https://github.com/KhronosGroup/glTF">glTF</a> model. For broadest client compatibility, the URI should be accessible via Cross-Origin Resource Sharing (CORS). The URI may also be a <a href="https://developer.mozilla.org/en/data_URIs">data URI</a>.
 
 
 **scale** - [[Double]]
 
 The scale of the model.
 
+Default: `1.0`
+
 
 **minimumPixelSize** - [[Double]]
 
 The approximate minimum pixel size of the model regardless of zoom.
+
+Default: `0.0`
 
 
 **maximumScale** - [[Double]]
@@ -67,6 +73,8 @@ Default: `NONE`
 
 The color of the silhouette drawn around the model.
 
+Default: `red`
+
 
 **silhouetteSize** - [[Double]]
 
@@ -78,6 +86,8 @@ Default: `0.0`
 **color** - [[Color]]
 
 The color to blend with the model's rendered color.
+
+Default: `white`
 
 
 **colorBlendMode** - [[ColorBlendMode]]

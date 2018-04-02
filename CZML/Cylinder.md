@@ -17,15 +17,21 @@ Default: `true`
 
 **length** - [[Double]]
 
+**Required**
+
 The length of the cylinder.
 
 
 **topRadius** - [[Double]]
 
+**Required**
+
 The radius of the top of the cylinder.
 
 
 **bottomRadius** - [[Double]]
+
+**Required**
 
 The radius of the bottom of the cylinder.
 
@@ -41,6 +47,8 @@ Default: `true`
 
 The material to display on the surface of the cylinder.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -53,6 +61,8 @@ Default: `false`
 
 The color of the cylinder outline.
 
+Default: `black`
+
 
 **outlineWidth** - [[Double]]
 
@@ -61,14 +71,18 @@ The width of the cylinder outline.
 Default: `1.0`
 
 
-**numberOfVerticalLines** - [[Double]]
+**numberOfVerticalLines** - [[Integer]]
 
 The number of vertical lines to draw along the perimeter for the outline.
 
+Default: `16`
 
-**slices** - [[Double]]
+
+**slices** - [[Integer]]
 
 The number of edges around the perimeter of the cylinder.
+
+Default: `128`
 
 
 **shadows** - [[ShadowMode]]

@@ -17,6 +17,8 @@ Default: `true`
 
 **radii** - [[EllipsoidRadii]]
 
+**Required**
+
 The dimensions of the ellipsoid.
 
 
@@ -31,6 +33,8 @@ Default: `true`
 
 The material to display on the surface of the ellipsoid.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -42,6 +46,8 @@ Default: `false`
 **outlineColor** - [[Color]]
 
 The color of the ellipsoid outline.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]
@@ -65,9 +71,11 @@ The number of times to partition the ellipsoid into radial slices.
 Default: `64`
 
 
-**subdivisions** - [[Double]]
+**subdivisions** - [[Integer]]
 
 The number of samples per outline ring, determining the granularity of the curvature.
+
+Default: `128`
 
 
 **shadows** - [[ShadowMode]]

@@ -17,10 +17,14 @@ Default: `true`
 
 **positions** - [[PositionList]]
 
+**Required**
+
 The array of positions defining the centerline of the corridor.
 
 
 **width** - [[Double]]
+
+**Required**
 
 The width of the corridor, which is the distance between the edges of the corridor.
 
@@ -28,6 +32,8 @@ The width of the corridor, which is the distance between the edges of the corrid
 **height** - [[Double]]
 
 The height of the corridor, which is the altitude of the corridor relative to the surface.
+
+Default: `0.0`
 
 
 **extrudedHeight** - [[Double]]
@@ -39,10 +45,14 @@ The extruded height of the corridor, which is the altitude of the corridor's ext
 
 The style of the corners of the corridor.
 
+Default: `ROUNDED`
+
 
 **granularity** - [[Double]]
 
 The sampling distance, in radians.
+
+Default: `PI / 180.0`
 
 
 **fill** - [[Boolean]]
@@ -56,6 +66,8 @@ Default: `true`
 
 The material to display on the surface of the corridor.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -67,6 +79,8 @@ Default: `false`
 **outlineColor** - [[Color]]
 
 The color of the corridor outline.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]

@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream.  Please r
 
 # Reference (value)
 
-Represents a reference to another property.  References can be used to specify that two properties on different objects are in fact, the same property.
+Represents a reference to another property. References can be used to specify that two properties on different objects are in fact, the same property.
 
 **Type**: string
 

@@ -17,6 +17,8 @@ Default: `true`
 
 **dimensions** - [[BoxDimensions]]
 
+**Required**
+
 The dimensions of the box.
 
 
@@ -31,6 +33,8 @@ Default: `true`
 
 The material to display on the surface of the box.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -42,6 +46,8 @@ Default: `false`
 **outlineColor** - [[Color]]
 
 The color of the box outline.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]

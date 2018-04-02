@@ -17,12 +17,16 @@ Default: `true`
 
 **positions** - [[PositionList]]
 
+**Required**
+
 The array of positions defining a simple polygon.
 
 
 **height** - [[Double]]
 
 The height of the polygon when `perPositionHeight` is false.
+
+Default: `0.0`
 
 
 **extrudedHeight** - [[Double]]
@@ -34,10 +38,14 @@ The extruded height of the polygon.
 
 The rotation of any applied texture. A positive rotation is counter-clockwise.
 
+Default: `0.0`
+
 
 **granularity** - [[Double]]
 
 The sampling distance, in radians.
+
+Default: `PI / 180.0`
 
 
 **fill** - [[Boolean]]
@@ -51,6 +59,8 @@ Default: `true`
 
 The material to use to fill the polygon.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -63,6 +73,8 @@ Default: `false`
 
 The color of the polygon outline.
 
+Default: `black`
+
 
 **outlineWidth** - [[Double]]
 
@@ -74,6 +86,8 @@ Default: `1.0`
 **perPositionHeight** - [[Boolean]]
 
 Whether to use the height of each position to define the polygon or to use `height` as a constant height above the surface.
+
+Default: `false`
 
 
 **closeTop** - [[Boolean]]

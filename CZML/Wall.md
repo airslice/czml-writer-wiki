@@ -17,6 +17,8 @@ Default: `true`
 
 **positions** - [[PositionList]]
 
+**Required**
+
 The array of positions defining the centerline of the wall.
 
 
@@ -34,6 +36,8 @@ The list of heights to be used for the top of the wall, instead of the height of
 
 The sampling distance, in radians.
 
+Default: `PI / 180.0`
+
 
 **fill** - [[Boolean]]
 
@@ -46,6 +50,8 @@ Default: `true`
 
 The material to display on the surface of the wall.
 
+Default: `solid white`
+
 
 **outline** - [[Boolean]]
 
@@ -57,6 +63,8 @@ Default: `false`
 **outlineColor** - [[Color]]
 
 The color of the wall outline.
+
+Default: `black`
 
 
 **outlineWidth** - [[Double]]

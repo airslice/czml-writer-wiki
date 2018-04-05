@@ -14,24 +14,32 @@ _Note: This type is an extension and may not be implemented by all CZML clients.
 
 Whether or not the vector is shown.
 
+Default: `true`
+
 
 **color** - [[Color]]
 
 The color of the vector.
 
+Default: `white`
 
-**direction** - [[Direction]]
+
+**direction** - [[Direction]] - **Required**
 
 The direction of the vector.
 
 
 **length** - [[Double]]
 
-The graphical length of the vector.
+The graphical length of the vector, in meters.
+
+Default: `1.0`
 
 
 **minimumLengthInPixels** - [[Double]]
 
 The minimum graphical length of the vector in pixels.
+
+Default: `0.0`
 
 

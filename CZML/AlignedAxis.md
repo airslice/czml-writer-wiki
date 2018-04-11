@@ -1,4 +1,4 @@
-This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
+This page describes the possible content of a CZML document or stream. Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
 # AlignedAxis
 
@@ -17,7 +17,7 @@ The axis specified as a three-dimensional unit magnitude Cartesian value `[X, Y,
 
 **unitSpherical** - [[UnitSphericalValue]]
 
-The axis specified as a unit spherical value `[Clock, Cone]`, in radians.  The clock angle is measured in the XY plane from the positive X axis toward the positive Y axis.  The cone angle is the angle from the positive Z axis toward the negative Z axis.
+The axis specified as a unit spherical value `[Clock, Cone]`, in radians. The clock angle is measured in the XY plane from the positive X axis toward the positive Y axis. The cone angle is the angle from the positive Z axis toward the negative Z axis.
 
 
 **reference** - [[ReferenceValue]]

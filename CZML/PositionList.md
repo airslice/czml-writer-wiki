@@ -1,4 +1,4 @@
-This page describes the possible content of a CZML document or stream.  Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
+This page describes the possible content of a CZML document or stream. Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
 # PositionList
 
@@ -32,6 +32,6 @@ The list of positions specified in Cartographic WGS84 coordinates, `[Longitude, 
 
 **references** - [[ReferenceListValue]]
 
-The list of positions specified as references.  Each reference is to a property that defines a single position, which may change with time.
+The list of positions specified as references. Each reference is to a property that defines a single position, which may change with time.
 
 

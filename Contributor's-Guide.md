@@ -59,8 +59,8 @@ Details:
 
 ## Contributing Code
 
-* Send us a [pull request](http://help.github.com/send-pull-requests/).  We'll promptly [review](https://github.com/AnalyticalGraphicsInc/cesium/wiki/Code-Review-Tips) it, provide feedback, and merge it.
-* Before we can merge, we require a [Contributor License Agreement](http://producingoss.com/en/copyright-assignment.html#copyright-assignment-cla) (CLA).  This can be emailed to cla@agi.com, and only needs to be completed once.  The CLA ensures that you retain copyright to your contributions, and that we have the right to use them.  There is a CLA for [individuals](http://www.agi.com/licenses/individual-cla-agi-v1.0.txt) and [corporations](http://www.agi.com/licenses/corporate-cla-agi-v1.0.txt).  Please email completed CLAs and related questions to cla@agi.com.
+* Send us a [pull request](https://help.github.com/articles/creating-a-pull-request/).  We'll review it, provide feedback, and merge it.
+* Before we can merge, we require a [Contributor License Agreement](http://producingoss.com/en/copyright-assignment.html#copyright-assignment-cla) (CLA).  This can be emailed to cla@agi.com, and only needs to be completed once.  The CLA ensures that you retain copyright to your contributions, and that we have the right to use them.  There is a CLA for [individuals](https://raw.githubusercontent.com/AnalyticalGraphicsInc/cesium/master/Documentation/Contributors/CLAs/individual-cla-agi-v1.0.txt) and [corporations](https://raw.githubusercontent.com/AnalyticalGraphicsInc/cesium/master/Documentation/Contributors/CLAs/corporate-cla-agi-v1.0.txt).  Please email completed CLAs and related questions to cla@agi.com.
 * Please make sure
    * Your code builds without errors or warnings.
    * To include tests with excellent code coverage for any new features.  We use [Nunit](http://www.nunit.org/) for writing tests.  Verify all new and existing tests pass. 

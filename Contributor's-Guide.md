@@ -23,14 +23,11 @@ Details:
 
 ## Building the Code
 
-Building the code is easy.
-
-C#:
-* Open `DotNet/CesiumLanguageWriter.sln` in Visual Studio (or [MonoDevelop](http://monodevelop.com/)).
-
+#### C#:
+* Open `DotNet/CesiumLanguageWriter.sln` in Visual Studio 2017 (or [MonoDevelop](http://monodevelop.com/)).
 * Select Build - Build Solution (Ctrl + Shift + B) to build all projects.
 
-Java:
+#### Java:
 * Open the projects in [Eclipse](http://www.eclipse.org/):
 	* File - Import - General - Existing Projects into Workspace
 	* Select root directory: `\czml-writer\Java`
@@ -59,18 +56,6 @@ Java:
 
 * Click the NUnit button in the new toolbar to start the NUnit GUI and load the current test suite.
 * To debug tests within Visual Studio, Debug - Attach To Process... - nunit-agent.exe
-
-## Development Tips and Conventions
-
-* Place each new CZML converter in a new project.  Include the source format in the project name, e.g. `KmlToCesiumLanguage`.
-
-* Place unit tests for each writer in a new project, named by appending `Tests` to the corresponding project name, e.g. `KmlToCesiumLanguageTests`.
-
-* When `using CesiumLanguageWriter`, make sure to include a reference to the project. In the Solution Explorer (View - Solution Explorer), expand the project tree, right-click References and select Add Reference. In the window that appears, click the Projects tab, select `CesiumLanguageWriter` and hit OK.
-
-* To cleanup unused using statements, right-click in the editor and select Organize Usings - Remove and Sort
-
-![Organize Usings Menu](screenshots/organize-usings-menu.png)
 
 ## Contributing Code
 

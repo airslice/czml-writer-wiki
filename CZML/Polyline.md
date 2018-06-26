@@ -69,7 +69,7 @@ The display condition specifying at what distance from the camera this polyline 
 
 Whether or not the polyline should be clamped to the ground.
 
-Default: `true`
+Default: `false`
 
 
 **zIndex** - [[Integer]]

@@ -65,3 +65,17 @@ The material to use to draw the polyline when it is below the terrain.
 The display condition specifying at what distance from the camera this polyline will be displayed.
 
 
+**clampToGround** - [[Boolean]]
+
+Whether or not the polyline should be clamped to the ground.
+
+Default: `true`
+
+
+**zIndex** - [[Integer]]
+
+The z-index of the polyline, used for ordering ground geometry. Only has an effect if the polyline is constant, and `clampToGround` is true.
+
+Default: `0`
+
+

@@ -98,3 +98,10 @@ Default: `DISABLED`
 The display condition specifying the distance from the camera at which this corridor will be displayed.
 
 
+**zIndex** - [[Integer]]
+
+The z-index of the corridor, used for ordering ground geometry. Only has an effect if the corridor is constant, and `height` and `extrudedHeight` are not specified.
+
+Default: `0`
+
+

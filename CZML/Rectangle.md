@@ -100,3 +100,10 @@ Default: `DISABLED`
 The display condition specifying at what distance from the camera this rectangle will be displayed.
 
 
+**zIndex** - [[Integer]]
+
+The z-index of the rectangle, used for ordering ground geometry. Only has an effect if the rectangle is constant, and `height` and `extrudedHeight` are not specified.
+
+Default: `0`
+
+

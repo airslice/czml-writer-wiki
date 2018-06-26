@@ -112,3 +112,10 @@ Default: `DISABLED`
 The display condition specifying at what distance from the camera this ellipse will be displayed.
 
 
+**zIndex** - [[Integer]]
+
+The z-index of the ellipse, used for ordering ground geometry. Only has an effect if the ellipse is constant, and `height` and `extrudedHeight` are not specified.
+
+Default: `0`
+
+

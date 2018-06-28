@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # ViewFrom
 
-A suggested camera location when viewing an object, specified as a Cartesian position in the East (x), North (y), Up (z) reference frame relative to the object's position.
+A suggested initial camera position offset when tracking this object, specified as a Cartesian position. Typically defined in the East (x), North (y), Up (z) reference frame relative to the object's position, but may use another frame depending on the object's velocity.
 
 **Extends**: [[InterpolatableProperty]]
 
@@ -22,11 +22,11 @@ A suggested camera location when viewing an object, specified as a Cartesian pos
 
 **cartesian** - [[Cartesian3Value]]
 
-The camera location specified as a three-dimensional Cartesian value `[X, Y, Z]`, in the East (x), North (y), Up (z) reference frame relative to the object's position.
+The offset specified as a three-dimensional Cartesian value `[X, Y, Z]`.
 
 
 **reference** - [[ReferenceValue]]
 
-The camera location specified as a reference to another property.
+The offset specified as a reference to another property.
 
 

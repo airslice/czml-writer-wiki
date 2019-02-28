@@ -50,7 +50,7 @@ Default: `solid white`
 
 **followSurface** - [[Boolean]]
 
-Whether or not the positions are connected as great arcs (the default) or as straight lines. This property has been superseded by arcType, which should be used instead.
+Whether or not the positions are connected as great arcs (the default) or as straight lines. This property has been superseded by `arcType`, which should be used instead.
 
 Default: `true`
 

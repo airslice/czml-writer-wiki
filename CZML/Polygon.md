@@ -20,6 +20,13 @@ Default: `true`
 The array of positions defining a simple polygon.
 
 
+**arcType** - [[ArcType]]
+
+The type of arc that should connect the positions of the polygon.
+
+Default: `GEODESIC`
+
+
 **height** - [[Double]]
 
 The height of the polygon when `perPositionHeight` is false.

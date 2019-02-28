@@ -20,6 +20,13 @@ Default: `true`
 The array of positions defining the polyline as a line strip.
 
 
+**arcType** - [[ArcType]]
+
+The type of arc that should connect the positions of the polyline.
+
+Default: `GEODESIC`
+
+
 **width** - [[Double]]
 
 The width of the polyline.
@@ -43,7 +50,7 @@ Default: `solid white`
 
 **followSurface** - [[Boolean]]
 
-Whether or not the positions are connected as great arcs (the default) or as straight lines.
+Whether or not the positions are connected as great arcs (the default) or as straight lines. This property has been superseded by arcType, which should be used instead.
 
 Default: `true`
 

@@ -32,6 +32,20 @@ Default: `0.0`
 The extruded height of the rectangle.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the rectangle, which indicates if `height` is relative to terrain or not.
+
+Default: `NONE`
+
+
+**extrudedHeightReference** - [[HeightReference]]
+
+The extruded height reference of the rectangle, which indicates if `extrudedHeight` is relative to terrain or not.
+
+Default: `NONE`
+
+
 **rotation** - [[Double]]
 
 The rotation of the rectangle clockwise from north.

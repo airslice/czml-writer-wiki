@@ -37,6 +37,20 @@ Default: `0.0`
 The altitude of the ellipse's extruded face relative to the surface.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the ellipse, which indicates if `height` is relative to terrain or not.
+
+Default: `NONE`
+
+
+**extrudedHeightReference** - [[HeightReference]]
+
+The extruded height reference of the ellipse, which indicates if `extrudedHeight` is relative to terrain or not.
+
+Default: `NONE`
+
+
 **rotation** - [[Double]]
 
 The angle from north (counter-clockwise) in radians.

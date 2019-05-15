@@ -39,6 +39,20 @@ Default: `0.0`
 The extruded height of the polygon.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the polygon, which indicates if `height` is relative to terrain or not.
+
+Default: `NONE`
+
+
+**extrudedHeightReference** - [[HeightReference]]
+
+The extruded height reference of the polygon, which indicates if `extrudedHeight` is relative to terrain or not.
+
+Default: `NONE`
+
+
 **stRotation** - [[Double]]
 
 The rotation of any applied texture. A positive rotation is counter-clockwise.

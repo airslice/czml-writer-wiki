@@ -37,6 +37,20 @@ Default: `0.0`
 The extruded height of the corridor, which is the altitude of the corridor's extruded face relative to the surface.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the corridor, which indicates if `height` is relative to terrain or not.
+
+Default: `NONE`
+
+
+**extrudedHeightReference** - [[HeightReference]]
+
+The extruded height reference of the corridor, which indicates if `extrudedHeight` is relative to terrain or not.
+
+Default: `NONE`
+
+
 **cornerType** - [[CornerType]]
 
 The style of the corners of the corridor.

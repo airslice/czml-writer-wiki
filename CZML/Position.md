@@ -62,3 +62,8 @@ The position and velocity specified as a three-dimensional Cartesian value and i
 The position specified as a reference to another property.
 
 
+**delete** - boolean
+
+Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
+
+

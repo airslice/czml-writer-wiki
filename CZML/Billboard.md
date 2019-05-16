@@ -116,7 +116,7 @@ Default: `NONE`
 
 **color** - [[Color]]
 
-The color of the billboard. This color value is multiplied with the values of the billboard's "image" to produce the final color.
+The color of the billboard. This color value is multiplied with the values of the billboard's `image` to produce the final color.
 
 Default: `white`
 

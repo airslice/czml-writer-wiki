@@ -28,3 +28,8 @@ The list of directions specified as three-dimensional Cartesian values `[X, Y, Z
 The list of directions specified as three-dimensional unit magnitude Cartesian values, `[X, Y, Z, X, Y, Z, ...]`, in world coordinates in meters.
 
 
+**delete** - boolean
+
+Whether the client should delete existing data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
+
+

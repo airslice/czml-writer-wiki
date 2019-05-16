@@ -48,3 +48,8 @@ A material that fills the line with a grid.
 A material that fills the line with alternating colors.
 
 
+**checkerboard** - [[CheckerboardMaterial]]
+
+A material that fills the line with a checkerboard pattern.
+
+

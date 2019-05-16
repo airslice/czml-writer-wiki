@@ -28,3 +28,8 @@ A material that fills the surface with a grid.
 A material that fills the surface with alternating colors.
 
 
+**checkerboard** - [[CheckerboardMaterial]]
+
+A material that fills the surface with a checkerboard pattern.
+
+

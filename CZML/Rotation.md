@@ -6,6 +6,8 @@ Defines a rotation that transforms a vector expressed in one axes and transforms
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 **Examples**:
@@ -43,10 +45,5 @@ The rotation specified as a 4-dimensional unit magnitude quaternion, specified a
 **reference** - [[ReferenceValue]]
 
 The rotation specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

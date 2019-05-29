@@ -6,6 +6,8 @@ A custom property.
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
@@ -25,14 +27,14 @@ The property specified as `[X, Y, Width, Height]`.
 The property specified as a three-dimensional Cartesian value `[X, Y, Z]`.
 
 
-**cartographicRadians** - [[CartographicValue]]
+**cartographicRadians** - [[CartographicRadiansValue]]
 
-The property specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in radians.
+The property specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in radians and Height is in meters.
 
 
-**cartographicDegrees** - [[CartographicValue]]
+**cartographicDegrees** - [[CartographicDegreesValue]]
 
-The property specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in degrees.
+The property specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in degrees and Height is in meters.
 
 
 **cartesian2** - [[Cartesian2Value]]
@@ -120,12 +122,12 @@ The property specified as a string.
 The property specified as an orientation of stripes in the stripe material.
 
 
-**wsen** - [[CartographicRectangleValue]]
+**wsen** - [[CartographicRectangleRadiansValue]]
 
 The property specified as a Cartographic rectangle `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in radians.
 
 
-**wsenDegrees** - [[CartographicRectangleValue]]
+**wsenDegrees** - [[CartographicRectangleDegreesValue]]
 
 The property specified as a Cartographic rectangle `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in degrees.
 
@@ -138,10 +140,5 @@ The property specified as a URI.
 **verticalOrigin** - [[VerticalOriginValue]]
 
 The property specified as a vertical origin.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

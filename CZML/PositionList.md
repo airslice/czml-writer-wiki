@@ -4,6 +4,8 @@ This page describes the possible content of a CZML document or stream. Please re
 
 A list of positions.
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: no
 
 ## Properties
@@ -20,12 +22,12 @@ Default: `FIXED`
 The list of positions specified as three-dimensional Cartesian values, `[X, Y, Z, X, Y, Z, ...]`, in meters relative to the `referenceFrame`.
 
 
-**cartographicRadians** - [[CartographicListValue]]
+**cartographicRadians** - [[CartographicRadiansListValue]]
 
 The list of positions specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height, Longitude, Latitude, Height, ...]`, where Longitude and Latitude are in radians and Height is in meters.
 
 
-**cartographicDegrees** - [[CartographicListValue]]
+**cartographicDegrees** - [[CartographicDegreesListValue]]
 
 The list of positions specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height, Longitude, Latitude, Height, ...]`, where Longitude and Latitude are in degrees and Height is in meters.
 
@@ -33,10 +35,5 @@ The list of positions specified in Cartographic WGS84 coordinates, `[Longitude, 
 **references** - [[ReferenceListValue]]
 
 The list of positions specified as references. Each reference is to a property that defines a single position, which may change with time.
-
-
-**delete** - boolean
-
-Whether the client should delete existing data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

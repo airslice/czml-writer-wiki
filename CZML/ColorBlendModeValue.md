@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # ColorBlendMode (value)
 
-Defines different modes for blending between a target color and an entity's source color.
+The mode of blending between a target color and an entity's source color.
 
 **Type**: string
 

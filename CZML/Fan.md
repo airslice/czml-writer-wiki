@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # Fan
 
-A fan. A fan starts at a point or apex and extends in a specified list of directions from the apex. Each pair of directions forms a face of the fan extending to the specified radius.
+A fan, which starts at a point or apex and extends in a specified list of directions from the apex. Each pair of directions forms a face of the fan extending to the specified radius.
 
 _Note: This type is an extension and may not be implemented by all CZML clients._
 

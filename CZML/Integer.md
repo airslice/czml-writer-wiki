@@ -6,6 +6,8 @@ An integer number.
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
@@ -18,10 +20,5 @@ The integer.
 **reference** - [[ReferenceValue]]
 
 The integer specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

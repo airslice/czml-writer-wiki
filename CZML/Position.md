@@ -6,6 +6,8 @@ Defines a position. The position can optionally vary over time.
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
@@ -22,7 +24,7 @@ Default: `FIXED`
 The position specified as a three-dimensional Cartesian value, `[X, Y, Z]`, in meters relative to the `referenceFrame`.
 
 
-**cartographicRadians** - [[CartographicValue]]
+**cartographicRadians** - [[CartographicRadiansValue]]
 
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in radians and Height is in meters.
 
@@ -37,7 +39,7 @@ The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude,
 ```
 
 
-**cartographicDegrees** - [[CartographicValue]]
+**cartographicDegrees** - [[CartographicDegreesValue]]
 
 The position specified in Cartographic WGS84 coordinates, `[Longitude, Latitude, Height]`, where Longitude and Latitude are in degrees and Height is in meters.
 
@@ -60,10 +62,5 @@ The position and velocity specified as a three-dimensional Cartesian value and i
 **reference** - [[ReferenceValue]]
 
 The position specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

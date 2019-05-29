@@ -6,16 +6,18 @@ A set of coordinates describing a cartographic rectangle on the surface of the e
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
 
-**wsen** - [[CartographicRectangleValue]]
+**wsen** - [[CartographicRectangleRadiansValue]]
 
 The set of coordinates specified as Cartographic values `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in radians.
 
 
-**wsenDegrees** - [[CartographicRectangleValue]]
+**wsenDegrees** - [[CartographicRectangleDegreesValue]]
 
 The set of coordinates specified as Cartographic values `[WestLongitude, SouthLatitude, EastLongitude, NorthLatitude]`, with values in degrees.
 
@@ -23,10 +25,5 @@ The set of coordinates specified as Cartographic values `[WestLongitude, SouthLa
 **reference** - [[ReferenceValue]]
 
 The set of coordinates specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

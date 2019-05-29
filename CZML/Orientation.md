@@ -6,6 +6,8 @@ Defines an orientation. An orientation is a rotation that takes a vector express
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 **Examples**:
@@ -45,13 +47,8 @@ The orientation specified as a 4-dimensional unit magnitude quaternion, specifie
 The orientation specified as a reference to another property.
 
 
-**velocityReference** - [[ReferenceValue]]
+**velocityReference** - [[VelocityReferenceValue]]
 
 The orientation specified as the normalized velocity vector of a position property. The reference must be to a `position` property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

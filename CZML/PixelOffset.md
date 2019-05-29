@@ -6,6 +6,8 @@ A pixel offset in viewport coordinates. A pixel offset is the number of pixels u
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
@@ -18,10 +20,5 @@ The pixel offset specified as a two-dimensional Cartesian value `[X, Y]`, in vie
 **reference** - [[ReferenceValue]]
 
 The pixel offset specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

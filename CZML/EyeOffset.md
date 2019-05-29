@@ -6,6 +6,8 @@ An offset in eye coordinates which can optionally vary over time. Eye coordinate
 
 **Extends**: [[InterpolatableProperty]]
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: yes
 
 ## Properties
@@ -18,10 +20,5 @@ The eye offset specified as a three-dimensional Cartesian value `[X, Y, Z]`, in 
 **reference** - [[ReferenceValue]]
 
 The eye offset specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing samples or interval data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

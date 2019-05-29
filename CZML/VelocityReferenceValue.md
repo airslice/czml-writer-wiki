@@ -1,8 +1,8 @@
 This page describes the possible content of a CZML document or stream. Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
 
-# CartographicList (value)
+# VelocityReference (value)
 
-A list of geodetic, WGS84 positions specified as `[Longitude, Latitude, Height, Longitude, Latitude, Height, ...]`.
+Represents the normalized velocity vector of a position property. The reference must be to a `position` property.
 
-**Type**: array
+**Type**: string
 

@@ -4,6 +4,8 @@ This page describes the possible content of a CZML document or stream. Please re
 
 A URI value. The URI can optionally vary with time.
 
+**Extends**: [[DeletableProperty]]
+
 **Interpolatable**: no
 
 **Examples**:
@@ -33,10 +35,5 @@ The URI value.
 **reference** - [[ReferenceValue]]
 
 The URI specified as a reference to another property.
-
-
-**delete** - boolean
-
-Whether the client should delete existing data for this property. Data will be deleted for the containing interval, or if there is no containing interval, then all data. If true, all other properties in this property will be ignored.
 
 

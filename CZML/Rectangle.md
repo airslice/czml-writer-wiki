@@ -27,16 +27,16 @@ The height of the rectangle.
 Default: `0.0`
 
 
-**extrudedHeight** - [[Double]]
-
-The extruded height of the rectangle.
-
-
 **heightReference** - [[HeightReference]]
 
 The height reference of the rectangle, which indicates if `height` is relative to terrain or not.
 
 Default: `NONE`
+
+
+**extrudedHeight** - [[Double]]
+
+The extruded height of the rectangle.
 
 
 **extrudedHeightReference** - [[HeightReference]]
@@ -112,6 +112,13 @@ Default: `DISABLED`
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
 
 The display condition specifying at what distance from the camera this rectangle will be displayed.
+
+
+**classificationType** - [[ClassificationType]]
+
+Whether a classification affects terrain, 3D Tiles or both.
+
+Default: `BOTH`
 
 
 **zIndex** - [[Integer]]

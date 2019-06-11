@@ -15,6 +15,16 @@ Whether or not the path is shown.
 Default: `true`
 
 
+**leadTime** - [[Double]]
+
+The time ahead of the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
+
+
+**trailTime** - [[Double]]
+
+The time behind the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
+
+
 **width** - [[Double]]
 
 The width of the path line.
@@ -27,16 +37,6 @@ Default: `1.0`
 The maximum step-size, in seconds, used to sample the path. If the `position` property has data points farther apart than resolution specifies, additional samples will be computed, creating a smoother path.
 
 Default: `60.0`
-
-
-**leadTime** - [[Double]]
-
-The time ahead of the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
-
-
-**trailTime** - [[Double]]
-
-The time behind the animation time, in seconds, to show the path. The time will be limited to not exceed the object's availability. By default, the value is unlimited, which effectively results in drawing the entire available path of the object.
 
 
 **material** - [[PolylineMaterial]]

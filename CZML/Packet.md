@@ -197,7 +197,7 @@ An ellipse, which is a closed curve on the surface of the Earth. The ellipse is 
 
 **ellipsoid** - [[Ellipsoid]]
 
-An ellipsoid, which is a closed quadric surface that is a three dimensional analogue of an ellipse. The ellipsoid is positioned and oriented using the `position` and `orientation` properties.
+An ellipsoid, which is a closed quadric surface that is a three-dimensional analogue of an ellipse. The ellipsoid is positioned and oriented using the `position` and `orientation` properties.
 
 
 **label** - [[Label]]
@@ -237,7 +237,7 @@ A cartographic rectangle, which conforms to the curvature of the globe and can b
 
 **wall** - [[Wall]]
 
-A two dimensional wall which conforms to the curvature of the globe and can be placed along the surface or at altitude.
+A two-dimensional wall which conforms to the curvature of the globe and can be placed along the surface or at altitude.
 
 
 **agi_conicSensor** - [[ConicSensor]]

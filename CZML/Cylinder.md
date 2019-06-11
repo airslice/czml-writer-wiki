@@ -30,6 +30,13 @@ The radius of the top of the cylinder.
 The radius of the bottom of the cylinder.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the cylinder, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **fill** - [[Boolean]]
 
 Whether or not the cylinder is filled.

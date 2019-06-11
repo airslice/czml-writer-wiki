@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # GridMaterial
 
-A material that fills the surface with a two dimensional grid.
+A material that fills the surface with a two-dimensional grid.
 
 **Interpolatable**: no
 

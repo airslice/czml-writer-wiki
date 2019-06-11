@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # Ellipsoid
 
-A closed quadric surface that is a three dimensional analogue of an ellipse.
+A closed quadric surface that is a three-dimensional analogue of an ellipse.
 
 **Interpolatable**: no
 
@@ -18,6 +18,13 @@ Default: `true`
 **radii** - [[EllipsoidRadii]] - **Required**
 
 The dimensions of the ellipsoid.
+
+
+**heightReference** - [[HeightReference]]
+
+The height reference of the ellipsoid, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
 
 
 **fill** - [[Boolean]]

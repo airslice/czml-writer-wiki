@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # DistanceDisplayCondition (value)
 
-Indicates the visibility of an object based on the distance to the camera, specified as two values `[NearDistance, FarDistance]`. If the array has two elements, the value is constant. If it has three or more elements, they are time-tagged samples arranged as `[Time, NearDistance, FarDistance, Time, NearDistance, FarDistance, ...]`, where Time is an ISO 8601 date and time string or seconds since epoch.
+A value indicating the visibility of an object based on the distance to the camera, specified as two values `[NearDistance, FarDistance]`. If the array has two elements, the value is constant. If it has three or more elements, they are time-tagged samples arranged as `[Time, NearDistance, FarDistance, Time, NearDistance, FarDistance, ...]`, where Time is an ISO 8601 date and time string or seconds since epoch.
 
 **Type**: array
 

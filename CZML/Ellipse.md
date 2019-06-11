@@ -32,16 +32,16 @@ The altitude of the ellipse relative to the surface.
 Default: `0.0`
 
 
-**extrudedHeight** - [[Double]]
-
-The altitude of the ellipse's extruded face relative to the surface.
-
-
 **heightReference** - [[HeightReference]]
 
 The height reference of the ellipse, which indicates if `height` is relative to terrain or not.
 
 Default: `NONE`
+
+
+**extrudedHeight** - [[Double]]
+
+The altitude of the ellipse's extruded face relative to the surface.
 
 
 **extrudedHeightReference** - [[HeightReference]]
@@ -124,6 +124,13 @@ Default: `DISABLED`
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
 
 The display condition specifying at what distance from the camera this ellipse will be displayed.
+
+
+**classificationType** - [[ClassificationType]]
+
+Whether a classification affects terrain, 3D Tiles or both.
+
+Default: `BOTH`
 
 
 **zIndex** - [[Integer]]

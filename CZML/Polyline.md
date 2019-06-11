@@ -79,6 +79,13 @@ Whether or not the polyline should be clamped to the ground.
 Default: `false`
 
 
+**classificationType** - [[ClassificationType]]
+
+Whether a classification affects terrain, 3D Tiles or both.
+
+Default: `BOTH`
+
+
 **zIndex** - [[Integer]]
 
 The z-index of the polyline, used for ordering ground geometry. Only has an effect if the polyline is constant, and `clampToGround` is true.

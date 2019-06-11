@@ -20,6 +20,13 @@ Default: `true`
 The dimensions of the box.
 
 
+**heightReference** - [[HeightReference]]
+
+The height reference of the box, which indicates if the position is relative to terrain or not.
+
+Default: `NONE`
+
+
 **fill** - [[Boolean]]
 
 Whether or not the box is filled.

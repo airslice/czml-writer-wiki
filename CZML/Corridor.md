@@ -32,16 +32,16 @@ The height of the corridor, which is the altitude of the corridor relative to th
 Default: `0.0`
 
 
-**extrudedHeight** - [[Double]]
-
-The extruded height of the corridor, which is the altitude of the corridor's extruded face relative to the surface.
-
-
 **heightReference** - [[HeightReference]]
 
 The height reference of the corridor, which indicates if `height` is relative to terrain or not.
 
 Default: `NONE`
+
+
+**extrudedHeight** - [[Double]]
+
+The extruded height of the corridor, which is the altitude of the corridor's extruded face relative to the surface.
 
 
 **extrudedHeightReference** - [[HeightReference]]
@@ -110,6 +110,13 @@ Default: `DISABLED`
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
 
 The display condition specifying the distance from the camera at which this corridor will be displayed.
+
+
+**classificationType** - [[ClassificationType]]
+
+Whether a classification affects terrain, 3D Tiles or both.
+
+Default: `BOTH`
 
 
 **zIndex** - [[Integer]]

@@ -150,3 +150,28 @@ A mapping of node names to node transformations.
 ```
 
 
+**articulations** - [[Articulations]]
+
+A mapping of keys to articulation values, where the keys are the name of the articulation, a single space, and the name of the stage.
+
+**Examples**:
+
+```javascript
+{
+    "model": {
+        "gltf": "example.gltf",
+        "articulations": {
+            "articulation1 stage1": 45.0,
+            "articulation1 stage2": {
+                "epoch": "2012-04-02T12:00:00Z",
+                "number": [
+                    0.0, 1.0,
+                    60.0, 10.0
+                ]
+            }
+        }
+    }
+}
+```
+
+

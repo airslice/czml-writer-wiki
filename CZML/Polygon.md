@@ -34,16 +34,16 @@ The height of the polygon when `perPositionHeight` is false.
 Default: `0.0`
 
 
-**extrudedHeight** - [[Double]]
-
-The extruded height of the polygon.
-
-
 **heightReference** - [[HeightReference]]
 
 The height reference of the polygon, which indicates if `height` is relative to terrain or not.
 
 Default: `NONE`
+
+
+**extrudedHeight** - [[Double]]
+
+The extruded height of the polygon.
 
 
 **extrudedHeightReference** - [[HeightReference]]
@@ -133,6 +133,13 @@ Default: `DISABLED`
 **distanceDisplayCondition** - [[DistanceDisplayCondition]]
 
 The display condition specifying the distance from the camera at which this polygon will be displayed.
+
+
+**classificationType** - [[ClassificationType]]
+
+Whether a classification affects terrain, 3D Tiles or both.
+
+Default: `BOTH`
 
 
 **zIndex** - [[Integer]]

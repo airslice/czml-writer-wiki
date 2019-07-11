@@ -20,6 +20,11 @@ Default: `true`
 The array of positions defining a simple polygon.
 
 
+**holes** - [[PositionListOfLists]]
+
+The array of arrays of positions defining holes in the polygon.
+
+
 **arcType** - [[ArcType]]
 
 The type of arc that should connect the positions of the polygon.

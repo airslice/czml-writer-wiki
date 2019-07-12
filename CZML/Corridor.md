@@ -114,7 +114,7 @@ The display condition specifying the distance from the camera at which this corr
 
 **classificationType** - [[ClassificationType]]
 
-Whether a classification affects terrain, 3D Tiles or both.
+Whether a classification affects terrain, 3D Tiles, or both.
 
 Default: `BOTH`
 

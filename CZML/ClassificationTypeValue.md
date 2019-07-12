@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # ClassificationType (value)
 
-Whether a classification affects terrain, 3D Tiles or both.
+Whether a classification affects terrain, 3D Tiles, or both.
 
 **Type**: string
 

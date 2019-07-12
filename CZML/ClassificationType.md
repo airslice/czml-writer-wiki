@@ -2,7 +2,7 @@ This page describes the possible content of a CZML document or stream. Please re
 
 # ClassificationType
 
-Whether a classification affects terrain, 3D Tiles or both.
+Whether a classification affects terrain, 3D Tiles, or both.
 
 **Extends**: [[DeletableProperty]]
 
@@ -12,7 +12,7 @@ Whether a classification affects terrain, 3D Tiles or both.
 
 **classificationType** - [[ClassificationTypeValue]]
 
-The classification type, which indicates whether a classification affects terrain, 3D Tiles or both.
+The classification type, which indicates whether a classification affects terrain, 3D Tiles, or both.
 
 
 **reference** - [[ReferenceValue]]

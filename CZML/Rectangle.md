@@ -116,7 +116,7 @@ The display condition specifying at what distance from the camera this rectangle
 
 **classificationType** - [[ClassificationType]]
 
-Whether a classification affects terrain, 3D Tiles or both.
+Whether a classification affects terrain, 3D Tiles, or both.
 
 Default: `BOTH`
 

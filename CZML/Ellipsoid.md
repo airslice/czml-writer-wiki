@@ -17,7 +17,40 @@ Default: `true`
 
 **radii** - [[EllipsoidRadii]] - **Required**
 
-The dimensions of the ellipsoid.
+The radii of the ellipsoid.
+
+
+**innerRadii** - [[EllipsoidRadii]]
+
+The inner radii of the ellipsoid.
+
+
+**minimumClock** - [[Double]]
+
+The minimum clock angle of the ellipsoid.
+
+Default: `0.0`
+
+
+**maximumClock** - [[Double]]
+
+The maximum clock angle of the ellipsoid.
+
+Default: `2π`
+
+
+**minimumCone** - [[Double]]
+
+The minimum cone angle of the ellipsoid.
+
+Default: `0.0`
+
+
+**maximumCone** - [[Double]]
+
+The maximum cone angle of the ellipsoid.
+
+Default: `π`
 
 
 **heightReference** - [[HeightReference]]

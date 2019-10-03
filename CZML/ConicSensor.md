@@ -28,7 +28,7 @@ Default: `0.0`
 
 The outer half angle of the cone.
 
-Default: `PI`
+Default: `π`
 
 
 **minimumClockAngle** - [[Double]]
@@ -42,7 +42,7 @@ Default: `0.0`
 
 The maximum clock angle limit of the cone.
 
-Default: `2 * PI`
+Default: `2π`
 
 
 **radius** - [[Double]]

@@ -62,7 +62,7 @@ Default: `ROUNDED`
 
 The sampling distance, in radians.
 
-Default: `PI / 180.0`
+Default: `π / 180.0`
 
 
 **fill** - [[Boolean]]

@@ -21,14 +21,14 @@ Default: `true`
 
 The X half angle.
 
-Default: `PI / 2`
+Default: `π / 2`
 
 
 **yHalfAngle** - [[Double]]
 
 The Y half angle.
 
-Default: `PI / 2`
+Default: `π / 2`
 
 
 **radius** - [[Double]]

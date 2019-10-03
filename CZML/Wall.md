@@ -34,7 +34,7 @@ The list of heights to be used for the top of the wall, instead of the height of
 
 The sampling distance, in radians.
 
-Default: `PI / 180.0`
+Default: `π / 180.0`
 
 
 **fill** - [[Boolean]]

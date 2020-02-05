@@ -155,3 +155,10 @@ The width in meters of the intersection line between the sensor and the environm
 Default: `5.0`
 
 
+**showThroughEllipsoid** - [[Boolean]]
+
+Whether or not a sensor intersecting the ellipsoid is drawn through the ellipsoid and potentially out to the other side.
+
+Default: `false`
+
+

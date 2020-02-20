@@ -235,6 +235,11 @@ A polyline, which is a line in the scene composed of multiple segments.
 A cartographic rectangle, which conforms to the curvature of the globe and can be placed along the surface or at altitude.
 
 
+**tileset** - [[Tileset]]
+
+A 3D Tiles tileset.
+
+
 **wall** - [[Wall]]
 
 A two-dimensional wall which conforms to the curvature of the globe and can be placed along the surface or at altitude.

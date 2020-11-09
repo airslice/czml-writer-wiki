@@ -24,11 +24,13 @@ Using [MonoDevelop](http://monodevelop.com/) on Linux or Mac:
 
 #### Java:
 
-* In [Eclipse](http://www.eclipse.org/):
-	* File - Import - General - Existing Projects into Workspace
-	* Select root directory: `\czml-writer\Java`
-* Build the included projects:
-	* Project - Build All (Ctrl + B)
-	* Or select Project - Build Automatically to build when changes are saved.
+* In [IntelliJ IDEA](https://www.jetbrains.com/idea/):
+  * File - Import - General - Existing Projects into Workspace
+  * Open the project using directory: `\czml-writer\Java`
+* Build the projects:
+  * Build - Build Project
 * Run the unit tests:
-	* In the Package or Project Explorer (Window - Show View), right-click the test project or file and select Run-As - [Junit](http://www.junit.org/) Test
+  * In the Project view, right-click the `CesiumLanguageWriterTests` project and select Run 'All Tests'.
+
+Or using [Gradle](https://gradle.org/):
+  * `gradlew build`

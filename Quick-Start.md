@@ -15,7 +15,7 @@ Binary releases are available for download on the [releases page](https://github
 Using Visual Studio 2017 on Windows:
 * Open `DotNet\CesiumLanguageWriter.sln`
 * Build the solution:  Build - Build Solution (Ctrl + Shift + B)
-* Open one of the included test projects using [Nunit](http://www.nunit.org/) to run unit tests. See the [Contributor's Guide](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/Contributor's-Guide#wiki-NUnit) for NUnit setup and usage instructions. 
+* Open one of the included test projects using [NUnit](http://www.nunit.org/) to run unit tests. See the [Contributor's Guide](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/Contributor's-Guide#wiki-NUnit) for NUnit setup and usage instructions. 
 
 Using [MonoDevelop](http://monodevelop.com/) on Linux or Mac:
 * Open `DotNet\CesiumLanguageWriter.sln`

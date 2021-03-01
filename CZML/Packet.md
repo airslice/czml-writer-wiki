@@ -230,6 +230,11 @@ A polygon, which is a closed figure on the surface of the Earth.
 A polyline, which is a line in the scene composed of multiple segments.
 
 
+**polylineVolume** - [[PolylineVolume]]
+
+A polyline with a volume, defined as a 2D shape extruded along a polyline.
+
+
 **rectangle** - [[Rectangle]]
 
 A cartographic rectangle, which conforms to the curvature of the globe and can be placed along the surface or at altitude.

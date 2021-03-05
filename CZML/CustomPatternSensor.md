@@ -115,7 +115,7 @@ Default: `COMPLETE`
 
 **environmentConstraint** - [[Boolean]]
 
-Whether or not the sensor will intersect the environment, e.g. terrain or models.
+Whether or not the sensor will be occluded by objects in the current view of the environment, e.g. visible terrain or models.
 
 Default: `false`
 
@@ -160,5 +160,33 @@ Default: `5.0`
 Whether or not a sensor intersecting the ellipsoid is drawn through the ellipsoid and potentially out to the other side.
 
 Default: `false`
+
+
+**showViewshed** - [[Boolean]]
+
+Whether or not the viewshed of the sensor will be drawn.
+
+Default: `false`
+
+
+**viewshedVisibleColor** - [[Color]]
+
+The color of the scene geometry that is visible to the sensor.
+
+Default: `lime, 50% transparent`
+
+
+**viewshedOccludedColor** - [[Color]]
+
+The color of the scene geometry that is not visible to the sensor.
+
+Default: `red, 50% transparent`
+
+
+**viewshedResolution** - [[Double]]
+
+The resolution in pixels of the viewshed.
+
+Default: `2048`
 
 

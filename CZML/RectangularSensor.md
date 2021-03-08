@@ -192,7 +192,7 @@ The color of the scene geometry that is not visible to the sensor.
 Default: `red, 50% transparent`
 
 
-**viewshedResolution** - [[Double]]
+**viewshedResolution** - [[Integer]]
 
 The resolution in pixels of the viewshed.
 

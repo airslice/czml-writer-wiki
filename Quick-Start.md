@@ -2,9 +2,9 @@
 
 #### .NET
 
-Binary releases are [available on NuGet](https://www.nuget.org/packages/CesiumLanguageWriter/).
+Binary releases are [available on NuGet](https://www.nuget.org/packages/CesiumLanguageWriter/), or on the [releases page](https://github.com/AnalyticalGraphicsInc/czml-writer/releases).
 
-#### Java 
+#### Java
 
 Binary releases are available for download on the [releases page](https://github.com/AnalyticalGraphicsInc/czml-writer/releases).
 
@@ -12,15 +12,10 @@ Binary releases are available for download on the [releases page](https://github
 
 #### .NET
 
-Using Visual Studio 2017 on Windows:
+Using Visual Studio 2019 on Windows:
 * Open `DotNet\CesiumLanguageWriter.sln`
 * Build the solution:  Build - Build Solution (Ctrl + Shift + B)
 * Open one of the included test projects using [NUnit](http://www.nunit.org/) to run unit tests. See the [Contributor's Guide](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/Contributor's-Guide#wiki-NUnit) for NUnit setup and usage instructions. 
-
-Using [MonoDevelop](http://monodevelop.com/) on Linux or Mac:
-* Open `DotNet\CesiumLanguageWriter.sln`
-* Build the included projects:  Build - Build All (F8)
-* Running unit tests:  Choose a test project or file from the solution view and select Run - Run Unit Tests (Ctrl + T)
 
 #### Java:
 

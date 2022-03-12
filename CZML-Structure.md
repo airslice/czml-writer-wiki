@@ -1,6 +1,8 @@
-CZML is a subset of [JSON](http://www.json.org), meaning that a valid CZML document is also a valid JSON document.  Specifically, a CZML document contains a single JSON array where each object-literal element in the array is a CZML [[Packet]].  A CZML packet describes the graphical properties for a single object in the scene, such as a single aircraft.
+# CZML 文档结构
 
-_Note: we use javascript comments in these examples even though comments are not technically allowed in JSON._
+CZML 是 [JSON](http://www.json.org) 的子集，这意味着有效的 CZML 文档也是有效的 JSON 文档。具体来说，一个 CZML 文档包含一个 JSON 数组，数组中的每个元素都是一个 CZML [[Packet]]。 CZML packet 描述场景中单个对象的图形属性，例如单个飞机。
+
+_注意：我们在这些示例中使用 javascript 注释，然而 JSON 实际上不允许注释。_
 
 ```javascript
 [
@@ -20,17 +22,17 @@ _Note: we use javascript comments in these examples even though comments are not
 ]
 ```
 
-Each packet has an `id` property identifying the object it is describing.  IDs do not need to be GUIDs, but they do need to uniquely identify a single object within a CZML source and any other CZML sources loaded into the same scope.
+每个 packet 都有一个 `id` 属性来标识它所描述的对象。 ID 不需要是 GUID，但它们确实需要唯一标识 CZML 源中的单个对象以及加载到同一范围内的任何其他 CZML 源。
 
-If an `id` is not specified, the client will automatically generate a unique one. However, this prevents later packets from referring to this object in order to, for example, add more data to it.
+如果没有指定 `id`，客户端会自动生成一个唯一的。 但是这会阻止以后的 packets 引用此对象，例如，向其添加更多数据。
 
-In addition to the `id`, [Packets](Packet) contain zero or more (but usually one or more) properties defining graphical items to draw related to the object.  In the example above, we've specified that the "GroundControlStation" object has a fixed [[Position]] at [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) longitude -75.5 degrees, latitude 40.0 degrees, and height 0.0 meters, and that a blue [[Point]] is drawn at its location.
+除了 `id` 之外，[Packets](Packet) 包含零个或多个（但通常是一个或多个）属性，用于定义要绘制的与对象相关的图形项。 在上面的示例中，我们指定“GroundControlStation”对象包含固定位置： [WGS 84](http://en.wikipedia.org/wiki/World_Geodetic_System) 经度 -75.5 度，纬度 40.0 度，高度 0.0 米，并且在该位置绘制一个蓝色 [[Point]]。
 
-There are many standard properties defined for CZML, including properties for adding [points](Point), [billboards](Billboard), [models](Model), [lines](Polyline), and other graphics to the scene.  The available properties are described in detail on the [[Packet]] page, and linked pages for sub-properties and sub-types.  On this page, we are primarily concerned with how the data is structured.  For example, we describe how a property can be specified such that it has two different values over two different intervals of time.
+CZML 定义了许多标准属性，包括用于将 [points](Point)、[billboards](Billboard)、[models](Model)、[lines](Polyline) 和其他图形添加到场景中的属性。[[Packet]] 页面上详细描述了可用属性，以及子属性和子类型的链接页面。在此页面上，我们主要关注数据的结构。例如，我们描述了如何指定一个属性，使其在两个不同的时间间隔内具有两个不同的值。
 
-## Intervals
+## Intervals 时间区间
 
-In the most general case, the value of a CZML property is a JSON array, where each element in the array is an object literal defining the value of the property for a different interval of time.  The interval described by any given object literal in the array is specified using an [ISO8601 interval](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) string in the `interval` property.
+在最一般的情况下，CZML 属性的值是一个 JSON 数组，其中数组中的每个元素都是一个对象字面量，定义了不同时间区间的属性值。数组中任何给定对象使用 `interval` 属性描述时间区间，属性的值为 [ISO8601 间隔](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) 字符串。
 
 ```javascript
 {
@@ -48,11 +50,11 @@ In the most general case, the value of a CZML property is a JSON array, where ea
 }
 ```
 
-Here we define the `someProperty` property over two intervals, the first from noon to 1:00 PM UTC where the value of the property is 5, and the other from 1:00 PM to 2:00 PM UTC where the value of the property is 6.  The value will change instantly when crossing the boundary between two intervals.  We use `number` to indicate the value because this is a number-type property.  Some properties, notably properties that represent position, allow the value to be specified in multiple formats, such as a Cartesian X,Y,Z position or a Cartographic longitude, latitude, height position.  The page for each type lists the types of data supported for each property, and the value names to use with each.
+在这里，我们在两个时间区间内定义了 `someProperty` 属性，第一个从 UTC 中午到下午 1:00，属性的值为 5，另一个从 UTC 下午 1:00 到下午 2:00，其中的值 属性为 6。当跨越两个区间的边界时，该值将立即更改。我们使用 `number` 来表示值，因为这是一个数字类型的属性。一些属性，尤其是表示位置的属性，允许以多种格式指定值，例如笛卡尔 X、Y、Z 位置或制图经度、纬度、高度位置。每种类型的介绍页面列出了每种属性支持的数据类型，以及每个属性使用的值名称。
 
-The `interval` property is optional.  If it is not specified, the interval is assumed to span all time.  It doesn't make much sense to specify multiple infinite intervals, or intervals that overlap in general, but if you do, the one later in the CZML file or stream takes precedence.
+`interval` 属性是可选的。如果未指定，则假定时间区间跨越所有时间。指定多个时间区间或重叠的区间没有多大意义，但如果指定了，则 CZML 文件（或流）中较后定义的区间生效。
 
-In the common case that the property has a value over just one interval, the interval list array can be omitted entirely.
+在属性只有一个区间的值的常见情况下，可以忽略区间列表数组。
 
 ```javascript
 {
@@ -64,7 +66,7 @@ In the common case that the property has a value over just one interval, the int
 }
 ```
 
-Just as before, the `interval` property can be omitted if it spans all time.  For properties with simple values, like the number property shown above, and with a single value for all time, the value can be given even more compactly:
+与上例类似，如果 `interval` 属性跨越所有时间，则可以省略它。对于具有简单值的属性，如上图所示的 number 属性，以及始终具有单个值的属性，可以更简洁地给出该值：
 
 ```javascript
 {
@@ -73,11 +75,11 @@ Just as before, the `interval` property can be omitted if it spans all time.  Fo
 }
 ```
 
-This abbreviated notation is valid for any property whose value can be represented with one of the simple JSON data types: string, number, or boolean.
+这种缩写对任何属性都有效，这些属性的值可以用简单的JSON数据类型之一表示：字符串、数字或布尔值。
 
-## Composite Values
+## Composite Values 复合值
 
-More complicated composite values, such as a Cartesian position or a color, are represented using JSON arrays.  For a Cartesian position, the array has three elements, corresponding to the X, Y, and Z components of the position, respectively.
+更复杂的复合值（如笛卡尔位置或颜色）使用 JSON 数组表示。对于笛卡尔位置，数组有三个元素，分别对应于位置的 X、Y 和 Z 分量。
 
 ```javascript
 {
@@ -88,11 +90,11 @@ More complicated composite values, such as a Cartesian position or a color, are 
 }
 ```
 
-Composite values must always be specified within an interval, even if that interval is infinite as shown here.  If the value, `[1.0, 2.0, 3.0]`, were allowed as the value of the `complexProperty` directly, it would be necessary for a client interpreting the CZML to look at the contents of the array to determine whether the array is a list of intervals or a single value.  So, for simplicity, we do not allow this.
+复合值必须始终在一个区间内指定（译注：需要使用一个时间区间对象），即使该区间是无限的，如图所示。如果允许将值 `[1.0,2.0,3.0]` 直接用作`complexProperty` 的值，则解析 CZML 时客户端需要查看数组的内容，以确定数组是时间间隔列表还是单个值。因此为了简单起见，我们不允许这样做。
 
-## Sampled Property Values
+## Sampled Property Values 采样属性值
 
-So far, we've discussed how to specify a single value for a property for all time, and how to specify different values for a property over different discrete intervals.  Some properties also allow you to specify time-tagged samples which the client will interpolate over to compute the value of the property at any given time.  Times are specified using [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) strings.
+到目前为止，我们已经讨论了如何始终为属性指定单个值，以及如何在不同的离散时间区间内为属性指定不同的值。某些属性还允许您指定时间标记的样本，客户端将对这些样本进行插值，以计算任何给定时间的属性值。时间值使用 [ISO8601](http://en.wikipedia.org/wiki/ISO_8601) 字符串。
 
 ```javascript
 {
@@ -107,9 +109,9 @@ So far, we've discussed how to specify a single value for a property for all tim
 }
 ```
 
-Here we're specifying that the value is `[1.0, 2.0, 3.0]` at noon, `[4.0, 5.0, 6.0]` one minute later, and `[7.0, 8.0, 9.0]` a minute after that.  If the client's current clock is 30 seconds past noon, the value will be a linear interpolation between `[1.0, 2.0, 3.0]` and `[4.0, 5.0, 6.0]`, or `[2.5, 3.5, 4.5]`.
+在这里，我们指定的值是中午 `[1.0,2.0,3.0]`，一分钟后 `[4.0,5.0,6.0]`，再一分钟后 `[7.0,8.0,9.0]`。如果客户端的当前时钟为正午30秒，则该值将是 `[1.0,2.0,3.0]` 和 `[4.0,5.0,6.0]`之间的线性插值，即 `[2.5,3.5,4.5]`。
 
-For succinctness, times can also be specified in seconds since an epoch.  While this is potentially less precise than specifying each time using an ISO8601 string, it is usually more than sufficient when the samples span less than a day or when the offsets are whole numbers of seconds.
+为了简洁起见，时间也可以从一个 `epoch` 开始以秒为单位指定。虽然这可能不如使用 ISO8601 字符串的精度高，但当样本跨度小于一天或偏移量为整数秒时，这通常就足够了。
 
 ```javascript
 {
@@ -125,7 +127,7 @@ For succinctness, times can also be specified in seconds since an epoch.  While 
 }
 ```
 
-Finally, properties specified using time-tagged samples have some additional, optional sub-properties controlling interpolation.
+最后，使用时间标记样本指定的属性具有一些额外的可选子属性，用于控制插值。
 
 ```javascript
 {
@@ -143,13 +145,13 @@ Finally, properties specified using time-tagged samples have some additional, op
 }
 ```
 
-The `interpolationAlgorithm` specifies the algorithm to use to interpolate a value at a different time from the provided data.  See the table below for the possible values.  The `interpolationDegree` property specifies the degree of the polynomial to use for interpolation.  If these properties are not specified, linear interpolation is used.  See [[InterpolatableProperty]] for a full list of the properties relating to interpolation.
+`interpolationAlgorithm` 指定了插值算法。有关可能的值，请参见下表。`interpolationDegree` 属性指定用于插值的多项式的阶数。如果未指定这些特性，则使用线性插值。有关插值的完整属性列表，请参见[[InterpolateProperty]]。
 
-It is not necessary for the time of every sample to fall within the interval that contains it, but the samples will not be used outside their interval.  This is useful to provide better accuracy with higher-degree interpolation.
+没有必要让每个样本的采样时间都在包含它的时间区间内，但样本不会在其时间区间之外使用。这有助于通过更高阶次的插值提供更好的精度。
 
-## EventSource and Streaming
+## EventSource and Streaming 事件源和流
 
-Putting an entire CZML document in one big JSON array makes it difficult to load the document incrementally.  Today's web browsers allow some access to a stream before it is complete, but parsing and interpreting the incomplete data requires slow and cumbersome string manipulations.  To facilitate high-performance streaming, CZML may also be streamed using modern browsers' [server-sent events](http://dev.w3.org/html5/eventsource/) (`EventSource`) API.  When using this API, each CZML packet is streamed to the client as a separate event:
+将整个 CZML 文档放在一个大的 JSON 数组中会使增量加载文档变得困难。现代 web 浏览器允许在流完成之前对其进行一些访问，但解析和解释不完整的数据需要缓慢而繁琐的字符串操作。为了促进高性能流式传输，CZML 也可以使用现代浏览器的 [server sent events](http://dev.w3.org/html5/eventsource/)（`EventSource`）API 进行流式传输。使用此 API 时，每个 CZML packet 作为单独的事件流式传输到客户端：
 
 ```javascript
 event: czml
@@ -163,23 +165,23 @@ data: {
 }
 ```
 
-As a result, the browser raises an event when each packet is received, containing the data for just that one packet.  This allows us to incrementally process CZML data with excellent performance.
+当收到每个 packet 时，浏览器会触发一个事件，其中只包含该 packet 的数据。这使我们能够以优异的性能增量处理 CZML 数据。
 
-So far, we've perhaps implied that a single object is represented using a single packet that describes all of the graphics associated with that object.  But this is not necessarily the case.  A single CZML stream or document can contain multiple packets with the same `id`, describing different aspects of the same object.
+到目前为止，我们可能已经暗示，单个对象是使用一个 packet 来表示的，该 packet 描述了与该对象相关的所有图形。但事实并非如此。一个 CZML 流或文档可以包含多个具有相同 `id` 的 packet，描述同一对象的不同方面。
 
-In fact, in some cases, two packets can even describe the same property of an object.  This is useful when the property is defined over many intervals or when an interval contains many time-tagged samples.  By breaking the complete definition of a property into multiple packets, we can get relevant data into Cesium sooner to minimize the time that the user must wait before Cesium starts rendering the scene.
+事实上，在某些情况下，两个 packet 甚至可以描述同一个对象的相同属性。当在多个时间区间上定义属性时，或者当一个时间区间包含多个时间标记的样本时，这非常有用。通过将一个属性的完整定义分解为多个 packet，我们可以更快地将相关数据输入 Cesium 中，从而最大限度地减少用户在 Cesium 开始渲染场景之前必须等待的时间。
 
-When a client receives a CZML packet, it walks through each property contained in the packet.  For each property, it walks through each interval over which the property is defined.  For each interval, it determines if the specified interval has already been defined for the property.  If the interval has already been defined, the existing interval is updated; otherwise, a new one is created.
+当客户端收到 CZML packet 时，它会遍历 packet 中包含的每个属性。对于每个属性，它将遍历定义属性的每个时间区间。对于每个时间区间，它确定是否已为属性定义了指定的时间区间。如果已经定义了，则更新现有时间区间；否则，将创建一个新的。
 
-When updating an existing interval, any provided sub-property value replaces the existing value, if any.  The only exception is when both the previous property value and the new property value contain time-tagged samples.  In that case, the samples are added to the list of samples for that interval.
+更新现有时间区间时，提供的任何子属性值都将替换现有值（如果有）。唯一的例外情况是，旧属性值和新属性值都包含带时间标记的采样。在这种情况下，样本将添加到该时间区间的样本列表中。
 
-When a new interval overlaps existing intervals, the new interval takes precedence and the existing intervals are truncated or removed entirely.  This is important to keep in mind because later intervals will be tested against the truncated intervals when determining whether the interval is new or an update to an existing one.
+当新时间区间与原有时间区间重叠时，新时间区间优先，原时间区间被截断或完全删除。记住这一点很重要，当判断之后的时间区间需要新建还是更新原有区间时，会与被截断的时间区间进行比较。
 
-The samples in an interval must be ordered by increasing time within a single packet.  Across packets, however, it is not necessary for the samples to be provided in any particular order.  However, care must be taken to ensure reasonable interpolation when streaming non-contiguous samples.
+单个 packet 中时间区间内的样本必须按时间来排序。然而，在 packet 之间，没有必要以任何特定顺序提供样本。然而，在流式传输非连续样本时，必须注意确保合理的插值。
 
-## Availability
+## Availability 可用性
 
-In addition to the `id` property, CZML packets have one additional special property: `availability`.
+除了 `id` 属性之外，CZML packet 还有一个额外的特殊属性：`availability`。
 
 ```javascript
 {
@@ -189,10 +191,10 @@ In addition to the `id` property, CZML packets have one additional special prope
 }
 ```
 
-The `availability` property indicates when data for an object is available.  If data for an object is known to be available at the current animation time, but the client does not yet have that data (presumably because it will arrive in a later packet), the client could pause with a message like "Buffering..." while it waits to receive the data.  The property can be a single string specifying a single interval, or an array of strings representing intervals.
+`availability` 属性表示对象的数据何时可用。如果已知对象的数据在当前动画时间可用，但客户端尚未拥有该数据（可能是因为它将在稍后的数据包中到达），客户端可能会暂停，并在等待接收数据时显示类似 "Buffering..." 的消息。属性的值可以是指定单个时间区间的字符串，也可以是表示事件区间的字符串数组。
 
-A later Cesium packet can update this availability if it changes or is found to be incorrect. For example, an SGP4 propagator may report availability for all time, but then later the propagator throws an exception and the availability needs to be adjusted. If this optional property is not present, the object is assumed to be available for all time. Availability is scoped to a particular CZML stream, so two different streams can list different availability for a single object. Within a single stream, the last availability stated for an object is the one in effect and any availabilities in previous packets are ignored. If an object is available at a time, the client expects the object to have at least one property, and it expects all properties that it needs to be defined at that time. If the object doesn't have any properties, or a needed property is defined but not at the animation time, the client could pause animation and wait for more data.
+如果 Cesium packet 发生变化或发现不正确，则后到达的 Cesium packet 可以更新此可用性。例如，SGP4 传播程序可能会一直报告可用性，但随后传播程序会抛出异常，需要调整可用性。如果此可选属性不存在，则假定对象始终可用。可用性的范围是特定的 CZML 流，因此两个不同的流可以为单个对象列出不同的可用性。在单个流中，为对象声明的最后一个可用性是有效的可用性，并且忽略以前数据包中的任何可用性。如果某个对象在某个时间可用，客户端希望该对象至少有一个属性，并希望在该时间定义它需要的所有属性。如果对象没有任何属性，或者定义了所需的属性但未在动画时定义，则客户端会暂停动画并等待更多数据。
 
-## Extending CZML
+## Extending CZML 扩展 CZML
 
-CZML can be extended with custom properties.  To minimize conflicts, we recommend that users prefix their custom properties with some sort of identifier.
+CZML 可以通过自定义属性进行扩展。为了尽量减少冲突，我们建议用户在自定义属性前面加上某种标识符。

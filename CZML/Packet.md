@@ -1,12 +1,12 @@
-This page describes the possible content of a CZML document or stream. Please read [[CZML Structure]] for an explanation of how a CZML document is put together.
-
 # Packet
 
-Describes the graphical properties of a single object in a scene, such as a single aircraft.
+此页面描述了 CZML 文档或流的可能内容。请阅读 [[CZML Structure]] 以了解如何组合 CZML 文档。
 
-**Interpolatable**: no
+Packet 用于描述场景中单个对象的图形属性，例如单个飞机。
 
-**Examples**:
+**可插值**: 否 （译注：此处指 packet 本身可插值性，与其内部属性值的可插值性无关）
+
+**范例**:
 
 ```javascript
 {
@@ -73,58 +73,58 @@ Describes the graphical properties of a single object in a scene, such as a sing
 }
 ```
 
-## Properties
+## 属性
 
 **id** - string
 
-The ID of the object described by this packet. IDs do not need to be GUIDs, but they do need to uniquely identify a single object within a CZML source and any other CZML sources loaded into the same scope. If this property is not specified, the client will automatically generate a unique one. However, this prevents later packets from referring to this object in order to add more data to it.
+此 packet 描述的对象的 ID。 ID 不需要是 GUID，但它们确实需要唯一标识 CZML 源中的单个对象以及加载到同一范围内的任何其他 CZML 源。 如果没有指定这个属性，客户端会自动生成一个唯一的。 但是，这会阻止以后的 packet 引用此对象以向其添加更多数据。
 
 
 **delete** - boolean
 
-Whether the client should delete all existing data for this object, identified by ID. If true, all other properties in this packet will be ignored.
+客户端是否应删除此对象的所有现有数据，由 ID 标识。如果为真，则此 packet 中的所有其他属性都将被忽略。
 
 
 **name** - string
 
-The name of the object. It does not have to be unique and is intended for user consumption.
+对象的名称。 它不必是唯一的，并且旨在供用户使用。
 
 
 **parent** - string
 
-The ID of the parent object, if any.
+父对象的 ID（如果有）。
 
 
 **description** - [[String]]
 
-An HTML description of the object.
+对象的 HTML 描述。
 
 
 **clock** - [[Clock]]
 
-The clock settings for the entire data set. Only valid on the document object.
+整个数据集的时钟设置。仅对 document 对象有效。
 
 
 **version** - string
 
-The CZML version being written. Only valid on the document object.
+正在编写的 CZML 版本。仅对 document 对象有效。
 
 
 **availability** - [[TimeIntervalCollection]]
 
-The set of time intervals over which data for an object is available. The property can be a single string specifying a single interval, or an array of strings representing intervals. A later CZML packet can update this availability if it changes or is found to be incorrect. For example, an SGP4 propagator may initially report availability for all time, but then later the propagator throws an exception and the availability can be adjusted to end at that time. If this optional property is not present, the object is assumed to be available for all time. Availability is scoped to a particular CZML stream, so two different streams can list different availability for a single object. Within a single stream, the last availability stated for an object is the one in effect and any availabilities in previous packets are ignored. If an object is not available at a time, the client will not draw that object.
+对象数据可用的一组时间区间。该属性可以是指定单个区间的单个字符串，也可以是表示区间的字符串数组。如果以后的 CZML packet 发生更改或被发现不正确，则可以更新此可用性。例如，SGP4 传播器可能最初报告所有时间的可用性，但随后传播器抛出异常并且可以调整可用性以在那时结束。如果此可选属性不存在，则假定该对象始终可用。可用性仅限于特定的 CZML 流，因此两个不同的流可以列出单个对象的不同可用性。在单个流中，为对象声明的最后一个可用性是有效的，并且忽略先前数据包中的任何可用性。如果某个对象在某个时间不可用，则客户端将不会绘制该对象。
 
-Default: `0000-00-00T00:00:00Z/9999-12-31T24:00:00Z`
+默认值: `0000-00-00T00:00:00Z/9999-12-31T24:00:00Z`
 
 
 **properties** - [[CustomProperties]]
 
-A set of custom properties for this object.
+此对象的一组自定义属性。
 
 
 **position** - [[Position]]
 
-The position of the object in the world. The position has no direct visual representation, but it is used to locate billboards, labels, and other graphical items attached to the object.
+物体在世界中的位置。该位置没有直接的视觉表示，但它用于定位广告牌、标签和其他附加到对象的图形项目。
 
 **Examples**:
 
@@ -162,116 +162,116 @@ The position of the object in the world. The position has no direct visual repre
 
 **orientation** - [[Orientation]]
 
-The orientation of the object in the world. The orientation has no direct visual representation, but it is used to orient models, cones, pyramids, and other graphical items attached to the object.
+对象在世界中的方向。方向没有直接的视觉表示，但它用于定向模型、圆锥、金字塔和其他附加到对象的图形项。
 
 
 **viewFrom** - [[ViewFrom]]
 
-A suggested camera location when viewing this object. The property is specified as a Cartesian position in the East (x), North (y), Up (z) reference frame relative to the object's position.
+查看此对象时建议的相机位置。该属性被指定为相对于对象位置的东 (x)、北 (y)、上 (z) 参考系中的笛卡尔位置。
 
 
 **billboard** - [[Billboard]]
 
-A billboard, or viewport-aligned image, sometimes called a marker. The billboard is positioned in the scene by the `position` property.
+广告牌或视口对齐的图像，有时称为标记。广告牌通过 `position` 属性定位在场景中。
 
 
 **box** - [[Box]]
 
-A box, which is a closed rectangular cuboid. The box is positioned and oriented using the `position` and `orientation` properties.
+一个盒子，它是一个封闭的长方体。 使用 `position` 和 `orientation` 属性对盒子进行定位和定向。
 
 
 **corridor** - [[Corridor]]
 
-A corridor, which is a shape defined by a centerline and width.
+走廊，它是由中心线和宽度定义的形状。
 
 
 **cylinder** - [[Cylinder]]
 
-A cylinder, truncated cone, or cone defined by a length, top radius, and bottom radius. The cylinder is positioned and oriented using the `position` and `orientation` properties.
+由长度、顶部半径和底部半径定义的圆柱体、截锥体或圆锥体。 圆柱体使用 `position` 和 `orientation` 属性定位和定向。
 
 
 **ellipse** - [[Ellipse]]
 
-An ellipse, which is a closed curve on the surface of the Earth. The ellipse is positioned using the `position` property.
+一个椭圆，它是地球表面上的一条闭合曲线。 椭圆使用 `position` 属性定位。
 
 
 **ellipsoid** - [[Ellipsoid]]
 
-An ellipsoid, which is a closed quadric surface that is a three-dimensional analogue of an ellipse. The ellipsoid is positioned and oriented using the `position` and `orientation` properties.
+椭圆体，它是一个封闭的二次曲面，是椭圆的三维模拟。 椭圆体使用 `position` 和 `orientation` 属性进行定位和定向。
 
 
 **label** - [[Label]]
 
-A string of text. The label is positioned in the scene by the `position` property.
+一串文本。标签通过 `position` 属性定位在场景中。
 
 
 **model** - [[Model]]
 
-A 3D model. The model is positioned and oriented using the `position` and `orientation` properties.
+一个 3D 模型。使用 `position` 和 `orientation` 属性对模型进行定位和定向。
 
 
 **path** - [[Path]]
 
-A path, which is a polyline defined by the motion of an object over time. The possible vertices of the path are specified by the `position` property.
+路径，它是由对象随时间的运动定义的折线。路径的可能顶点由 `position` 属性指定。
 
 
 **point** - [[Point]]
 
-A point, or viewport-aligned circle. The point is positioned in the scene by the `position` property.
+一个点或视口对齐的圆。 该点通过 `position` 属性定位在场景中。
 
 
 **polygon** - [[Polygon]]
 
-A polygon, which is a closed figure on the surface of the Earth.
+一个多边形，它是地球表面上的一个封闭图形。
 
 
 **polyline** - [[Polyline]]
 
-A polyline, which is a line in the scene composed of multiple segments.
+一条折线，即场景中由多条线段组成的一条线。
 
 
 **polylineVolume** - [[PolylineVolume]]
 
-A polyline with a volume, defined as a 2D shape extruded along a polyline.
+具有体积的多段线，定义为沿多段线拉伸的二维形状。
 
 
 **rectangle** - [[Rectangle]]
 
-A cartographic rectangle, which conforms to the curvature of the globe and can be placed along the surface or at altitude.
+符合地球曲率的制图矩形，可以沿表面或高度放置。
 
 
 **tileset** - [[Tileset]]
 
-A 3D Tiles tileset.
+3D Tiles 瓦片集。
 
 
 **wall** - [[Wall]]
 
-A two-dimensional wall which conforms to the curvature of the globe and can be placed along the surface or at altitude.
+符合地球曲率的二维墙，可以沿地表或高处放置。
 
 
 **agi_conicSensor** - [[ConicSensor]]
 
-A conical sensor volume taking into account occlusion of an ellipsoid, i.e., the globe. The sensor is positioned and oriented using the `position` and `orientation` properties.
+考虑到椭圆体（即地球）的遮挡的锥形传感器体积。 使用 `position` 和 `orientation` 属性定位和定向传感器。
 
 
 **agi_customPatternSensor** - [[CustomPatternSensor]]
 
-A custom sensor volume taking into account occlusion of an ellipsoid, i.e., the globe. The sensor is positioned and oriented using the `position` and `orientation` properties.
+考虑到椭圆体（即地球）的遮挡的自定义传感器体积。 使用 `position` 和 `orientation` 属性定位和定向传感器。
 
 
 **agi_rectangularSensor** - [[RectangularSensor]]
 
-A rectangular pyramid sensor volume taking into account occlusion of an ellipsoid, i.e., the globe. The sensor is positioned and oriented using the `position` and `orientation` properties.
+考虑到椭圆体（即地球）的遮挡的矩形金字塔传感器体积。 使用 `position` 和 `orientation` 属性定位和定向传感器。
 
 
 **agi_fan** - [[Fan]]
 
-Defines a fan, which starts at a point or apex and extends in a specified list of directions from the apex. Each pair of directions forms a face of the fan extending to the specified radius. The fan is positioned and oriented using the `position` and `orientation` properties.
+定义一个扇形，它从一个点或顶点开始，并从顶点沿指定的方向列表延伸。 每对方向形成延伸到指定半径的扇面。 使用 `position` 和 `orientation` 属性来定位和定向风扇。
 
 
 **agi_vector** - [[Vector]]
 
-Defines a graphical vector that originates at the `position` property and extends in the provided direction for the provided length. The vector is positioned using the `position` property.
+定义一个图形向量，该向量源自 `position` 属性并在提供的方向上延伸提供的长度。 使用 `position` 属性定位向量。
 
 
